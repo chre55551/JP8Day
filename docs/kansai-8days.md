@@ -283,6 +283,27 @@
 
 > 1/4 是週一：桐麵週二休、COBATOPAN 週三休，都不衝突；小店過年後哪天開門，12 月中再確認⚠️
 
+### 奈良還可以多排什麼（1/3）
+
+奈良現在只排了 9:00–11:30，半天就夠。想多待的話挑一兩個；1/3 是新年第三天，東大寺、春日大社會有參拜人潮，要去就趁早。
+
+- [東大寺大佛殿](https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E5%A4%A7%E5%AF%BA+%E5%A4%A7%E4%BB%8F%E6%AE%BF)：8:30 開門，大人 600 日圓，從奈良公園走就到（算一間寺社）
+- [春日大社](https://www.google.com/maps/search/?api=1&query=%E6%98%A5%E6%97%A5%E5%A4%A7%E7%A4%BE)：參道石燈籠很好拍；1/3 初詣人多（算一間寺社）
+- [奈良町](https://www.google.com/maps/search/?api=1&query=%E3%81%AA%E3%82%89%E3%81%BE%E3%81%A1+%E5%A5%88%E8%89%AF)：老町屋改建的小店和咖啡廳，從近鐵奈良站往南走約 10 分
+- [志津香 公園店](https://www.google.com/maps/search/?api=1&query=%E5%BF%97%E6%B4%A5%E9%A6%99+%E5%85%AC%E5%9C%92%E5%BA%97)：1959 年創業的釜飯，11:00 開、週末到 16:00 點餐，常排隊
+- 柿葉壽司：一口大小，可以買幾種分著吃；奈良公園[夢風ひろば](https://www.google.com/maps/search/?api=1&query=%E5%A4%A2%E9%A2%A8%E3%81%B2%E3%82%8D%E3%81%B0+%E5%A5%88%E8%89%AF)裡就有店
+
+> 加這些的話奈良會變成大半天，下午難波的行程要往後挪或刪一些。1/3 各店的過年營業還沒查到⚠️
+
+### 神戶還有什麼（不只神戶牛）
+
+- [北野異人館街](https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E9%87%8E%E7%95%B0%E4%BA%BA%E9%A4%A8%E8%A1%97)：坡道上的西洋老房子，附近咖啡廳和雜貨多；從三宮往上坡約 15 分
+- 南京町：中華街小吃，份量小可以吃好幾種（老祥記本店整修中，預計 2026 年 11 月左右完工）
+- 舊居留地・元町商店街：石造洋館街景，風月堂、Juchheim 伴手禮
+- 美利堅公園・神戶港塔、Harborland umie MOSAIC：港灣夕陽夜景；Frantz 草莓松露巧克力、壺裝布丁
+- [布引香草園](https://www.google.com/maps/search/?api=1&query=%E5%B8%83%E5%BC%95%E3%83%8F%E3%83%BC%E3%83%96%E5%9C%92)：日本最大級的香草園，搭纜車上山看夜景（冬季營業時間要確認）
+- 神戶牛：鐵板燒一般 8,000–15,000 日圓，超過預算；平價一點的是元町的 [Steak Land](https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD%E3%83%A9%E3%83%B3%E3%83%89+%E7%A5%9E%E6%88%B8)，午餐約 3,000 日圓起（年末年始要確認⚠️）
+
 ### 寺社精簡成 2–3 間
 
 - 建議留：[清水寺](https://www.google.com/maps/search/?api=1&query=%E6%B8%85%E6%B0%B4%E5%AF%BA+%E4%BA%AC%E9%83%BD)（附近有二年坂、三年坂）、[伏見稻荷](https://www.google.com/maps/search/?api=1&query=%E4%BC%8F%E8%A6%8B%E7%A8%B2%E8%8D%B7%E5%A4%A7%E7%A4%BE)（深夜千本鳥居）、[露天神社](https://www.google.com/maps/search/?api=1&query=%E9%9C%B2%E5%A4%A9%E7%A5%9E%E7%A4%BE+%E3%81%8A%E5%88%9D%E5%A4%A9%E7%A5%9E)（離飯店近）
