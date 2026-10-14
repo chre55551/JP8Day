@@ -1,0 +1,9 @@
+# Mac 和 Windows 一起開發：repo 內一律存 LF，避免換行差異造成整檔變更與衝突
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
