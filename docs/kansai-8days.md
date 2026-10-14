@@ -244,7 +244,7 @@
 
 ---
 
-## 建議備選（還沒排進行程，看過喜歡再挑）
+## 行程建議（還沒排進行程，看過喜歡再挑）
 
 ### 神戶半日：12/29 落地當天下午
 
@@ -283,27 +283,6 @@
 
 > 1/4 是週一：桐麵週二休、COBATOPAN 週三休，都不衝突；小店過年後哪天開門，12 月中再確認⚠️
 
-### 奈良還可以多排什麼（1/3）
-
-奈良現在只排了 9:00–11:30，半天就夠。想多待的話挑一兩個；1/3 是新年第三天，東大寺、春日大社會有參拜人潮，要去就趁早。
-
-- [東大寺大佛殿](https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E5%A4%A7%E5%AF%BA+%E5%A4%A7%E4%BB%8F%E6%AE%BF)：8:30 開門，大人 600 日圓，從奈良公園走就到（算一間寺社）
-- [春日大社](https://www.google.com/maps/search/?api=1&query=%E6%98%A5%E6%97%A5%E5%A4%A7%E7%A4%BE)：參道石燈籠很好拍；1/3 初詣人多（算一間寺社）
-- [奈良町](https://www.google.com/maps/search/?api=1&query=%E3%81%AA%E3%82%89%E3%81%BE%E3%81%A1+%E5%A5%88%E8%89%AF)：老町屋改建的小店和咖啡廳，從近鐵奈良站往南走約 10 分
-- [志津香 公園店](https://www.google.com/maps/search/?api=1&query=%E5%BF%97%E6%B4%A5%E9%A6%99+%E5%85%AC%E5%9C%92%E5%BA%97)：1959 年創業的釜飯，11:00 開、週末到 16:00 點餐，常排隊
-- 柿葉壽司：一口大小，可以買幾種分著吃；奈良公園[夢風ひろば](https://www.google.com/maps/search/?api=1&query=%E5%A4%A2%E9%A2%A8%E3%81%B2%E3%82%8D%E3%81%B0+%E5%A5%88%E8%89%AF)裡就有店
-
-> 加這些的話奈良會變成大半天，下午難波的行程要往後挪或刪一些。1/3 各店的過年營業還沒查到⚠️
-
-### 神戶還有什麼（不只神戶牛）
-
-- [北野異人館街](https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E9%87%8E%E7%95%B0%E4%BA%BA%E9%A4%A8%E8%A1%97)：坡道上的西洋老房子，附近咖啡廳和雜貨多；從三宮往上坡約 15 分
-- 南京町：中華街小吃，份量小可以吃好幾種（老祥記本店整修中，預計 2026 年 11 月左右完工）
-- 舊居留地・元町商店街：石造洋館街景，風月堂、Juchheim 伴手禮
-- 美利堅公園・神戶港塔、Harborland umie MOSAIC：港灣夕陽夜景；Frantz 草莓松露巧克力、壺裝布丁
-- [布引香草園](https://www.google.com/maps/search/?api=1&query=%E5%B8%83%E5%BC%95%E3%83%8F%E3%83%BC%E3%83%96%E5%9C%92)：日本最大級的香草園，搭纜車上山看夜景（冬季營業時間要確認）
-- 神戶牛：鐵板燒一般 8,000–15,000 日圓，超過預算；平價一點的是元町的 [Steak Land](https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD%E3%83%A9%E3%83%B3%E3%83%89+%E7%A5%9E%E6%88%B8)，午餐約 3,000 日圓起（年末年始要確認⚠️）
-
 ### 寺社精簡成 2–3 間
 
 - 建議留：[清水寺](https://www.google.com/maps/search/?api=1&query=%E6%B8%85%E6%B0%B4%E5%AF%BA+%E4%BA%AC%E9%83%BD)（附近有二年坂、三年坂）、[伏見稻荷](https://www.google.com/maps/search/?api=1&query=%E4%BC%8F%E8%A6%8B%E7%A8%B2%E8%8D%B7%E5%A4%A7%E7%A4%BE)（深夜千本鳥居）、[露天神社](https://www.google.com/maps/search/?api=1&query=%E9%9C%B2%E5%A4%A9%E7%A5%9E%E7%A4%BE+%E3%81%8A%E5%88%9D%E5%A4%A9%E7%A5%9E)（離飯店近）
@@ -312,52 +291,119 @@
 
 ---
 
-## 備選名單（之後挑有興趣的排進「待安排」時段）
+## 景點・美食備選（依地區）
 
-### 📷 景點備選
+> 「已排」是已經在行程裡的；預算是每人大約金額（日圓）。網站「建議備選」區塊是同一份資料。
 
-| 景點 | 適合排在哪天 | 要花多久 | 備註 |
-|---|---|---|---|
-| 舊居留地・元町商店街 | Day 8 不行（太早）；要去就得另外排神戶半天 | 2 小時 | 石造洋館街景、神戶風月堂、Juchheim 伴手禮 |
-| **北野異人館街** | 另排神戶半天 | 1.5 小時 | 坡道洋房、風見雞之館；從三宮要往上坡走 15 分 |
-| **生田神社** | 另排神戶半天 | 30 分 | 結緣神社，兩人一起抽戀愛籤 |
-| **南京町** | 另排神戶半天 | 45 分 | 中華街小吃。⚠️ 老祥記本店整修中（預計 2026 年 11 月左右完工），施工期間改在對面的曹家包子館營業 |
-| **美利堅公園 → 神戶港塔** | 另排神戶半天 | 1 小時 | BE KOBE 字牌、港塔屋頂甲板 |
-| **Harborland umie MOSAIC** | 另排神戶傍晚 | 1.5 小時 | 港灣夜景、摩天輪；🛍 Frantz 草莓松露巧克力、壺裝布丁 |
-| **東大寺大佛殿 → 春日大社** | Day 2 上午 | 1.5 小時 | 大佛殿、石燈籠參道 |
-| 錦市場 | Day 3 早上 | 1 小時 | 除夕最熱鬧，但很多店下午就收攤；1/1–3 大多休息 |
-| 寺町一帶：一保堂、松榮堂、LE LABO KYOTO MACHIYA | Day 3 下午 | 1.5 小時 | 松榮堂全年無休（元旦起休息）；其他年末要確認⚠️ |
-| 祇園抹茶甜點：祇園小森、鍵善良房、祇園辻利、茶寮都路里 | Day 3 傍晚 | 45 分 | 年末要確認⚠️ |
-| 京都車站：JR 京都伊勢丹、中村藤吉 | Day 5 | 1.5 小時 | 伊勢丹去年 1/2 有營業 |
-| 調香體驗：京都しゃぼんや、MY ONLY FRAGRANCE | Day 3 或 Day 5 | 1–1.5 小時 | 兩人互調對方的味道⚠️要預約 |
-| **阿倍野 HARUKAS 300** | Day 4 傍晚 | 1.5 小時 | 全玻璃展望台看夕陽夜景，從新世界走過去約 15 分 |
-| **南禪寺水路閣 → 哲學之道 → 銀閣寺** | Day 3 或 Day 5 | 3 小時 | 紅磚拱橋光影很好拍、2 公里散步道 |
-| **嵐山** | 很難塞進目前的京都兩天 | 半天 | 竹林、野宮神社、天龍寺、渡月橋；大河內山莊去年年末年始照常開放 |
-| **和服** | Day 5 上午（配清水坂一帶） | 加 1.5 小時（換裝、還衣） | 清水一帶和服店多，要挑有寫正月營業的⚠️ |
-| 京都塔展望室 | Day 5 晚上 | 45 分 | 去年年末年始照常開放 |
-| **大阪城** | Day 4 下午 | 2 小時 | 天守閣 12/28–1/1 休館，元旦只能逛公園 |
-| **天神橋筋商店街** | Day 6 | 1.5 小時 | 日本最長的商店街，就在天滿橋北邊 |
-| **HEP FIVE 摩天輪** | Day 1 晚上 | 30 分 | 就在梅田，最容易塞進行程 |
+### 大阪
 
-### 🍜 美食備選
+**景點**
 
-| 店家 | 適合排在哪餐 | 類型／預算（每人） | 備註 |
-|---|---|---|---|
-| 神戶牛鐵板燒：吉祥吉／八坐和／Steak Aoyama／Steak Land | 另排神戶半天 | 高價 8,000–15,000 日圓（Steak Land 約 3,000 起） | 吉祥吉同集團去年年末年始照常營業 |
-| 星巴克北野異人館店／西村珈琲 中山手本店 | 另排神戶半天 | 咖啡 | 適合跟北野異人館一起排 |
-| **牛かつもと村** | Day 1 午餐 | 1,500–2,500 日圓 | 炸牛排；梅田有分店 |
-| **志津香 公園店**／麵鬪庵 | Day 2 午餐（要換掉㐂舌響） | 2,000–3,000／1,000–1,500 日圓 | 志津香週二公休，12/30 有開；**麵鬪庵週三公休，12/30 吃不到** |
-| **りくろーおじさん** | Day 2 下午 | 約 1,000 日圓 | 難波本店，剛出爐會搖鈴 |
-| **くくる vs わなか** | Day 2 傍晚 | 600–1,000 日圓 | 章魚燒比一比 |
-| **美津の**／**北極星** | Day 2 晚餐 | 1,500–2,500／1,200–1,800 日圓 | 美津の是必比登推薦、標示無休 |
-| **551 蓬萊** | Day 2 宵夜 | 約 250 日圓 | 不能帶回台灣 |
-| **松葉 本店**（年越蕎麥麵） | Day 3 晚餐 | 約 1,800 日圓 | 週三公休，12/31 是週四；當天大排長龍 |
-| **おめん 銀閣寺本店** | 配南禪寺路線 | 約 1,500 日圓 | ⚠️ 週四公休，去年 12/30–1/2 也休息 |
-| **金龍ラーメン**／梅田連鎖店 | Day 4 晚餐 | 約 1,000 日圓 | 金龍 24 小時營業，元旦的保險選擇 |
-| **本家 第一旭 たかばし** | Day 5 午餐 | 約 1,000 日圓 | 京都車站旁，營業時間長 |
-| **先斗町割烹／懷石** | Day 3 晚餐 | 高價 8,000–15,000 日圓 | 京都料亭年末年始休息的比例很高 |
-| **焼肉 花田 梅田茶屋町** | Day 6 晚餐 | 5,000–8,000 日圓 | 和牛燒肉⚠️ |
-| かに道楽 道頓堀本店 | Day 2 晚餐 | 6,000–10,000 日圓 | ⚠️ 有資料顯示 12/31 休息 |
+- **梅田藍天大廈空中庭園**（已排 12/29）：360 度露天展望台，夕陽轉夜景　[介紹](https://www.skybldg.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%A2%85%E7%94%B0%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%93%E3%83%AB%20%E7%A9%BA%E4%B8%AD%E5%BA%AD%E5%9C%92)
+- **LUCUA／LUCUA 1100**（已排 12/29）：大阪站直結的百貨，兩棟都很好逛　[介紹](https://www.lucua.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%AB%E3%82%AF%E3%82%A2%E5%A4%A7%E9%98%AA)
+- **環球影城**（已排 12/30）：任天堂世界、哈利波特、小小兵　[介紹](https://www.usj.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%A6%E3%83%8B%E3%83%90%E3%83%BC%E3%82%B5%E3%83%AB%E3%83%BB%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%AA%E3%83%BB%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3)
+- **新世界・通天閣**（已排 1/1）：懷舊下町、串炸一條街　[介紹](https://www.tsutenkaku.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%80%9A%E5%A4%A9%E9%96%A3)
+- **心齋橋筋商店街**（已排 1/3）：有屋頂的購物街，藥妝、服飾一路逛到道頓堀　[介紹](https://www.shinsaibashi.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%BF%83%E6%96%8E%E6%A9%8B%E7%AD%8B%E5%95%86%E5%BA%97%E8%A1%97)
+- **阪急梅田本店**（已排 1/4）：B1 Grand Calbee 現炸洋芋片、伴手禮　[介紹](https://www.hankyu-dept.co.jp/honten/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%98%AA%E6%80%A5%E3%81%86%E3%82%81%E3%81%A0%E6%9C%AC%E5%BA%97)
+- **大阪城公園・天守閣**：護城河和石牆很好拍；天守閣去年 12/28–1/1 休館，公園照常開　[介紹](https://www.osakacastle.net/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%98%AA%E5%9F%8E%E5%A4%A9%E5%AE%88%E9%96%A3)
+- **阿倍野 HARUKAS 300**：300 公尺高的全玻璃展望台，看夕陽夜景；從新世界走約 15 分　[介紹](https://www.abenoharukas-300.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%81%82%E3%81%B9%E3%81%AE%E3%83%8F%E3%83%AB%E3%82%AB%E3%82%B9%E5%B1%95%E6%9C%9B%E5%8F%B0)
+- **天神橋筋商店街**：日本最長的商店街，約 2.6 km，藥妝、小吃、雜貨；離飯店近　[介紹](https://www.tenjin123.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E7%A5%9E%E6%A9%8B%E7%AD%8B%E5%95%86%E5%BA%97%E8%A1%97)
+- **HEP FIVE 摩天輪**：梅田的紅色摩天輪，離飯店走路約 7 分，晚上最容易塞進行程　[介紹](https://www.hepfive.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=HEP%20FIVE%20%E8%A6%B3%E8%A6%A7%E8%BB%8A)
+- **中之島公園**：河岸散步道和中央公會堂紅磚建築　[介紹](https://osaka-info.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E4%B9%8B%E5%B3%B6%E5%85%AC%E5%9C%92)
+
+**美食**
+
+- **串炸 松葉總本店**（已排 12/29）｜¥約 1,500：新梅田食道街的立食串炸，只收現金、週一休　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E6%9D%BE%E8%91%89%E7%B7%8F%E6%9C%AC%E5%BA%97%20%E6%96%B0%E6%A2%85%E7%94%B0%E9%A3%9F%E9%81%93%E8%A1%97)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9D%BE%E8%91%89%E7%B7%8F%E6%9C%AC%E5%BA%97%20%E6%96%B0%E6%A2%85%E7%94%B0%E9%A3%9F%E9%81%93%E8%A1%97)
+- **㐂舌響**（已排 1/3）｜¥約 2,080：法善寺橫丁，午間黑毛和牛丼　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E3%90%82%E8%88%8C%E9%9F%BF%20%E6%B3%95%E5%96%84%E5%AF%BA)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%90%82%E8%88%8C%E9%9F%BF%20%E6%B3%95%E5%96%84%E5%AF%BA)
+- **串カツだるま 新世界總本店**（已排 1/1）｜¥1,500–2,500：醬汁禁止沾兩次　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E3%81%A0%E3%82%8B%E3%81%BE%20%E6%96%B0%E4%B8%96%E7%95%8C%E7%B7%8F%E6%9C%AC%E5%BA%97)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%81%A0%E3%82%8B%E3%81%BE%20%E6%96%B0%E4%B8%96%E7%95%8C%E7%B7%8F%E6%9C%AC%E5%BA%97)
+- **牛かつもと村**｜¥1,500–2,500：炸牛排，梅田有分店　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E7%89%9B%E3%81%8B%E3%81%A4%E3%82%82%E3%81%A8%E6%9D%91%20%E6%A2%85%E7%94%B0)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%89%9B%E3%81%8B%E3%81%A4%E3%82%82%E3%81%A8%E6%9D%91%20%E6%A2%85%E7%94%B0)
+- **りくろーおじさん**｜¥約 1,000：現烤起司蛋糕，剛出爐會搖鈴；一個兩人分　[介紹](https://www.rikuro.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%8A%E3%81%8F%E3%82%8D%E3%83%BC%E3%81%8A%E3%81%98%E3%81%95%E3%82%93%E3%81%AE%E5%BA%97%20%E3%81%AA%E3%82%93%E3%81%B0%E6%9C%AC%E5%BA%97)
+- **章魚燒：くくる vs わなか**｜¥600–1,000：兩家各買一盒比一比　[介紹](https://www.shirohato.com/kukuru/)・[介紹 2](https://takoyaki-wanaka.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%81%9F%E3%81%93%E5%AE%B6%E9%81%93%E9%A0%93%E5%A0%80%E3%81%8F%E3%81%8F%E3%82%8B%20%E6%9C%AC%E5%BA%97)
+- **美津の**｜¥1,500–2,500：大阪燒，必比登推薦　[介紹](https://www.mizuno-osaka.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%BE%8E%E6%B4%A5%E3%81%AE%20%E9%81%93%E9%A0%93%E5%A0%80)
+- **北極星**｜¥1,200–1,800：蛋包飯創始店　[介紹](https://hokkyokusei.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E6%A5%B5%E6%98%9F%20%E5%BF%83%E6%96%8E%E6%A9%8B%E6%9C%AC%E5%BA%97)
+- **551 蓬萊**｜¥約 250：豬肉包，現場吃（不能帶回台灣）　[介紹](https://www.551horai.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=551%E8%93%AC%E8%8E%B1%20%E6%9C%AC%E5%BA%97)
+- **金龍ラーメン**｜¥約 1,000：24 小時營業，元旦的保險選擇　[介紹](https://kinryu-ramen.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%87%91%E9%BE%8D%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%20%E9%81%93%E9%A0%93%E5%A0%80)
+
+### 京都
+
+**景點**
+
+- **清水寺**（已排 1/2）：6:00 開門，清晨人少拍清水舞台　[介紹](https://www.kiyomizudera.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%B8%85%E6%B0%B4%E5%AF%BA%20%E4%BA%AC%E9%83%BD)
+- **teamLab Biovortex Kyoto**（已排 1/2）：teamLab 在日本最大的美術館，預留 4 小時　[介紹](https://www.teamlab.art/e/kyoto/)・[地圖](https://www.google.com/maps/search/?api=1&query=teamLab%20Biovortex%20Kyoto)
+- **伏見稻荷大社**（已排 12/31）：千本鳥居，跨年夜深夜參拜　[介紹](https://inari.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%BC%8F%E8%A6%8B%E7%A8%B2%E8%8D%B7%E5%A4%A7%E7%A4%BE)
+- **今宮神社**（已排 12/31）：歌姬籤、阿呆賢さん　[介紹](http://www.imamiyajinja.org/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%BB%8A%E5%AE%AE%E7%A5%9E%E7%A4%BE%20%E4%BA%AC%E9%83%BD)
+- **八坂神社**（已排 12/31）：除夜祭・白朮參拜，燈籠點滿整個神社　[介紹](https://www.yasaka-jinja.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E5%9D%82%E7%A5%9E%E7%A4%BE)
+- **智積院**（已排 12/31）：除夕可以親手敲鐘，免預約　[介紹](https://chisan.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%99%BA%E7%A9%8D%E9%99%A2)
+- **金閣寺**：金色舍利殿倒映在鏡湖池，京都最經典的一張照片；在北邊，要另外排　[介紹](https://www.shokoku-ji.jp/kinkakuji/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%87%91%E9%96%A3%E5%AF%BA)
+- **南禪寺水路閣 → 哲學之道 → 銀閣寺**：紅磚拱橋光影、2 公里的散步道，一路往北約 3 小時　[介紹](https://nanzenji.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E7%A6%85%E5%AF%BA%20%E6%B0%B4%E8%B7%AF%E9%96%A3)
+- **銀閣寺**：哲學之道的終點，枯山水庭園　[介紹](https://www.shokoku-ji.jp/ginkakuji/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%8A%80%E9%96%A3%E5%AF%BA)
+- **嵐山**：竹林小徑、天龍寺、渡月橋；要排就是半天　[介紹](https://www.arashiyamahoshokai.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B5%90%E5%B1%B1%20%E7%AB%B9%E6%9E%97%E3%81%AE%E5%B0%8F%E5%BE%84)
+- **天龍寺**：嵐山的世界遺產，曹源池庭園　[介紹](https://www.tenryuji.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E9%BE%8D%E5%AF%BA)
+- **錦市場**：京都的廚房，邊走邊吃；除夕最熱鬧但很多店下午就收，1/1–1/3 大多休息　[介紹](https://www.kyoto-nishiki.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%8C%A6%E5%B8%82%E5%A0%B4)
+- **京都塔**：京都站對面的展望台，去年年末年始照常開放　[介紹](https://www.kyoto-tower.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E9%83%BD%E3%82%BF%E3%83%AF%E3%83%BC)
+- **寺町：一保堂茶舖、松榮堂**：老字號抹茶和香舖，可以買抹茶和線香　[介紹](https://www.ippodo-tea.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E4%BF%9D%E5%A0%82%E8%8C%B6%E8%88%97%20%E4%BA%AC%E9%83%BD%E6%9C%AC%E5%BA%97)
+- **京都城市觀光官方網站**：想找其他京都景點可以從這裡查　[介紹](https://kyoto.travel/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E9%83%BD%E9%A7%85)
+
+**美食**
+
+- **さらさ西陣**（已排 12/31）｜¥1,000–1,500：錢湯改建的咖啡廳，招牌法式吐司　[介紹](https://www.cafe-sarasa.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%81%95%E3%82%89%E3%81%95%E8%A5%BF%E9%99%A3)
+- **宮川豚衛門**（已排 1/2）｜¥2,500–3,500：NewBabe 姊妹店的厚切豬排，TableCheck 訂位　[介紹](https://www.tablecheck.com/miyagawatonemon)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%AE%AE%E5%B7%9D%E8%B1%9A%E8%A1%9B%E9%96%80)
+- **松葉 本店**｜¥約 1,800：鯡魚蕎麥麵，除夕吃年越蕎麥；當天大排長龍　[介紹](https://www.sobamatsuba.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%B7%8F%E6%9C%AC%E5%AE%B6%E3%81%AB%E3%81%97%E3%82%93%E3%81%9D%E3%81%B0%E6%9D%BE%E8%91%89%20%E6%9C%AC%E5%BA%97)
+- **おめん 銀閣寺本店**｜¥約 1,500：烏龍沾麵，配哲學之道；週四休，去年 12/30–1/2 也休　[介紹](https://www.omen.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E3%82%81%E3%82%93%20%E9%8A%80%E9%96%A3%E5%AF%BA%E6%9C%AC%E5%BA%97)
+- **本家 第一旭 たかばし**｜¥約 1,000：京都站旁的醬油拉麵，營業時間長　[介紹](https://www.honke-daiichiasahi.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9C%AC%E5%AE%B6%E7%AC%AC%E4%B8%80%E6%97%AD%20%E3%81%9F%E3%81%8B%E3%81%B0%E3%81%97)
+- **鍵善良房**｜¥1,000–1,500：祇園老字號，葛切涼粉　[介紹](https://www.kagizen.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%8D%B5%E5%96%84%E8%89%AF%E6%88%BF%20%E5%9B%9B%E6%9D%A1%E6%9C%AC%E5%BA%97)
+- **祇園辻利・茶寮都路里**｜¥1,500–2,000：抹茶聖代　[介紹](https://www.giontsujiri.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E8%8C%B6%E5%AF%AE%E9%83%BD%E8%B7%AF%E9%87%8C%20%E7%A5%87%E5%9C%92%E6%9C%AC%E5%BA%97)
+
+### 宇治
+
+**景點**
+
+- **任天堂博物館**（已排 1/4）：抽籤制，這趟只有 1/4 能去　[介紹](https://museum.nintendo.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%8B%E3%83%B3%E3%83%86%E3%83%B3%E3%83%89%E3%83%BC%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%82%A2%E3%83%A0)
+- **丸久小山園 本店**（已排 1/4）：宇治老字號抹茶，本社工場就在任天堂博物館附近　[介紹](https://www.marukyu-koyamaen.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%B8%E4%B9%85%E5%B0%8F%E5%B1%B1%E5%9C%92%20%E6%9C%AC%E7%A4%BE%E5%B7%A5%E5%A0%B4)
+- **平等院**（已排 1/4 表參道）：十圓硬幣上的鳳凰堂，表參道整排宇治茶老舖　[介紹](https://www.byodoin.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B9%B3%E7%AD%89%E9%99%A2)
+- **中村藤吉 本店**：宇治抹茶甜點老店，就在 JR 宇治站旁　[介紹](https://tokichi.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E6%9D%91%E8%97%A4%E5%90%89%E6%9C%AC%E5%BA%97)
+
+**美食**
+
+- **中村藤吉 本店**｜¥1,500–2,000：抹茶甜點、生茶果凍　[介紹](https://tokichi.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E6%9D%91%E8%97%A4%E5%90%89%E6%9C%AC%E5%BA%97)
+
+### 奈良
+
+**景點**
+
+- **奈良公園**（已排 1/3）：餵鹿，先鞠躬鹿會回禮　[介紹](https://narashikanko.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A5%88%E8%89%AF%E5%85%AC%E5%9C%92)
+- **興福寺**（已排 1/3）：五重塔，去奈良公園順路經過　[介紹](https://www.kohfukuji.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E8%88%88%E7%A6%8F%E5%AF%BA)
+- **東大寺大佛殿**：8:30 開門，大人 600 日圓，早上人最少　[介紹](https://www.todaiji.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E5%A4%A7%E5%AF%BA%20%E5%A4%A7%E4%BB%8F%E6%AE%BF)
+- **春日大社**：參道一整排石燈籠；1/3 初詣人多　[介紹](https://www.kasugataisha.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%98%A5%E6%97%A5%E5%A4%A7%E7%A4%BE)
+- **奈良町（ならまち）**：老町屋改建的小店和咖啡廳，從近鐵奈良站往南約 10 分　[介紹](https://narashikanko.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%81%AA%E3%82%89%E3%81%BE%E3%81%A1%20%E5%A5%88%E8%89%AF)
+
+**美食**
+
+- **中谷堂**（已排 1/3）｜¥約 200：看高速搗麻糬，艾草麻糬　[介紹](https://www.nakatanidou.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E8%B0%B7%E5%A0%82%20%E5%A5%88%E8%89%AF)
+- **志津香 公園店**｜¥2,000–3,000：1959 年創業的釜飯，常排隊　[介紹](https://kamameshi-shizuka.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%BF%97%E6%B4%A5%E9%A6%99%20%E5%85%AC%E5%9C%92%E5%BA%97)
+- **柿葉壽司：平宗／ゐざさ**｜¥約 1,000：一口大小，可以買幾種分著吃　[介紹](https://www.hiraso.jp/)・[介紹 2](https://www.izasa.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9F%BF%E3%81%AE%E8%91%89%E3%81%9A%E3%81%97%20%E5%B9%B3%E5%AE%97%20%E5%A5%88%E8%89%AF%E5%BA%97)
+
+### 神戶
+
+**景點**
+
+- **北野異人館街**：坡道上的西洋老房子，從三宮往上坡約 15 分　[介紹](https://www.kobeijinkan.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E9%87%8E%E7%95%B0%E4%BA%BA%E9%A4%A8%E8%A1%97)
+- **生田神社**：結緣神社，可以一起抽戀愛籤（算一間寺社）　[介紹](https://ikutajinja.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%94%9F%E7%94%B0%E7%A5%9E%E7%A4%BE)
+- **南京町**：中華街小吃，份量小可以吃好幾種　[介紹](https://www.nankinmachi.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E4%BA%AC%E7%94%BA%20%E7%A5%9E%E6%88%B8)
+- **舊居留地**：石造洋館街景，精品和咖啡廳　[介紹](https://www.kobe-kyoryuchi.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%97%A7%E5%B1%85%E7%95%99%E5%9C%B0%20%E7%A5%9E%E6%88%B8)
+- **元町商店街**：風月堂、Juchheim 等神戶伴手禮　[介紹](https://www.kobe-motomachi.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%85%83%E7%94%BA%E5%95%86%E5%BA%97%E8%A1%97%20%E7%A5%9E%E6%88%B8)
+- **美利堅公園・神戶港塔**：BE KOBE 字牌、港塔屋頂甲板　[介紹](https://www.kobe-port-tower.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%A5%9E%E6%88%B8%E3%83%9D%E3%83%BC%E3%83%88%E3%82%BF%E3%83%AF%E3%83%BC)
+- **Harborland umie MOSAIC**：港灣夕陽夜景、摩天輪　[介紹](https://umie.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=umie%20MOSAIC)
+- **布引香草園**：搭纜車上山，日本最大級香草園和夜景；冬季營業時間要確認　[介紹](https://www.kobeherb.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B8%83%E5%BC%95%E3%83%8F%E3%83%BC%E3%83%96%E5%9C%92)
+- **神戶官方觀光網站**：想找其他神戶景點可以從這裡查　[介紹](https://www.feel-kobe.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%89%E5%AE%AE%E9%A7%85)
+
+**美食**
+
+- **HARBS 神戶クレフィ三宮店**（已排 12/29）｜¥約 1,050：水果千層，11:00 開門，通常不用排隊　[介紹](https://www.harbs.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=HARBS%20%E7%A5%9E%E6%88%B8%E3%82%AF%E3%83%AC%E3%83%95%E3%82%A3%E4%B8%89%E5%AE%AE%E5%BA%97)
+- **老祥記**｜¥約 300：南京町的元祖豬肉包；本店整修中，預計 2026 年 11 月左右完工　[介紹](https://roushouki.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E8%80%81%E7%A5%A5%E8%A8%98)
+- **Steak Land 神戶**｜¥約 3,000 起：平價神戶牛午餐（預算內的神戶牛選擇）　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD%E3%83%A9%E3%83%B3%E3%83%89%20%E7%A5%9E%E6%88%B8%E5%BA%97)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD%E3%83%A9%E3%83%B3%E3%83%89%20%E7%A5%9E%E6%88%B8%E5%BA%97)
+- **Frantz**｜¥約 1,000：草莓松露巧克力、壺裝布丁（伴手禮）　[介紹](https://www.frantz.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%83%A9%E3%83%B3%E3%83%84%20umie%20MOSAIC)
+- **西村珈琲 中山手本店**｜¥約 1,000：神戶老咖啡館，適合跟北野異人館一起排　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E8%A5%BF%E6%9D%91%E7%8F%88%E7%90%B2%20%E4%B8%AD%E5%B1%B1%E6%89%8B%E6%9C%AC%E5%BA%97)・[地圖](https://www.google.com/maps/search/?api=1&query=%E8%A5%BF%E6%9D%91%E7%8F%88%E7%90%B2%20%E4%B8%AD%E5%B1%B1%E6%89%8B%E6%9C%AC%E5%BA%97)
 
 ---
 

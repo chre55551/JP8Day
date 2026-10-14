@@ -125,10 +125,38 @@
 
   /* ---------- 建議備選 ---------- */
   function mapUrl(q){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q);}
-  document.getElementById("ideas-list").innerHTML=IDEAS.map(function(it){
-    return '<article class="idea"><h3>'+esc(it.title)+'</h3><p class="why">'+esc(it.why)+'</p>'+
+  function tbUrl(q){return "https://tabelog.com/rstLst/?vs=1&sw="+encodeURIComponent(q);}
+  function a(href,label,cls){return '<a class="'+cls+'" href="'+esc(href)+'" target="_blank" rel="noopener">'+esc(label)+'</a>';}
+  document.getElementById("plans-list").innerHTML=PLANS.map(function(it){
+    return '<article class="idea"><h4>'+esc(it.title)+'</h4><p class="why">'+esc(it.why)+'</p>'+
       '<ol>'+it.plan.map(function(p){return '<li>'+esc(p)+'</li>';}).join("")+'</ol>'+
-      '<div class="idea-links">'+it.links.map(function(l){return '<a href="'+esc(l.u||mapUrl(l.q))+'" target="_blank" rel="noopener">'+esc(l.n)+'</a>';}).join("")+'</div>'+
+      '<div class="idea-links">'+it.links.map(function(l){return a(l.u||mapUrl(l.q),l.n,"lk");}).join("")+'</div>'+
       (it.note?'<p class="idea-note">'+NOTE_ICON+'<span>'+esc(it.note)+'</span></p>':'')+'</article>';
   }).join("");
+
+  function row(it,food){
+    var links=[];
+    if(it.u)links.push(a(it.u,"介紹","lk"));
+    if(it.u2)links.push(a(it.u2,"介紹 2","lk"));
+    if(it.tb)links.push(a(tbUrl(it.q),"食べログ","lk"));
+    links.push(a(mapUrl(it.q),"地圖","lk lk-map"));
+    return '<li class="pick'+(it.s?" on":"")+'"><div class="pick-top"><span class="pick-n">'+esc(it.n)+'</span>'+
+      (it.s?'<span class="pick-s">已排 '+esc(it.s)+'</span>':'')+
+      (food&&it.p?'<span class="pick-p">¥'+esc(it.p)+'</span>':'')+'</div>'+
+      '<p class="pick-d">'+esc(it.d)+'</p><div class="idea-links">'+links.join("")+'</div></li>';
+  }
+  var AREAS=["大阪","京都","宇治","奈良","神戶"];
+  var areaTabs=document.getElementById("area-tabs"), picksEl=document.getElementById("picks");
+  function showArea(area){
+    store("kansai8-area",area);
+    Array.prototype.forEach.call(areaTabs.children,function(b){b.setAttribute("aria-selected",b.dataset.a===area?"true":"false");});
+    var sp=SPOTS.filter(function(x){return x.a===area;}), fd=FOODS.filter(function(x){return x.a===area;});
+    picksEl.innerHTML='<div class="pick-col"><h4>景點（'+sp.length+'）</h4><ul class="picks">'+sp.map(function(x){return row(x,false);}).join("")+'</ul></div>'+
+      '<div class="pick-col"><h4>美食（'+fd.length+'）</h4>'+(fd.length?'<ul class="picks">'+fd.map(function(x){return row(x,true);}).join("")+'</ul>':'<p class="pick-d">這區還沒有美食備選。</p>')+'</div>';
+  }
+  AREAS.forEach(function(ar){
+    var b=document.createElement("button");b.type="button";b.className="area-tab";b.dataset.a=ar;b.setAttribute("role","tab");
+    b.textContent=ar;b.addEventListener("click",function(){showArea(ar);});areaTabs.appendChild(b);
+  });
+  var savedArea=store("kansai8-area");showArea(AREAS.indexOf(savedArea)>=0?savedArea:"大阪");
 })();
