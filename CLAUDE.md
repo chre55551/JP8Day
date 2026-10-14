@@ -9,6 +9,8 @@
 - **開始任何修改前**，先執行 `git pull --rebase`。
 - **完成修改後**，commit 並 `git push`，不用另外詢問。commit message 用繁體中文簡述改了什麼。
 - pull 遇到衝突時，先停下來跟使用者說明衝突內容，不要自行丟棄任何一方的修改。
+- **少推幾次**：一次修改做完、確認好再 push，不要每改一小步就推。
+- **推完確認部署成功**：部署由 `.github/workflows/deploy.yml`（GitHub Actions）負責，新的部署會自動取消舊的。push 後用 `gh run list --workflow deploy.yml --limit 1` 確認是 success，才跟使用者說已上線；失敗就用 `gh run view --log-failed` 查原因。
 
 ## 行程規劃原則（使用者訂的，排行程時一律遵守）
 

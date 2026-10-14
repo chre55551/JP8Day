@@ -2,7 +2,7 @@
 
 2026/12/29–2027/1/5 大阪・京都・神戶行程網站。
 
-線上版：https://chre55551.github.io/JP8Day/ （push 到 `main` 後 GitHub Pages 會自動更新，約 1 分鐘）
+線上版：https://chre55551.github.io/JP8Day/ （push 到 `main` 後由 `.github/workflows/deploy.yml` 自動部署，約 1 分鐘；進度在 repo 的 Actions 頁面）
 
 ## 專案結構
 
