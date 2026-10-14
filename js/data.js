@@ -190,7 +190,6 @@ var SPOTS=[
   {a:"京都",n:"寺町：一保堂茶舖、松榮堂",d:"老字號抹茶和香舖，可以買抹茶和線香",u:"https://www.ippodo-tea.co.jp/",q:"一保堂茶舗 京都本店"},
   {a:"京都",n:"京都城市觀光官方網站",d:"想找其他京都景點可以從這裡查",u:"https://kyoto.travel/",q:"京都駅"},
   {a:"宇治",n:"任天堂博物館",d:"抽籤制，這趟只有 1/4 能去",s:"1/4",u:"https://museum.nintendo.com/",q:"ニンテンドーミュージアム"},
-  {a:"宇治",n:"丸久小山園 本店",d:"宇治老字號抹茶，本社工場就在任天堂博物館附近",s:"1/4",u:"https://www.marukyu-koyamaen.co.jp/",q:"丸久小山園 本社工場"},
   {a:"宇治",n:"平等院",d:"十圓硬幣上的鳳凰堂，表參道整排宇治茶老舖",s:"1/4 表參道",u:"https://www.byodoin.or.jp/",q:"平等院"},
   {a:"宇治",n:"中村藤吉 本店",d:"宇治抹茶甜點老店，就在 JR 宇治站旁",u:"https://tokichi.jp/",q:"中村藤吉本店"},
   {a:"奈良",n:"奈良公園",d:"餵鹿，先鞠躬鹿會回禮",s:"1/3",u:"https://narashikanko.or.jp/",q:"奈良公園"},
@@ -235,6 +234,34 @@ var FOODS=[
   {a:"神戶",n:"HARBS 神戶クレフィ三宮店",d:"水果千層，11:00 開門，通常不用排隊",p:"約 1,050",s:"12/29",u:"https://www.harbs.co.jp/",q:"HARBS 神戸クレフィ三宮店"},
   {a:"神戶",n:"老祥記",d:"南京町的元祖豬肉包；本店整修中，預計 2026 年 11 月左右完工",p:"約 300",u:"https://roushouki.com/",q:"老祥記"},
   {a:"神戶",n:"Steak Land 神戶",d:"平價神戶牛午餐（預算內的神戶牛選擇）",p:"約 3,000 起",tb:1,q:"ステーキランド 神戸店"},
-  {a:"神戶",n:"Frantz",d:"草莓松露巧克力、壺裝布丁（伴手禮）",p:"約 1,000",u:"https://www.frantz.jp/",q:"フランツ umie MOSAIC"},
   {a:"神戶",n:"西村珈琲 中山手本店",d:"神戶老咖啡館，適合跟北野異人館一起排",p:"約 1,000",tb:1,q:"西村珈琲 中山手本店"}
+];
+
+/* 購物備選（原稿「口袋名單」）。欄位同 SPOTS；沒有 u 的是官網打不開，只附地圖 */
+var SHOPS=[
+  {a:"大阪",n:"Nintendo OSAKA",d:"大丸梅田 13 樓的任天堂官方商店，扭蛋",s:"12/29",u:"https://www.nintendo.com/jp/officialstore/",q:"Nintendo OSAKA 大丸梅田"},
+  {a:"大阪",n:"阪急梅田本店 B1 Grand Calbee",d:"現炸洋芋片最頂級的產線，伴手禮",s:"1/4",u:"https://calbee.co.jp/grandcalbee/",q:"グランカルビー 阪急うめだ本店"},
+  {a:"大阪",n:"阪神梅田本店",d:"地下食品樓很好逛，阪神虎周邊",u:"https://www.hanshin-dept.jp/hshonten/index.html",q:"阪神梅田本店"},
+  {a:"大阪",n:"PLST",d:"UNIQLO 旗下的高階品牌，簡約上班服",u:"https://www.plst.com/",q:"PLST 梅田"},
+  {a:"大阪",n:"無印良品 Grand Front 大阪",d:"梅田的大型店",q:"無印良品 グランフロント大阪"},
+  {a:"大阪",n:"唐吉訶德 梅田本店",d:"24 小時營業，藥妝零食一次買齊；離飯店近",u:"https://www.donki.com/",q:"ドン・キホーテ 梅田本店"},
+  {a:"大阪",n:"SNKR DUNK（橘通）",d:"球鞋、潮流選品",s:"1/3",u:"https://snkrdunk.com/",q:"SNKR DUNK 大阪"},
+  {a:"大阪",n:"BIOTOP OSAKA（橘通）",d:"香氛、服飾選品，樓上有咖啡",s:"1/3",u:"https://www.biotop.jp/",q:"BIOTOP OSAKA"},
+  {a:"大阪",n:"APFR",d:"日本香氛品牌，線香、香氛蠟燭；門市地點以官網為準",u:"https://apfr.jp/",q:"APFR 大阪"},
+  {a:"京都",n:"TRAVELER'S FACTORY KYOTO",d:"新風館裡的旅行筆記本專賣店，很適合買來送人",s:"12/31",u:"https://travelers-factory.com/",q:"TRAVELER'S FACTORY KYOTO"},
+  {a:"京都",n:"よーじや 祇園店",d:"藝妓吸油面紙、手霜",s:"12/31",u:"https://www.yojiya.co.jp/",q:"よーじや 祇園店"},
+  {a:"京都",n:"七味家本舖 清水本店",d:"約 370 年的七味粉老店，可以試味道",s:"1/2",u:"https://shichimiya.co.jp/",q:"七味家本舗 清水"},
+  {a:"京都",n:"一保堂茶舖 京都本店",d:"老字號抹茶、煎茶（寺町）",u:"https://www.ippodo-tea.co.jp/",q:"一保堂茶舗 京都本店"},
+  {a:"京都",n:"丸久小山園 西洞院店",d:"宇治本店沒開時的備案；週三、1/1–1/3 休",u:"https://www.marukyu-koyamaen.co.jp/",q:"丸久小山園 西洞院店"},
+  {a:"京都",n:"祇園辻利",d:"抹茶伴手禮，樓上是茶寮都路里",u:"https://www.giontsujiri.co.jp/",q:"祇園辻利 祇園本店"},
+  {a:"京都",n:"松榮堂",d:"老字號香舖，線香、香袋",u:"https://www.shoyeido.co.jp/",q:"松栄堂 京都本店"},
+  {a:"京都",n:"LE LABO KYOTO MACHIYA",d:"町家改建的 LE LABO 香水店",u:"https://www.lelabofragrances.jp/",q:"LE LABO 京都町家"},
+  {a:"京都",n:"MY ONLY FRAGRANCE",d:"調香體驗，可以兩人互調對方的味道；要預約",u:"https://myonlyfragrance.com/",q:"MY ONLY FRAGRANCE 京都"},
+  {a:"京都",n:"京都しゃぼんや",d:"肥皂、香氛，也有調香體驗；要預約",q:"京都しゃぼんや"},
+  {a:"京都",n:"JR 京都伊勢丹",d:"京都站直結，伴手禮一次買；去年 1/2 就有營業",q:"ジェイアール京都伊勢丹"},
+  {a:"京都",n:"茶の菓（マールブランシュ）",d:"抹茶貓舌餅乾，京都伴手禮第一名",u:"https://www.malebranche.co.jp/",q:"マールブランシュ 京都駅"},
+  {a:"京都",n:"京ばあむ",d:"抹茶和豆乳的年輪蛋糕",u:"https://www.kyobaum.com/",q:"京ばあむ 京都駅"},
+  {a:"京都",n:"聖護院八ッ橋總本店",d:"生八橋老店",u:"https://www.shogoin.co.jp/",q:"聖護院八ッ橋総本店"},
+  {a:"宇治",n:"丸久小山園 本店",d:"宇治老字號抹茶，本社工場就在任天堂博物館附近",s:"1/4",u:"https://www.marukyu-koyamaen.co.jp/",q:"丸久小山園 本社工場"},
+  {a:"神戶",n:"Frantz",d:"草莓松露巧克力、壺裝布丁",u:"https://www.frantz.jp/",q:"フランツ umie MOSAIC"}
 ];

@@ -291,9 +291,10 @@
 
 ---
 
-## 景點・美食備選（依地區）
+<!-- picks:begin -->
+## 景點・美食・購物備選（依地區）
 
-> 「已排」是已經在行程裡的；預算是每人大約金額（日圓）。網站「建議備選」區塊是同一份資料。
+> 「已排」是已經在行程裡的；美食的預算是每人大約金額（日圓）。網站「建議備選」區塊是同一份資料。
 
 ### 大阪
 
@@ -323,6 +324,18 @@
 - **北極星**｜¥1,200–1,800：蛋包飯創始店　[介紹](https://hokkyokusei.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E6%A5%B5%E6%98%9F%20%E5%BF%83%E6%96%8E%E6%A9%8B%E6%9C%AC%E5%BA%97)
 - **551 蓬萊**｜¥約 250：豬肉包，現場吃（不能帶回台灣）　[介紹](https://www.551horai.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=551%E8%93%AC%E8%8E%B1%20%E6%9C%AC%E5%BA%97)
 - **金龍ラーメン**｜¥約 1,000：24 小時營業，元旦的保險選擇　[介紹](https://kinryu-ramen.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%87%91%E9%BE%8D%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%20%E9%81%93%E9%A0%93%E5%A0%80)
+
+**購物**
+
+- **Nintendo OSAKA**（已排 12/29）：大丸梅田 13 樓的任天堂官方商店，扭蛋　[介紹](https://www.nintendo.com/jp/officialstore/)・[地圖](https://www.google.com/maps/search/?api=1&query=Nintendo%20OSAKA%20%E5%A4%A7%E4%B8%B8%E6%A2%85%E7%94%B0)
+- **阪急梅田本店 B1 Grand Calbee**（已排 1/4）：現炸洋芋片最頂級的產線，伴手禮　[介紹](https://calbee.co.jp/grandcalbee/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%AB%E3%83%AB%E3%83%93%E3%83%BC%20%E9%98%AA%E6%80%A5%E3%81%86%E3%82%81%E3%81%A0%E6%9C%AC%E5%BA%97)
+- **阪神梅田本店**：地下食品樓很好逛，阪神虎周邊　[介紹](https://www.hanshin-dept.jp/hshonten/index.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%98%AA%E7%A5%9E%E6%A2%85%E7%94%B0%E6%9C%AC%E5%BA%97)
+- **PLST**：UNIQLO 旗下的高階品牌，簡約上班服　[介紹](https://www.plst.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=PLST%20%E6%A2%85%E7%94%B0)
+- **無印良品 Grand Front 大阪**：梅田的大型店　[地圖](https://www.google.com/maps/search/?api=1&query=%E7%84%A1%E5%8D%B0%E8%89%AF%E5%93%81%20%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E5%A4%A7%E9%98%AA)
+- **唐吉訶德 梅田本店**：24 小時營業，藥妝零食一次買齊；離飯店近　[介紹](https://www.donki.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86%20%E6%A2%85%E7%94%B0%E6%9C%AC%E5%BA%97)
+- **SNKR DUNK（橘通）**（已排 1/3）：球鞋、潮流選品　[介紹](https://snkrdunk.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=SNKR%20DUNK%20%E5%A4%A7%E9%98%AA)
+- **BIOTOP OSAKA（橘通）**（已排 1/3）：香氛、服飾選品，樓上有咖啡　[介紹](https://www.biotop.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=BIOTOP%20OSAKA)
+- **APFR**：日本香氛品牌，線香、香氛蠟燭；門市地點以官網為準　[介紹](https://apfr.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=APFR%20%E5%A4%A7%E9%98%AA)
 
 ### 京都
 
@@ -354,18 +367,38 @@
 - **鍵善良房**｜¥1,000–1,500：祇園老字號，葛切涼粉　[介紹](https://www.kagizen.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%8D%B5%E5%96%84%E8%89%AF%E6%88%BF%20%E5%9B%9B%E6%9D%A1%E6%9C%AC%E5%BA%97)
 - **祇園辻利・茶寮都路里**｜¥1,500–2,000：抹茶聖代　[介紹](https://www.giontsujiri.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E8%8C%B6%E5%AF%AE%E9%83%BD%E8%B7%AF%E9%87%8C%20%E7%A5%87%E5%9C%92%E6%9C%AC%E5%BA%97)
 
+**購物**
+
+- **TRAVELER'S FACTORY KYOTO**（已排 12/31）：新風館裡的旅行筆記本專賣店，很適合買來送人　[介紹](https://travelers-factory.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=TRAVELER'S%20FACTORY%20KYOTO)
+- **よーじや 祇園店**（已排 12/31）：藝妓吸油面紙、手霜　[介紹](https://www.yojiya.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%88%E3%83%BC%E3%81%98%E3%82%84%20%E7%A5%87%E5%9C%92%E5%BA%97)
+- **七味家本舖 清水本店**（已排 1/2）：約 370 年的七味粉老店，可以試味道　[介紹](https://shichimiya.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%83%E5%91%B3%E5%AE%B6%E6%9C%AC%E8%88%97%20%E6%B8%85%E6%B0%B4)
+- **一保堂茶舖 京都本店**：老字號抹茶、煎茶（寺町）　[介紹](https://www.ippodo-tea.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E4%BF%9D%E5%A0%82%E8%8C%B6%E8%88%97%20%E4%BA%AC%E9%83%BD%E6%9C%AC%E5%BA%97)
+- **丸久小山園 西洞院店**：宇治本店沒開時的備案；週三、1/1–1/3 休　[介紹](https://www.marukyu-koyamaen.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%B8%E4%B9%85%E5%B0%8F%E5%B1%B1%E5%9C%92%20%E8%A5%BF%E6%B4%9E%E9%99%A2%E5%BA%97)
+- **祇園辻利**：抹茶伴手禮，樓上是茶寮都路里　[介紹](https://www.giontsujiri.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%A5%87%E5%9C%92%E8%BE%BB%E5%88%A9%20%E7%A5%87%E5%9C%92%E6%9C%AC%E5%BA%97)
+- **松榮堂**：老字號香舖，線香、香袋　[介紹](https://www.shoyeido.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9D%BE%E6%A0%84%E5%A0%82%20%E4%BA%AC%E9%83%BD%E6%9C%AC%E5%BA%97)
+- **LE LABO KYOTO MACHIYA**：町家改建的 LE LABO 香水店　[介紹](https://www.lelabofragrances.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=LE%20LABO%20%E4%BA%AC%E9%83%BD%E7%94%BA%E5%AE%B6)
+- **MY ONLY FRAGRANCE**：調香體驗，可以兩人互調對方的味道；要預約　[介紹](https://myonlyfragrance.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=MY%20ONLY%20FRAGRANCE%20%E4%BA%AC%E9%83%BD)
+- **京都しゃぼんや**：肥皂、香氛，也有調香體驗；要預約　[地圖](https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E9%83%BD%E3%81%97%E3%82%83%E3%81%BC%E3%82%93%E3%82%84)
+- **JR 京都伊勢丹**：京都站直結，伴手禮一次買；去年 1/2 就有營業　[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B8%E3%82%A7%E3%82%A4%E3%82%A2%E3%83%BC%E3%83%AB%E4%BA%AC%E9%83%BD%E4%BC%8A%E5%8B%A2%E4%B8%B9)
+- **茶の菓（マールブランシュ）**：抹茶貓舌餅乾，京都伴手禮第一名　[介紹](https://www.malebranche.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9E%E3%83%BC%E3%83%AB%E3%83%96%E3%83%A9%E3%83%B3%E3%82%B7%E3%83%A5%20%E4%BA%AC%E9%83%BD%E9%A7%85)
+- **京ばあむ**：抹茶和豆乳的年輪蛋糕　[介紹](https://www.kyobaum.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E3%81%B0%E3%81%82%E3%82%80%20%E4%BA%AC%E9%83%BD%E9%A7%85)
+- **聖護院八ッ橋總本店**：生八橋老店　[介紹](https://www.shogoin.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E8%81%96%E8%AD%B7%E9%99%A2%E5%85%AB%E3%83%83%E6%A9%8B%E7%B7%8F%E6%9C%AC%E5%BA%97)
+
 ### 宇治
 
 **景點**
 
 - **任天堂博物館**（已排 1/4）：抽籤制，這趟只有 1/4 能去　[介紹](https://museum.nintendo.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%8B%E3%83%B3%E3%83%86%E3%83%B3%E3%83%89%E3%83%BC%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%82%A2%E3%83%A0)
-- **丸久小山園 本店**（已排 1/4）：宇治老字號抹茶，本社工場就在任天堂博物館附近　[介紹](https://www.marukyu-koyamaen.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%B8%E4%B9%85%E5%B0%8F%E5%B1%B1%E5%9C%92%20%E6%9C%AC%E7%A4%BE%E5%B7%A5%E5%A0%B4)
 - **平等院**（已排 1/4 表參道）：十圓硬幣上的鳳凰堂，表參道整排宇治茶老舖　[介紹](https://www.byodoin.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B9%B3%E7%AD%89%E9%99%A2)
 - **中村藤吉 本店**：宇治抹茶甜點老店，就在 JR 宇治站旁　[介紹](https://tokichi.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E6%9D%91%E8%97%A4%E5%90%89%E6%9C%AC%E5%BA%97)
 
 **美食**
 
 - **中村藤吉 本店**｜¥1,500–2,000：抹茶甜點、生茶果凍　[介紹](https://tokichi.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E6%9D%91%E8%97%A4%E5%90%89%E6%9C%AC%E5%BA%97)
+
+**購物**
+
+- **丸久小山園 本店**（已排 1/4）：宇治老字號抹茶，本社工場就在任天堂博物館附近　[介紹](https://www.marukyu-koyamaen.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%B8%E4%B9%85%E5%B0%8F%E5%B1%B1%E5%9C%92%20%E6%9C%AC%E7%A4%BE%E5%B7%A5%E5%A0%B4)
 
 ### 奈良
 
@@ -402,23 +435,13 @@
 - **HARBS 神戶クレフィ三宮店**（已排 12/29）｜¥約 1,050：水果千層，11:00 開門，通常不用排隊　[介紹](https://www.harbs.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=HARBS%20%E7%A5%9E%E6%88%B8%E3%82%AF%E3%83%AC%E3%83%95%E3%82%A3%E4%B8%89%E5%AE%AE%E5%BA%97)
 - **老祥記**｜¥約 300：南京町的元祖豬肉包；本店整修中，預計 2026 年 11 月左右完工　[介紹](https://roushouki.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E8%80%81%E7%A5%A5%E8%A8%98)
 - **Steak Land 神戶**｜¥約 3,000 起：平價神戶牛午餐（預算內的神戶牛選擇）　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD%E3%83%A9%E3%83%B3%E3%83%89%20%E7%A5%9E%E6%88%B8%E5%BA%97)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD%E3%83%A9%E3%83%B3%E3%83%89%20%E7%A5%9E%E6%88%B8%E5%BA%97)
-- **Frantz**｜¥約 1,000：草莓松露巧克力、壺裝布丁（伴手禮）　[介紹](https://www.frantz.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%83%A9%E3%83%B3%E3%83%84%20umie%20MOSAIC)
 - **西村珈琲 中山手本店**｜¥約 1,000：神戶老咖啡館，適合跟北野異人館一起排　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E8%A5%BF%E6%9D%91%E7%8F%88%E7%90%B2%20%E4%B8%AD%E5%B1%B1%E6%89%8B%E6%9C%AC%E5%BA%97)・[地圖](https://www.google.com/maps/search/?api=1&query=%E8%A5%BF%E6%9D%91%E7%8F%88%E7%90%B2%20%E4%B8%AD%E5%B1%B1%E6%89%8B%E6%9C%AC%E5%BA%97)
 
----
+**購物**
 
-## 口袋名單
+- **Frantz**：草莓松露巧克力、壺裝布丁　[介紹](https://www.frantz.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%83%A9%E3%83%B3%E3%83%84%20umie%20MOSAIC)
 
-### 🛍 購物
-
-| 類別 | 推薦店家 |
-|---|---|
-| 梅田 | LUCUA／LUCUA 1100、大丸梅田 Nintendo OSAKA、阪急梅田本店 B1（Grand Calbee）、阪神梅田本店、無印良品、PLST |
-| 難波・堀江 | 橘通（SNKR DUNK、BIOTOP）、心齋橋筋商店街、唐吉訶德 |
-| 京都 | 新風館 TRAVELER'S FACTORY、よーじや（吸油面紙）、七味家本舖、清水坂・二三年坂、京都車站 |
-| 抹茶 | 一保堂茶舖、丸久小山園、中村藤吉、祇園辻利 |
-| 香氛 | BIOTOP、LE LABO KYOTO MACHIYA、APFR、京都しゃぼんや（調香）、MY ONLY FRAGRANCE、松榮堂 |
-| 甜點伴手禮 | Grand Calbee、茶の菓（マールブランシュ）、京ばあむ、生八橋、Frantz、MARUSHIGE |
+<!-- picks:end -->
 
 > 住梅田的好處：伴手禮可以分幾天買，每天買完先放回飯店，最後一天再一次裝箱。
 

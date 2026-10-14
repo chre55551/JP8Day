@@ -150,9 +150,11 @@
   function showArea(area){
     store("kansai8-area",area);
     Array.prototype.forEach.call(areaTabs.children,function(b){b.setAttribute("aria-selected",b.dataset.a===area?"true":"false");});
-    var sp=SPOTS.filter(function(x){return x.a===area;}), fd=FOODS.filter(function(x){return x.a===area;});
-    picksEl.innerHTML='<div class="pick-col"><h4>景點（'+sp.length+'）</h4><ul class="picks">'+sp.map(function(x){return row(x,false);}).join("")+'</ul></div>'+
-      '<div class="pick-col"><h4>美食（'+fd.length+'）</h4>'+(fd.length?'<ul class="picks">'+fd.map(function(x){return row(x,true);}).join("")+'</ul>':'<p class="pick-d">這區還沒有美食備選。</p>')+'</div>';
+    picksEl.innerHTML=[["景點",SPOTS,false],["美食",FOODS,true],["購物",SHOPS,false]].map(function(g){
+      var list=g[1].filter(function(x){return x.a===area;});
+      return '<div class="pick-col"><h4>'+g[0]+'（'+list.length+'）</h4>'+
+        (list.length?'<ul class="picks">'+list.map(function(x){return row(x,g[2]);}).join("")+'</ul>':'<p class="pick-d">這區還沒有'+g[0]+'備選。</p>')+'</div>';
+    }).join("");
   }
   AREAS.forEach(function(ar){
     var b=document.createElement("button");b.type="button";b.className="area-tab";b.dataset.a=ar;b.setAttribute("role","tab");
