@@ -29,6 +29,7 @@
 ## 結構
 
 - `js/data.js`：行程資料。`DAYS` 每日行程的欄位：`k` 類型（sight/food/shop/move/rest）、`m` 必去、`w` 需確認、`x` 待安排、`tr` 交通標籤；`TODOS` 待辦清單。
+- 兩頁：`index.html`（首頁、航班、每日行程、路線圖、住宿）、`prep.html`（待辦、建議備選）。`js/main.js` 兩頁共用，頁面有哪個區塊就啟動哪個。
 - `js/icons.js`：SVG 圖示；`js/main.js`：渲染邏輯；`css/style.css`：樣式。
 - 載入順序：icons.js → data.js → main.js（一般 `<script>`，沒有模組或 build）。
 - 資料刻意用 JS 而不是 JSON，這樣直接開 `file://` 也能預覽。
@@ -40,4 +41,6 @@
 
 - 介面文字一律用繁體中文。
 - 換行統一 LF（見 `.gitattributes`），編碼 UTF-8。
+- **改了任何畫面上的文字（含 data.js）就重跑 `python3 docs/make-font.py`**，字型只包含用到的字；有缺字會印出來。
+- 新增檔案要加進 `sw.js` 的 `FILES`。改了 `FILES` 或快取策略時，把 `CACHE` 版本號加一。
 - 改完要在瀏覽器確認畫面正常，再 push。

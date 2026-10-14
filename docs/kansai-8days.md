@@ -8,7 +8,7 @@
 
 **行程網站與進度（2026/10/11 更新）**
 - 行程網站（給女友看）：https://chre55551.github.io/JP8Day/（GitHub repo：chre55551/JP8Day，公開）
-- 網站原始檔就是這個 repo：`index.html`＋`css/`＋`js/`，行程資料在 `js/data.js`
+- 網站原始檔就是這個 repo：`index.html`（行程）＋`prep.html`（待辦・備選），資料在 `js/data.js`；可以加到手機主畫面，離線也能看
 - 網站上的待辦清單只存在各自手機，不做兩人共享
 - 日系繪本風網站已完成；之後行程有改，要同步更新網站並重新推送
 

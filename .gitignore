@@ -7,3 +7,6 @@ desktop.ini
 .vscode/
 .idea/
 *.swp
+
+# 字型原始檔（docs/make-font.py 會自動下載）
+fonts/.src/
