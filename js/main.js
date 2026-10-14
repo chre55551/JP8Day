@@ -103,6 +103,7 @@
   TODOS.forEach(function(td,i){
     var li=document.createElement("li");
     li.innerHTML='<label class="'+(td.u?"urgent":"")+'" for="todo-'+i+'"><input type="checkbox" id="todo-'+i+'"'+(done[i]?" checked":"")+'><span>'+esc(td.t)+(td.when?'<span class="when">'+esc(td.when)+'</span>':'')+'</span></label>';
+    if(td.href){li.innerHTML+='<a class="todo-link" href="'+esc(td.href)+'" target="_blank" rel="noopener">購買頁面</a>';}
     list.appendChild(li);
   });
   function prog(){
@@ -115,4 +116,13 @@
     var i=Number(e.target.id.split("-")[1]);done[i]=e.target.checked;store("kansai8-todo-v2",done);prog();
   });
   prog();
+
+  /* ---------- 建議備選 ---------- */
+  function mapUrl(q){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q);}
+  document.getElementById("ideas-list").innerHTML=IDEAS.map(function(it){
+    return '<article class="idea"><h3>'+esc(it.title)+'</h3><p class="why">'+esc(it.why)+'</p>'+
+      '<ol>'+it.plan.map(function(p){return '<li>'+esc(p)+'</li>';}).join("")+'</ol>'+
+      '<div class="idea-links">'+it.links.map(function(l){return '<a href="'+esc(l.u||mapUrl(l.q))+'" target="_blank" rel="noopener">'+esc(l.n)+'</a>';}).join("")+'</div>'+
+      (it.note?'<p class="idea-note">'+NOTE_ICON+'<span>'+esc(it.note)+'</span></p>':'')+'</article>';
+  }).join("");
 })();
