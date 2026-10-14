@@ -93,7 +93,13 @@
 
   /* ---------- 待辦 ---------- */
   var list=document.getElementById("todo-list");
-  var done=store("kansai8-todo")||{};
+  var done=store("kansai8-todo-v2");
+  if(!done){
+    /* 舊版第 5 項（兩足院）已移除，之後的勾選往前挪一格 */
+    var old=store("kansai8-todo")||{};done={};
+    Object.keys(old).forEach(function(k){var n=Number(k);if(n<4)done[n]=old[k];else if(n>4)done[n-1]=old[k];});
+    store("kansai8-todo-v2",done);
+  }
   TODOS.forEach(function(td,i){
     var li=document.createElement("li");
     li.innerHTML='<label class="'+(td.u?"urgent":"")+'" for="todo-'+i+'"><input type="checkbox" id="todo-'+i+'"'+(done[i]?" checked":"")+'><span>'+esc(td.t)+(td.when?'<span class="when">'+esc(td.when)+'</span>':'')+'</span></label>';
@@ -106,7 +112,7 @@
   }
   list.addEventListener("change",function(e){
     if(!e.target.id)return;
-    var i=Number(e.target.id.split("-")[1]);done[i]=e.target.checked;store("kansai8-todo",done);prog();
+    var i=Number(e.target.id.split("-")[1]);done[i]=e.target.checked;store("kansai8-todo-v2",done);prog();
   });
   prog();
 })();
