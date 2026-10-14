@@ -272,6 +272,12 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
   .routes,.shops{grid-template-columns:1fr 1fr}
 }
 
+/* ---------- 路線圖 ---------- */
+.map-wrap{margin-top:10px;border:var(--line) solid var(--ink);border-radius:var(--r-md);background:var(--paper);overflow-x:auto;-webkit-overflow-scrolling:touch}
+.map-hint{display:none;font-size:13px;color:var(--ink-soft);margin-top:6px}
+@media (max-width:600px){.map-hint{display:block}}
+.map-svg{display:block;width:100%;min-width:560px;height:auto;font-family:var(--font)}
+
 /* ---------- 建議備選 ---------- */
 .ideas{display:grid;gap:14px}
 .idea{border:var(--line) solid var(--ink);border-radius:var(--r-md);background:var(--paper);padding:14px 16px;display:grid;gap:8px}

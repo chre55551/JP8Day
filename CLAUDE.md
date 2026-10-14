@@ -33,6 +33,7 @@
 - 載入順序：icons.js → data.js → main.js（一般 `<script>`，沒有模組或 build）。
 - 資料刻意用 JS 而不是 JSON，這樣直接開 `file://` 也能預覽。
 - `docs/kansai-8days.md` 是行程原稿；改行程時兩邊內容要保持一致。
+- 「路線圖」區塊的兩張 SVG 由 `docs/make-maps.py` 產生；要改路線圖就改這支程式，重新產生後貼回 `index.html` 的 `#maps` 區塊。
 
 ## 慣例
 
