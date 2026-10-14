@@ -93,17 +93,23 @@
 
   /* ---------- 待辦 ---------- */
   var list=document.getElementById("todo-list");
-  var done=store("kansai8-todo-v2");
+  var done=store("kansai8-todo-v3");
   if(!done){
-    /* 舊版第 5 項（兩足院）已移除，之後的勾選往前挪一格 */
-    var old=store("kansai8-todo")||{};done={};
-    Object.keys(old).forEach(function(k){var n=Number(k);if(n<4)done[n]=old[k];else if(n>4)done[n-1]=old[k];});
-    store("kansai8-todo-v2",done);
+    /* 舊版用順序記勾選（v1→v2 曾移除第 5 項），換成用 id 記 */
+    var V2=["hotel","usj","teamlab","tonemon","ukb-t2","icoca","keihan","recheck","gmaps","life","first-train","nm-lottery","marukyu"];
+    var old=store("kansai8-todo-v2");
+    if(!old){
+      var v1=store("kansai8-todo")||{};old={};
+      Object.keys(v1).forEach(function(k){var n=Number(k);if(n<4)old[n]=v1[k];else if(n>4)old[n-1]=v1[k];});
+    }
+    done={};
+    Object.keys(old).forEach(function(k){if(old[k]&&V2[k])done[V2[k]]=true;});
+    store("kansai8-todo-v3",done);
   }
   TODOS.forEach(function(td,i){
     var li=document.createElement("li");
-    li.innerHTML='<label class="'+(td.u?"urgent":"")+'" for="todo-'+i+'"><input type="checkbox" id="todo-'+i+'"'+(done[i]?" checked":"")+'><span>'+esc(td.t)+(td.when?'<span class="when">'+esc(td.when)+'</span>':'')+'</span></label>';
-    if(td.href){li.innerHTML+='<a class="todo-link" href="'+esc(td.href)+'" target="_blank" rel="noopener">購買頁面</a>';}
+    li.innerHTML='<label class="'+(td.u?"urgent":"")+'" for="todo-'+i+'"><input type="checkbox" id="todo-'+i+'"'+(done[td.id]?" checked":"")+'><span>'+esc(td.t)+(td.when?'<span class="when">'+esc(td.when)+'</span>':'')+'</span></label>';
+    if(td.href){li.innerHTML+='<a class="todo-link" href="'+esc(td.href)+'" target="_blank" rel="noopener">'+esc(td.hl||"連結")+'</a>';}
     list.appendChild(li);
   });
   function prog(){
@@ -113,7 +119,7 @@
   }
   list.addEventListener("change",function(e){
     if(!e.target.id)return;
-    var i=Number(e.target.id.split("-")[1]);done[i]=e.target.checked;store("kansai8-todo-v2",done);prog();
+    var i=Number(e.target.id.split("-")[1]);done[TODOS[i].id]=e.target.checked;store("kansai8-todo-v3",done);prog();
   });
   prog();
 

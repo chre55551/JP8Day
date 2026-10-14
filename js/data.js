@@ -100,20 +100,24 @@ var DAYS=[
    ]}
 ];
 
+/* 待辦：id 用來記住勾選狀態，改文字或順序都不會跑掉；新增項目給一個新的 id */
 var TODOS=[
-  {t:"寄信問飯店：12/29 中午能不能先寄放行李",when:"入住前；不行就用大阪站置物櫃",u:1},
-  {t:"環球影城 12/30 門票＋快速通關 4（含瑪利歐賽車、哈利波特，有小小兵更好）",when:"越早越好；快速通關不含門票",u:1,href:"https://www.klook.com/zh-TW/activity/3407-universal-studios-japan-express-pass-osaka/"},
-  {t:"teamLab Biovortex Kyoto 1/2 下午的時段預約"},
-  {t:"TableCheck 訂宮川豚衛門 1/2 晚餐"},
-  {t:"查神戶機場第 2 航廈的位置"},
-  {t:"兩支 iPhone 加入 ICOCA 並儲值"},
-  {t:"確認京阪跨年通宵班次、八坂神社和智積院的跨年活動時間",when:"12 月中"},
-  {t:"再查一次標「需確認」的店家年末年始公告",when:"11 月底到 12 月中"},
-  {t:"行程定案後補上每天的 Google Maps 路線"},
-  {t:"確認 Life 超市、阪急梅田 B1 的年末年始營業時間",when:"12 月中"},
-  {t:"查 1/2 JR 大阪 → 京都的首班車時刻",when:"出發前"},
-  {t:"任天堂博物館 1/4 抽籤報名",when:"2027 年 1 月場次報名到 10/31；12/1 公布、12/7 前付款。要任天堂帳號，姓名要跟護照一樣",u:1,href:"https://museum-tickets.nintendo.com/en/calendar"},
-  {t:"確認丸久小山園本店 1/4 有沒有營業",when:"12 月中；沒開就改去西洞院店"}
+  {id:"nm-account",t:"任天堂博物館①：申請任天堂帳號",when:"10/31 前；要手機號碼收驗證碼",u:1,href:"https://museum-tickets.nintendo.com/en/calendar",hl:"官方網站"},
+  {id:"nm-lottery",t:"任天堂博物館②：抽籤報名，三個志願都選 1/4 的不同時段",when:"10/31 23:59（日本時間）截止。兩人姓名跟護照一模一樣；只送一次，不要找代購",u:1,href:"https://museum-tickets.nintendo.com/en/calendar",hl:"官方網站"},
+  {id:"nm-result",t:"任天堂博物館③：看抽籤結果，抽中就付款",when:"12/1 寄 email 公布；12/7 23:59 前付款，沒付就失效",u:1},
+  {id:"nm-resale",t:"任天堂博物館④：沒抽到就搶釋出的票",when:"參觀日前約兩個月起常上官網看，一釋出幾分鐘就被搶光",href:"https://museum-tickets.nintendo.com/en/calendar",hl:"官方網站"},
+  {id:"hotel",t:"寄信問飯店：12/29 中午能不能先寄放行李",when:"入住前；不行就用大阪站置物櫃",u:1},
+  {id:"usj",t:"環球影城 12/30 門票＋快速通關 4（含瑪利歐賽車、哈利波特，有小小兵更好）",when:"越早越好；快速通關不含門票",u:1,href:"https://www.klook.com/zh-TW/activity/3407-universal-studios-japan-express-pass-osaka/",hl:"購買頁面"},
+  {id:"teamlab",t:"teamLab Biovortex Kyoto 1/2 下午的時段預約"},
+  {id:"tonemon",t:"TableCheck 訂宮川豚衛門 1/2 晚餐"},
+  {id:"ukb-t2",t:"查神戶機場第 2 航廈的位置"},
+  {id:"icoca",t:"兩支 iPhone 加入 ICOCA 並儲值"},
+  {id:"keihan",t:"確認京阪跨年通宵班次、八坂神社和智積院的跨年活動時間",when:"12 月中"},
+  {id:"recheck",t:"再查一次標「需確認」的店家年末年始公告",when:"11 月底到 12 月中"},
+  {id:"gmaps",t:"行程定案後補上每天的 Google Maps 路線"},
+  {id:"life",t:"確認 Life 超市、阪急梅田 B1 的年末年始營業時間",when:"12 月中"},
+  {id:"first-train",t:"查 1/2 JR 大阪 → 京都的首班車時刻",when:"出發前"},
+  {id:"marukyu",t:"確認丸久小山園本店 1/4 有沒有營業",when:"12 月中；沒開就改去西洞院店"}
 ];
 
 /* 建議備選：還沒排進行程，看過喜歡再挑。links 的 q 是 Google Maps 搜尋字，u 是直接連結 */
