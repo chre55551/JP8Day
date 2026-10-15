@@ -69,7 +69,8 @@ var DAYS=[
     {t:"10:30",k:"shop",n:"よーじや 祇園本店",o:"藝妓吸油面紙，也有手霜和化妝小物；從二年坂經八坂神社走到四條約 20 分。過年營業還查不到",w:1,tr:["步行"]},
     {t:"11:15",k:"sight",n:"花見小路 → 祇園白川・巽橋",o:"上午人比較少，石板路、町家和白川柳樹都好拍",tr:["步行"]},
     {t:"13:00",k:"food",n:"午餐",x:1},
-    {t:"14:30",k:"sight",n:"teamLab Biovortex Kyoto",o:"預留 4 小時；日期時段預約制，通常 9:00–21:00",m:1,w:1,tr:["計程車"]},
+    {t:"14:30",k:"sight",n:"teamLab Biovortex Kyoto",o:"預留 2 小時；日期時段預約制，通常 9:00–21:00",m:1,w:1,tr:["計程車"]},
+    {t:"16:30",k:"shop",n:"京都站一帶",o:"teamLab 在京都站南邊；JR 京都伊勢丹去年 1/2 就開始營業，可以逛地下街和伴手禮，18:30 再搭計程車去宮川町",x:1,tr:["步行"]},
     {t:"19:00",k:"food",n:"宮川豚衛門",o:"大阪 NewBabe 的姊妹店，町家改建、低溫慢炸厚切豬排、8 種調味；TableCheck 訂位",w:1,tr:["計程車"]},
     {t:"20:30",k:"sight",n:"鴨川夜散步 → 回梅田",o:"京阪祇園四條或阪急京都河原町",tr:["步行","京阪"]},
     {t:"21:45",k:"shop",n:"最後一站：便利商店＋超市 → 回飯店",o:"Life 去年大多 1/1–1/3 休息，改去唐吉訶德梅田本店（24 小時，也有食品）＋ LAWSON 神山町店；Life 有沒有開 12 月中再確認",w:1,tr:["步行"]}
@@ -192,7 +193,7 @@ var SPOTS=[
   {a:"大阪",n:"HEP FIVE 摩天輪",d:"梅田的紅色摩天輪，離飯店走路約 7 分，晚上最容易塞進行程",s:"12/29、1/1",u:"https://www.hepfive.jp/",q:"HEP FIVE 観覧車"},
   {a:"大阪",n:"中之島公園",d:"河岸散步道和中央公會堂紅磚建築",u:"https://osaka-info.jp/",q:"中之島公園"},
   {a:"京都",n:"清水寺",d:"6:00 開門，清晨人少拍清水舞台",s:"1/2",u:"https://www.kiyomizudera.or.jp/",q:"清水寺 京都"},
-  {a:"京都",n:"teamLab Biovortex Kyoto",d:"teamLab 在日本最大的美術館，預留 4 小時",s:"1/2",u:"https://www.teamlab.art/e/kyoto/",q:"teamLab Biovortex Kyoto"},
+  {a:"京都",n:"teamLab Biovortex Kyoto",d:"teamLab 在日本最大的美術館，預留 2 小時",s:"1/2",u:"https://www.teamlab.art/e/kyoto/",q:"teamLab Biovortex Kyoto"},
   {a:"京都",n:"伏見稻荷大社",d:"千本鳥居，跨年夜深夜參拜",u:"https://inari.jp/",q:"伏見稲荷大社"},
   {a:"京都",n:"今宮神社",d:"歌姬籤、阿呆賢さん",u:"http://www.imamiyajinja.org/",q:"今宮神社 京都"},
   {a:"京都",n:"八坂神社",d:"除夜祭・白朮參拜，燈籠點滿整個神社",u:"https://www.yasaka-jinja.or.jp/",q:"八坂神社"},
