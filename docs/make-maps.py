@@ -49,7 +49,7 @@ for k,(x,y) in S.items():
 hx,hy=S["hotel"]
 o.append(f'<g transform="translate({hx} {hy})"><path d="M0 -15 L4.4 -5 L15 -4.6 L7 2.6 L9.6 13 L0 7.2 L-9.6 13 L-7 2.6 L-15 -4.6 L-4.4 -5 Z" fill="#F6D27A" stroke="{INK}" stroke-width="3" stroke-linejoin="round"/></g>')
 o.append(lab(hx,hy+32,"飯店",anchor="middle",size=15,sub="神山町"))
-L=[("jusou",-12,22,"十三","end","桐麵"),("hk_umeda",14,-6,"大阪梅田（阪急）","start",None),
+L=[("jusou",-12,22,"十三","end",None),("hk_umeda",14,-6,"大阪梅田（阪急）","start",None),
    ("osaka",-14,-4,"大阪（JR）","end","LUCUA・空中庭園"),("umeda",-14,22,"梅田","end",None),
    ("higashi",-12,20,"東梅田","end",None),("nakazaki",12,-8,"中崎町","start",None),("tenroku",14,-4,"天神橋筋六丁目","start",None),
    ("ogimachi",14,10,"扇町","start",None),("tenma",10,-16,"天滿（JR）","start","天神橋筋・天滿市場"),
