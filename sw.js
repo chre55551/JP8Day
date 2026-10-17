@@ -1,7 +1,7 @@
 /* 離線快取：第一次打開就把整個網站存起來，之後沒網路也能看。
-   網頁、CSS、JS 先抓網路的新版（3 秒沒回應就用快取）；字型、圖示直接用快取，背景再更新。
+   網頁、CSS、JS 先抓網路的新版（略過瀏覽器的 HTTP 快取，3 秒沒回應就用快取）；字型、圖示直接用快取，背景再更新。
    新增檔案時記得加進 FILES。 */
-var CACHE = "jp8day-v1";
+var CACHE = "jp8day-v2";
 var FILES = [
   "./", "index.html", "prep.html", "css/style.css",
   "js/icons.js", "js/data.js", "js/main.js",
@@ -19,9 +19,14 @@ self.addEventListener("activate", function (e) {
   }).then(function () { return self.clients.claim(); }));
 });
 
-function fromNetwork(req) {
-  return fetch(req).then(function (res) {
-    if (res.ok) { var copy = res.clone(); caches.open(CACHE).then(function (c) { c.put(req, copy); }); }
+function fromNetwork(req, fresh) {
+  /* fresh：每次都跟伺服器確認有沒有新版，不用瀏覽器 HTTP 快取裡的舊檔（GitHub Pages 會快取 10 分鐘） */
+  return fetch(fresh ? new Request(req.url, { cache: "no-cache", credentials: "same-origin" }) : req).then(function (res) {
+    /* 存快取時拿掉 ?r= 這類參數，同一頁只存一份 */
+    var key = new URL(req.url); key.search = ""; key.hash = "";
+    /* 網址被轉址（例如少了結尾的 /）時，讓瀏覽器自己跳過去，不能直接回傳轉址後的內容 */
+    if (fresh && res.redirected) return Response.redirect(res.url, 302);
+    if (res.ok) { var copy = res.clone(); caches.open(CACHE).then(function (c) { c.put(key.href, copy); }); }
     return res;
   });
 }
@@ -42,7 +47,7 @@ self.addEventListener("fetch", function (e) {
     var timer = setTimeout(function () {
       caches.match(req, { ignoreSearch: true }).then(function (hit) { if (hit && !done) { done = true; resolve(hit); } });
     }, 3000);
-    fromNetwork(req).then(function (res) {
+    fromNetwork(req, true).then(function (res) {
       clearTimeout(timer); if (!done) { done = true; resolve(res); }
     }).catch(function () {
       clearTimeout(timer);

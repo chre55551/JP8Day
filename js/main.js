@@ -176,7 +176,17 @@
   });
 
   /* 離線快取（sw.js）；file:// 預覽時不支援，略過 */
+  var swReg=null;
   if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost")){
-    navigator.serviceWorker.register("sw.js").catch(function(){});
+    navigator.serviceWorker.register("sw.js").then(function(r){swReg=r;}).catch(function(){});
   }
+
+  /* 點左上角標題：回首頁並強制抓最新版（網址加 ?r= 繞過瀏覽器快取，載入後再拿掉） */
+  if(/[?&]r=\d+/.test(location.search))history.replaceState(null,"",location.pathname+location.hash);
+  var brand=document.querySelector(".brand");
+  if(brand)brand.addEventListener("click",function(e){
+    e.preventDefault();
+    var go=function(){location.replace("index.html?r="+Date.now()+"#home");};
+    if(swReg)swReg.update().then(go,go);else go();
+  });
 })();
