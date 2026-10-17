@@ -170,8 +170,29 @@
     var savedArea=store("kansai8-area");showArea(AREAS.indexOf(savedArea)>=0?savedArea:"大阪");
   }
 
+  /* 伴手禮清單：買到就打勾，用 id 記在這台裝置 */
+  function initGifts(){
+    var list=document.getElementById("gift-list"),got=store("kansai8-gifts")||{};
+    GIFTS.forEach(function(g,i){
+      var li=document.createElement("li");
+      li.innerHTML='<label for="gift-'+i+'"><input type="checkbox" id="gift-'+i+'"'+(got[g.id]?" checked":"")+'><span>'+esc(g.n)+
+        (g.d?'<span class="when">'+esc(g.d)+'</span>':'')+(g.buy?'<span class="when">在哪買：'+esc(g.buy)+'</span>':'')+'</span></label>';
+      list.appendChild(li);
+    });
+    function prog(){
+      var n=0;GIFTS.forEach(function(g){if(got[g.id])n++;});
+      document.getElementById("gift-prog").textContent=n+" / "+GIFTS.length;
+      document.getElementById("gift-bar").style.width=(GIFTS.length?n/GIFTS.length*100:0)+"%";
+    }
+    list.addEventListener("change",function(e){
+      if(!e.target.id)return;
+      got[GIFTS[Number(e.target.id.split("-")[1])].id]=e.target.checked;store("kansai8-gifts",got);prog();
+    });
+    prog();
+  }
+
   /* 兩頁共用這支程式：頁面上有哪個區塊就啟動哪個 */
-  [["cd-d",initCountdown],["tabs",initDays],["todo-list",initTodo],["plans-list",initIdeas]].forEach(function(p){
+  [["cd-d",initCountdown],["tabs",initDays],["todo-list",initTodo],["gift-list",initGifts],["plans-list",initIdeas]].forEach(function(p){
     if(document.getElementById(p[0]))p[1]();
   });
 
