@@ -42,7 +42,7 @@ svg [fill="#F2A497"]{fill:var(--coral)}
 svg [fill="#F6D27A"]{fill:var(--yama)}
 svg [fill="#A8D3E6"]{fill:var(--mizu)}
 svg [fill="#B9DAA5"]{fill:var(--take)}
-.map-svg text{fill:var(--ink)}
+
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
@@ -376,6 +376,36 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .map-hint{display:none;font-size:13px;color:var(--ink-soft);margin-top:6px}
 @media (max-width:600px){.map-hint{display:block}}
 .map-svg{display:block;width:100%;min-width:560px;height:auto;font-family:var(--font)}
+/* 路線圖配色：淺色用各線代表色（降低飽和度），深色只用灰、石板藍的深淺區分，外框變成跟底色一樣的細縫 */
+.map-svg{
+  --ln-mido:#D65F5A;--ln-tani:#9883B8;--ln-sakai:#A3866A;--ln-loop:#E2925A;--ln-jr:#4F8CC4;
+  --ln-hankyu:#8C4E49;--ln-keihan:#468A6A;--ln-kintetsu:#CFA54A;--ln-port:#62AEB8;--map-case:var(--edge);
+}
+:root[data-theme="dark"] .map-svg{
+  --ln-mido:#D8D2C6;--ln-tani:#A39E95;--ln-sakai:#6F6B65;--ln-loop:#9DB1BE;--ln-jr:#9DB1BE;
+  --ln-hankyu:#6D8494;--ln-keihan:#4D6070;--ln-kintetsu:#B9A47C;--ln-port:#7F95A3;--map-case:var(--paper);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .map-svg{
+    --ln-mido:#D8D2C6;--ln-tani:#A39E95;--ln-sakai:#6F6B65;--ln-loop:#9DB1BE;--ln-jr:#9DB1BE;
+    --ln-hankyu:#6D8494;--ln-keihan:#4D6070;--ln-kintetsu:#B9A47C;--ln-port:#7F95A3;--map-case:var(--paper);
+  }
+}
+.map-svg .m-bg{fill:var(--paper)}
+.map-svg .m-case{fill:none;stroke:var(--map-case);stroke-linejoin:round;stroke-linecap:round}
+.map-svg .m-ln{fill:none;stroke-linejoin:round;stroke-linecap:round}
+.map-svg .m-st{fill:var(--paper);stroke:var(--ink);stroke-width:2.5}
+.map-svg .m-xfer{fill:none;stroke:var(--ink-soft);stroke-width:3;stroke-dasharray:1 6;stroke-linecap:round}
+.map-svg .m-hotel{fill:var(--yama);stroke:var(--ink);stroke-width:2.5;stroke-linejoin:round}
+.map-svg .m-lab{fill:var(--ink);stroke:var(--paper);stroke-width:5;stroke-linejoin:round;paint-order:stroke}
+.map-svg .m-sub{fill:var(--ink-soft);stroke-width:4}
+.map-svg .m-sw{stroke:var(--edge);stroke-width:1.5}
+.m-mido{stroke:var(--ln-mido);fill:var(--ln-mido)}.m-tani{stroke:var(--ln-tani);fill:var(--ln-tani)}
+.m-sakai{stroke:var(--ln-sakai);fill:var(--ln-sakai)}.m-loop,.m-yume{stroke:var(--ln-loop);fill:var(--ln-loop)}
+.m-jr{stroke:var(--ln-jr);fill:var(--ln-jr)}.m-hankyu{stroke:var(--ln-hankyu);fill:var(--ln-hankyu)}
+.m-keihan{stroke:var(--ln-keihan);fill:var(--ln-keihan)}.m-kintetsu{stroke:var(--ln-kintetsu);fill:var(--ln-kintetsu)}
+.m-port{stroke:var(--ln-port);fill:var(--ln-port)}
+.map-svg path.m-ln{fill:none}
 
 /* ---------- 建議備選 ---------- */
 .ideas{display:grid;gap:14px}

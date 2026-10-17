@@ -1,19 +1,18 @@
 # 產生網站「路線圖」區塊的兩張 SVG（大阪市區、關西各城市）。用法：python3 docs/make-maps.py <輸出資料夾>，再把 map1.svg、map2.svg 貼進 index.html 的 #maps 區塊
-# 繪本風：粗墨線外框、白底站點；座標是示意位置，不照實際比例
-INK="#3E3A39"
-C={"mido":"#E5484D","tani":"#9B7BC2","sakai":"#A87C56","loop":"#F08A3C","jr":"#3C8DD8",
-   "hankyu":"#8E3B3B","keihan":"#2F8F63","kintetsu":"#D9A21B","port":"#4FB8C4","yume":"#F08A3C"}
+# 顏色全部用 class，由 css/style.css 的 .map-svg 規則上色：淺色是各線代表色（降低飽和度），深色改用同色系的深淺區分
+# 座標是示意位置，不照實際比例
+C={k:k for k in ("mido","tani","sakai","loop","jr","hankyu","keihan","kintetsu","port","yume")}
 def line(pts,col,dash=False,w=9):
     d="M"+" L".join(f"{x} {y}" for x,y in pts)
-    s=f'<path d="{d}" fill="none" stroke="{INK}" stroke-width="{w+5}" stroke-linejoin="round" stroke-linecap="round"/>'
-    s+=f'<path d="{d}" fill="none" stroke="{col}" stroke-width="{w}" stroke-linejoin="round" stroke-linecap="round"'+(' stroke-dasharray="2 14"' if dash else '')+'/>'
+    s=f'<path class="m-case" d="{d}" stroke-width="{w+4}"/>'
+    s+=f'<path class="m-ln m-{col}" d="{d}" stroke-width="{w}"/>'
     return s
 def st(x,y,big=False):
     r=9 if big else 6
-    return f'<circle cx="{x}" cy="{y}" r="{r}" fill="#FFFCF6" stroke="{INK}" stroke-width="3"/>'
-def lab(x,y,t,anchor="start",size=15,sub=None,bold=False):
-    s=f'<text x="{x}" y="{y}" text-anchor="{anchor}" font-size="{size}" fill="{INK}" paint-order="stroke" stroke="#FFFCF6" stroke-width="5" stroke-linejoin="round">{t}</text>'
-    if sub: s+=f'<text x="{x}" y="{y+16}" text-anchor="{anchor}" font-size="12" fill="#6B6461" paint-order="stroke" stroke="#FFFCF6" stroke-width="4" stroke-linejoin="round">{sub}</text>'
+    return f'<circle class="m-st" cx="{x}" cy="{y}" r="{r}"/>'
+def lab(x,y,t,anchor="start",size=16,sub=None,bold=False):
+    s=f'<text class="m-lab" x="{x}" y="{y}" text-anchor="{anchor}" font-size="{size}">{t}</text>'
+    if sub: s+=f'<text class="m-lab m-sub" x="{x}" y="{y+17}" text-anchor="{anchor}" font-size="13">{sub}</text>'
     return s
 def arrow(x,y,t,anchor="start"):
     return lab(x,y,t,anchor,13)
@@ -40,16 +39,16 @@ o.append(line([S["namba"],S["nippombashi"],S["kintetsu_east"]],C["kintetsu"]))
 # 轉乘虛線
 for a,b in [("osaka","umeda"),("umeda","higashi"),("hk_umeda","umeda"),("ogimachi","tenma")]:
     (x1,y1),(x2,y2)=S[a],S[b]
-    o.append(f'<path d="M{x1} {y1} L{x2} {y2}" stroke="{INK}" stroke-width="3" stroke-dasharray="1 6" stroke-linecap="round"/>')
+    o.append(f'<path class="m-xfer" d="M{x1} {y1} L{x2} {y2}"/>')
 big={"osaka","umeda","hk_umeda","namba","nippombashi","minami","doubutsu","tenmabashi","kyobashi","nishikujo","kitahama","yodoyabashi","tennoji","tenroku"}
 for k,(x,y) in S.items():
     if k in ("kintetsu_east","keihan_east","hotel"): continue
     o.append(st(x,y,k in big))
 # 飯店
 hx,hy=S["hotel"]
-o.append(f'<g transform="translate({hx} {hy})"><path d="M0 -15 L4.4 -5 L15 -4.6 L7 2.6 L9.6 13 L0 7.2 L-9.6 13 L-7 2.6 L-15 -4.6 L-4.4 -5 Z" fill="#F6D27A" stroke="{INK}" stroke-width="3" stroke-linejoin="round"/></g>')
-o.append(lab(hx,hy+32,"飯店",anchor="middle",size=15,sub="神山町"))
-L=[("jusou",-12,22,"十三","end",None),("hk_umeda",14,-6,"大阪梅田（阪急）","start",None),
+o.append(f'<g transform="translate({hx} {hy})"><path d="M0 -15 L4.4 -5 L15 -4.6 L7 2.6 L9.6 13 L0 7.2 L-9.6 13 L-7 2.6 L-15 -4.6 L-4.4 -5 Z" class="m-hotel"/></g>')
+o.append(lab(hx,hy+32,"飯店",anchor="middle",size=16,sub="神山町"))
+L=[("jusou",-12,22,"十三","end",None),("hk_umeda",14,-6,"阪急大阪梅田","start",None),
    ("osaka",-14,-4,"大阪（JR）","end","LUCUA・空中庭園"),("umeda",-14,22,"梅田","end",None),
    ("higashi",-12,20,"東梅田","end",None),("nakazaki",12,-8,"中崎町","start",None),("tenroku",14,-4,"天神橋筋六丁目","start",None),
    ("ogimachi",14,10,"扇町","start",None),("tenma",10,-16,"天滿（JR）","start","天神橋筋・天滿市場"),
@@ -60,7 +59,7 @@ L=[("jusou",-12,22,"十三","end",None),("hk_umeda",14,-6,"大阪梅田（阪急
    ("tennoji",14,5,"天王寺","start","HARUKAS 300"),("tenmabashi",14,24,"天滿橋","start","COBATOPAN"),("tani4",14,5,"谷町四丁目","start","大阪城"),
    ("kyobashi",8,-16,"京橋","start",None),("fukushima",-12,-6,"福島","end",None),("nishikujo",-14,-6,"西九條","end",None),("usj",14,5,"環球城","start","環球影城")]
 for k,dx,dy,t,an,sub in L:
-    x,y=S[k]; o.append(lab(x+dx,y+dy,t,an,14,sub))
+    x,y=S[k]; o.append(lab(x+dx,y+dy,t,an,16,sub))
 o.append(arrow(84,12,"往京都・神戶（阪急）"))
 o.append(arrow(560,400,"往奈良（近鐵）","start"))
 o.append(arrow(600,138,"往京都（京阪）","start"))
@@ -70,10 +69,10 @@ legend=[("mido","御堂筋線（地鐵）"),("tani","谷町線（地鐵）"),("s
 lg='<g transform="translate(470 470)">'
 for i,(k,t) in enumerate(legend):
     y=i*20
-    lg+=f'<rect x="0" y="{y-6}" width="26" height="10" rx="5" fill="{C[k]}" stroke="{INK}" stroke-width="2"/><text x="34" y="{y+3}" font-size="13" fill="{INK}">{t}</text>'
+    lg+=f'<rect class="m-sw m-{k}" x="0" y="{y-6}" width="26" height="10" rx="5"/><text class="m-lab" x="34" y="{y+3}" font-size="14">{t}</text>'
 lg+='</g>'
 o.append(lg)
-svg1=f'<svg class="map-svg" viewBox="0 0 700 620" role="img" aria-labelledby="map1-t"><title id="map1-t">大阪市區地鐵示意圖：這趟會搭到的路線</title><rect width="700" height="620" fill="#FFFCF6"/>'+"".join(o)+'</svg>'
+svg1=f'<svg class="map-svg" viewBox="0 0 700 620" role="img" aria-labelledby="map1-t"><title id="map1-t">大阪市區地鐵示意圖：這趟會搭到的路線</title><rect class="m-bg" width="700" height="620"/>'+"".join(o)+'</svg>'
 
 # ---------- 圖 2：關西城市 ----------
 o=[]
@@ -92,14 +91,14 @@ names={"ukb":("神戶機場","middle",0,32),"sannomiya":("三宮","end",-14,-8),
        "namba":("難波","start",14,24),"usj":("環球影城","middle",0,30),"kyoto":("京都站","start",14,-6),
        "kawaramachi":("京都河原町","end",-14,-4),"ogura":("小倉","end",-12,24),"uji":("宇治","start",12,24),"nara":("近鐵奈良","middle",0,32)}
 for k,(t,an,dx,dy) in names.items():
-    x,y=N[k]; o.append(lab(x+dx,y+dy,t,an,16))
+    x,y=N[k]; o.append(lab(x+dx,y+dy,t,an,17))
 tags=[(118,272,"Port Liner 18 分","end"),(270,208,"JR 新快速 21 分","middle"),(270,264,"阪急 30 分","middle"),
       (490,180,"JR 新快速 30 分","start"),(396,140,"阪急 45 分","end"),(592,160,"近鐵 20 分","end"),(712,104,"JR 奈良線 20 分","middle"),
       (382,302,"御堂筋線 8 分","start"),(515,362,"近鐵 40 分","middle"),(292,306,"JR 15 分","end")]
-for x,y,t,an in tags: o.append(lab(x,y,t,an,13))
-o.append(lab(600,244,"任天堂博物館・丸久小山園","middle",12))
-o.append(lab(690,262,"平等院表參道","middle",12))
-svg2=f'<svg class="map-svg" viewBox="0 0 780 400" role="img" aria-labelledby="map2-t"><title id="map2-t">關西各城市之間的交通示意圖</title><rect width="780" height="400" fill="#FFFCF6"/>'+"".join(o)+'</svg>'
+for x,y,t,an in tags: o.append(lab(x,y,t,an,14))
+o.append(lab(600,244,"任天堂博物館・丸久小山園","middle",13))
+o.append(lab(690,262,"平等院表參道","middle",13))
+svg2=f'<svg class="map-svg" viewBox="0 0 780 400" role="img" aria-labelledby="map2-t"><title id="map2-t">關西各城市之間的交通示意圖</title><rect class="m-bg" width="780" height="400"/>'+"".join(o)+'</svg>'
 import sys
 open(sys.argv[1]+"/map1.svg","w",encoding="utf-8").write(svg1)
 open(sys.argv[1]+"/map2.svg","w",encoding="utf-8").write(svg2)

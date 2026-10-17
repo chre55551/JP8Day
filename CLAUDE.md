@@ -39,7 +39,7 @@
 - 資料刻意用 JS 而不是 JSON，這樣直接開 `file://` 也能預覽。
 - `docs/kansai-8days.md` 是行程原稿；改行程時兩邊內容要保持一致。
 - 原稿的「景點・美食・購物備選」由 `node docs/make-picks.js` 從 `js/data.js` 產生，改了 SPOTS／FOODS／SHOPS 就重跑一次。
-- 「路線圖」區塊的兩張 SVG 由 `docs/make-maps.py` 產生；要改路線圖就改這支程式，重新產生後貼回 `index.html` 的 `#maps` 區塊。
+- 「路線圖」區塊的兩張 SVG 由 `docs/make-maps.py` 產生（顏色用 class，由 style.css 的 `.map-svg` 規則上色；深色模式只用灰、石板藍深淺）；要改路線圖就改這支程式，重新產生後貼回 `index.html` 的 `#maps` 區塊。
 
 ## 慣例
 
