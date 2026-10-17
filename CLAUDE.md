@@ -32,7 +32,7 @@
 
 ## 結構
 
-- `js/data.js`：行程資料。`DAYS` 每日行程的欄位：`k` 類型（sight/food/shop/move/rest）、`m` 必去、`w` 需確認、`x` 待安排、`tr` 交通標籤；`TODOS` 待辦清單；`GIFTS` 伴手禮清單（使用者會一項項加，加的時候查在哪買，行程裡順路那一站也備註一句）。
+- `js/data.js`：行程資料。`DAYS` 每日行程的欄位：`k` 類型（sight/food/shop/move/rest）、`m` 必去、`w` 需確認、`x` 待安排、`tr` 交通標籤、`q` Google Maps 導航用的日文搜尋字（有填才出現「導航」按鈕，新增行程時一起填）；`TODOS` 待辦清單；`GIFTS` 伴手禮清單（使用者會一項項加，加的時候查在哪買，行程裡順路那一站也備註一句）。
 - 兩頁：`index.html`（首頁、航班、每日行程、路線圖、住宿）、`prep.html`（待辦、建議備選）。`js/main.js` 兩頁共用，頁面有哪個區塊就啟動哪個。
 - `js/icons.js`：SVG 圖示；`js/main.js`：渲染邏輯；`css/style.css`：樣式。
 - 載入順序：icons.js → data.js → main.js（一般 `<script>`，沒有模組或 build）。
