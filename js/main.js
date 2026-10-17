@@ -77,7 +77,7 @@
       h+='<ol class="timeline">';
       day.items.forEach(function(it,j){
         var cls="ev k-"+it.k+(it.m?" must":"")+(it.x?" tbd":"");
-        h+='<li class="'+cls+'" style="--i:'+j+'"><span class="time">'+esc(it.t)+'</span><span class="node" aria-hidden="true"></span><div class="card">'+
+        h+='<li class="'+cls+'" style="--i:'+j+'"><span class="tpill'+(it.t?'':' empty')+'">'+esc(it.t)+'</span><div class="card">'+
           '<div class="row1">'+(it.m?'<span class="must-badge">'+STAR+'必去</span>':'')+'<span class="kind">'+(it.x?"待安排":KIND[it.k])+'</span>'+(it.w?'<span class="warn">需確認</span>':'')+'</div>'+
           '<div class="ttl">'+esc(it.n)+'</div>'+(it.o?'<p class="note">'+esc(it.o)+'</p>':'')+
           ((it.tr||it.q)?'<div class="tags">'+(it.tr||[]).map(ttag).join("")+
