@@ -10,6 +10,9 @@
   --yama:#F6D27A;       /* 山吹黃 */
   --mizu:#A8D3E6;       /* 水色 */
   --take:#B9DAA5;       /* 若竹綠 */
+  --edge:#3E3A39;       /* 框線（深色模式會變柔和） */
+  --shadow:#3E3A39;     /* 卡片的平面陰影 */
+  --sky:#FFFCF6;        /* 主圖背景 */
   --line:3px;
   --r-lg:26px;
   --r-md:18px;
@@ -18,6 +21,28 @@
   --nav-h:58px;
   color-scheme:light;
 }
+/* 深色模式：灰、藍、苔綠等低彩度的侘寂色；跟著手機設定，也可以用右上角按鈕切換 */
+:root[data-theme="dark"]{
+  --paper:#1C1E21;--paper-2:#25282C;--ink:#D8D2C6;--ink-soft:#A39E95;
+  --coral:#6E4F4A;--yama:#625538;--mizu:#43535F;--take:#4C5745;
+  --edge:#8A857D;--shadow:#0D0E10;--sky:#20262E;color-scheme:dark;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#1C1E21;--paper-2:#25282C;--ink:#D8D2C6;--ink-soft:#A39E95;
+    --coral:#6E4F4A;--yama:#625538;--mizu:#43535F;--take:#4C5745;
+    --edge:#8A857D;--shadow:#0D0E10;--sky:#20262E;color-scheme:dark;
+  }
+}
+/* 插圖、圖示裡寫死的顏色改用變數，深色模式會跟著換 */
+svg [fill="#FFFCF6"]{fill:var(--paper)}
+svg [fill="#3E3A39"]{fill:var(--ink)}
+svg [stroke="#3E3A39"]{stroke:var(--edge)}
+svg [fill="#F2A497"]{fill:var(--coral)}
+svg [fill="#F6D27A"]{fill:var(--yama)}
+svg [fill="#A8D3E6"]{fill:var(--mizu)}
+svg [fill="#B9DAA5"]{fill:var(--take)}
+.map-svg text{fill:var(--ink)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
@@ -29,13 +54,13 @@ h1,h2,h3{margin:0;font-weight:400;text-wrap:balance;line-height:1.3}
 p{margin:0}
 button{font:inherit;color:inherit}
 a{color:inherit}
-:focus-visible{outline:3px dashed var(--ink);outline-offset:3px;border-radius:10px}
+:focus-visible{outline:3px dashed var(--edge);outline-offset:3px;border-radius:10px}
 
 /* ---------- 頂端固定選單 ---------- */
 .nav{
   position:fixed;top:0;left:0;right:0;z-index:20;
   padding-top:env(safe-area-inset-top,0px);
-  background:var(--paper);border-bottom:var(--line) solid var(--ink);
+  background:var(--paper);border-bottom:var(--line) solid var(--edge);
 }
 .nav-in{
   max-width:760px;margin:0 auto;height:var(--nav-h);
@@ -50,24 +75,65 @@ a{color:inherit}
   border:2px solid transparent;white-space:nowrap;
 }
 .nav-links a:hover{border-color:var(--ink);background:var(--yama)}
-@media (max-width:440px){.brand .brand-t{display:none}.nav-links a{padding:9px 8px}.nav-arrow{display:none}.nav-links a.nav-page{order:-1}}
+/* 深淺色切換按鈕 */
+.theme-btn{
+  flex:none;width:40px;height:40px;display:grid;place-items:center;cursor:pointer;
+  border:2px solid var(--edge);border-radius:50%;background:var(--paper-2);padding:0;
+}
+.theme-btn svg{width:22px;height:22px}
+.theme-btn .sun{display:none}
+:root[data-theme="dark"] .theme-btn .sun{display:block}
+:root[data-theme="dark"] .theme-btn .moon{display:none}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .theme-btn .sun{display:block}
+  :root:not([data-theme="light"]) .theme-btn .moon{display:none}
+}
+/* 手機：選單移到畫面底部，大拇指按得到；頂端只留標題和深淺色按鈕 */
+@media (max-width:640px){
+  .brand{margin-right:auto}
+  .nav-links{
+    position:fixed;left:0;right:0;bottom:0;margin:0;gap:4px;justify-content:space-around;
+    padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px));
+    background:var(--paper);border-top:var(--line) solid var(--edge);
+  }
+  .nav-links a{flex:1;text-align:center;padding:10px 4px;font-size:14.5px}
+  .nav-arrow{display:none}
+  main{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))}
+  footer{padding-bottom:calc(90px + env(safe-area-inset-bottom,0px))}
+}
 .nav-links a.nav-page{border-color:var(--ink);background:var(--yama);white-space:nowrap}
 
 main{max-width:760px;margin:0 auto;padding-inline:16px;padding-block:calc(var(--nav-h) + 18px) 48px;display:flex;flex-direction:column;gap:28px}
 section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 
 .page{
-  background:var(--paper);border:var(--line) solid var(--ink);border-radius:var(--r-lg);
-  padding:22px 18px;box-shadow:5px 5px 0 var(--ink);
+  background:var(--paper);border:var(--line) solid var(--edge);border-radius:var(--r-lg);
+  padding:22px 18px;box-shadow:5px 5px 0 var(--shadow);
 }
 .sec-head{display:flex;align-items:center;gap:10px;margin-bottom:16px}
 .sec-head h2{font-size:24px}
-.sec-head .dot{width:16px;height:16px;border-radius:50%;border:var(--line) solid var(--ink);flex:none}
+.sec-head .dot{width:16px;height:16px;border-radius:50%;border:var(--line) solid var(--edge);flex:none}
 .sec-sub{font-size:14px;color:var(--ink-soft);margin-top:-8px;margin-bottom:16px}
 
 /* ---------- 首頁 ---------- */
 .hero{padding:0;overflow:hidden}
-.hero-art{display:block;width:100%;height:auto;background:var(--paper);border-bottom:var(--line) solid var(--ink)}
+.hero-art{display:block;width:100%;height:auto;background:var(--sky);border-bottom:var(--line) solid var(--edge)}
+.hero-art.night{display:none}
+:root[data-theme="dark"] .hero-art.day{display:none}
+:root[data-theme="dark"] .hero-art.night{display:block}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .hero-art.day{display:none}
+  :root:not([data-theme="light"]) .hero-art.night{display:block}
+}
+/* 深夜主圖：煙火綻放、星星閃爍、章魚燒彈跳 */
+.fw{transform-box:fill-box;transform-origin:center;animation:burst 3.6s ease-out infinite}
+.fw-2{animation-delay:1.2s}
+.fw-3{animation-delay:2.4s}
+.twinkle{animation:twinkle 2.8s ease-in-out infinite}
+.twinkle.t2{animation-delay:1.4s}
+.tako{transform-box:fill-box;transform-origin:50% 100%;animation:hop 2.4s ease-in-out infinite}
+.tako.k2{animation-delay:.3s}
+.tako.k3{animation-delay:.6s}
 .hero-body{padding:20px 18px 22px;display:flex;flex-direction:column;gap:14px}
 .eyebrow{font-size:14px;letter-spacing:.12em;color:var(--ink-soft)}
 .hero h1{font-size:clamp(30px,8vw,44px);letter-spacing:.02em}
@@ -75,13 +141,13 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .hero-meta{display:flex;flex-wrap:wrap;gap:8px}
 .chip{
   display:inline-flex;align-items:center;gap:6px;font-size:14px;line-height:1.2;
-  padding:5px 12px;border:2px solid var(--ink);border-radius:var(--r-sm);background:var(--paper);white-space:nowrap;
+  padding:5px 12px;border:2px solid var(--edge);border-radius:var(--r-sm);background:var(--paper);white-space:nowrap;
 }
 .count{
   display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:4px;
 }
 .count .cell{
-  border:var(--line) solid var(--ink);border-radius:var(--r-md);background:var(--paper-2);
+  border:var(--line) solid var(--edge);border-radius:var(--r-md);background:var(--paper-2);
   text-align:center;padding:10px 4px 8px;
 }
 .count .cell:nth-child(1){background:var(--coral)}
@@ -95,14 +161,14 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 /* ---------- 航班 ---------- */
 .flights{display:grid;gap:16px}
 .ticket{
-  border:var(--line) solid var(--ink);border-radius:var(--r-md);background:var(--paper);
+  border:var(--line) solid var(--edge);border-radius:var(--r-md);background:var(--paper);
   display:grid;grid-template-columns:1fr;overflow:hidden;
 }
-.ticket-top{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 16px;border-bottom:var(--line) dashed var(--ink)}
+.ticket-top{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 16px;border-bottom:var(--line) dashed var(--edge)}
 .ticket.go .ticket-top{background:var(--mizu)}
 .ticket.back .ticket-top{background:var(--coral)}
 .ticket-top .no{font-size:20px;letter-spacing:.06em}
-.ticket-top .tag{font-size:13px;background:var(--paper);border:2px solid var(--ink);border-radius:var(--r-sm);padding:2px 10px}
+.ticket-top .tag{font-size:13px;background:var(--paper);border:2px solid var(--edge);border-radius:var(--r-sm);padding:2px 10px}
 .ticket-mid{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;padding:16px}
 .port{display:flex;flex-direction:column;min-width:0}
 .port.to{text-align:right}
@@ -123,22 +189,22 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .tabs::-webkit-scrollbar{display:none}
 .tab{
   flex:none;scroll-snap-align:start;cursor:pointer;
-  border:var(--line) solid var(--ink);border-radius:16px;background:var(--paper);
+  border:var(--line) solid var(--edge);border-radius:16px;background:var(--paper);
   padding:6px 12px 7px;display:flex;flex-direction:column;align-items:center;min-width:64px;line-height:1.25;
   transition:transform .15s ease;
 }
 .tab .d{font-size:18px;font-variant-numeric:tabular-nums}
 .tab .w{font-size:12px;color:var(--ink-soft)}
 .tab:hover{transform:translateY(-2px)}
-.tab[aria-selected="true"]{background:var(--yama);box-shadow:3px 3px 0 var(--ink)}
+.tab[aria-selected="true"]{background:var(--yama);box-shadow:3px 3px 0 var(--shadow)}
 .tab[aria-selected="true"] .w{color:var(--ink)}
 .tab.bounce{animation:tabBounce .5s cubic-bezier(.3,1.6,.5,1)}
 
 .day-head{
   display:grid;grid-template-columns:auto 1fr;gap:6px 12px;align-items:center;
-  background:var(--paper-2);border:var(--line) solid var(--ink);border-radius:var(--r-md);padding:10px 12px;margin-top:6px;
+  background:var(--paper-2);border:var(--line) solid var(--edge);border-radius:var(--r-md);padding:10px 12px;margin-top:6px;
 }
-.day-icon{width:44px;height:44px;border:var(--line) solid var(--ink);border-radius:14px;background:var(--paper);display:grid;place-items:center}
+.day-icon{width:44px;height:44px;border:var(--line) solid var(--edge);border-radius:14px;background:var(--paper);display:grid;place-items:center}
 .day-icon svg{width:34px;height:34px}
 .day-head .num{font-size:12.5px;color:var(--ink-soft)}
 .day-head h3{font-size:17px}
@@ -148,7 +214,7 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 
 .tt{
   display:inline-flex;align-items:center;font-size:12.5px;line-height:1.2;padding:3px 9px;
-  border:2px solid var(--ink);border-radius:var(--r-sm);white-space:nowrap;
+  border:2px solid var(--edge);border-radius:var(--r-sm);white-space:nowrap;
 }
 .tt-JR{background:var(--mizu)}
 .tt-阪急{background:var(--coral)}
@@ -163,12 +229,12 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .timeline{list-style:none;margin:18px 0 0;padding:0;position:relative}
 /* 時間做成有顏色的扁圓（顏色跟類型一樣），虛線串起整天 */
 .timeline::before{
-  content:"";position:absolute;left:31px;top:6px;bottom:6px;border-left:var(--line) dashed var(--ink);
+  content:"";position:absolute;left:31px;top:6px;bottom:6px;border-left:var(--line) dashed var(--edge);
 }
 .ev{display:grid;grid-template-columns:64px 1fr;gap:0 8px;align-items:start;padding-bottom:12px}
 .tpill{
   justify-self:center;margin-top:10px;position:relative;z-index:1;min-width:56px;padding:3px 7px;
-  border:var(--line) solid var(--ink);border-radius:var(--r-sm);background:var(--paper);
+  border:var(--line) solid var(--edge);border-radius:var(--r-sm);background:var(--paper);
   font-size:13.5px;line-height:1.25;text-align:center;white-space:nowrap;font-variant-numeric:tabular-nums;
 }
 .tpill.empty{min-width:0;width:20px;height:20px;padding:0;margin-top:14px}
@@ -178,26 +244,36 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .k-move .tpill{background:var(--take)}
 .k-rest .tpill{background:var(--paper)}
 .ev .card{
-  min-width:0;border:var(--line) solid var(--ink);border-radius:var(--r-md);background:var(--paper);
+  min-width:0;border:var(--line) solid var(--edge);border-radius:var(--r-md);background:var(--paper);
   padding:10px 12px 11px;display:flex;flex-direction:column;gap:5px;
 }
-.ev.must .card{background:var(--paper-2);box-shadow:3px 3px 0 var(--ink)}
+.ev.must .card{background:var(--paper-2);box-shadow:3px 3px 0 var(--shadow)}
 .ev.tbd .card{border-style:dashed;background:transparent;color:var(--ink-soft)}
 .card .row1{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
 .card .ttl{font-size:16.5px;line-height:1.35}
 .card .note{font-size:14px;color:var(--ink-soft);line-height:1.55}
 .card .tags{display:flex;flex-wrap:wrap;align-items:center;gap:5px;margin-top:2px}
+/* 兩站之間的交通：放在卡片和卡片中間 */
+.leg{display:grid;grid-template-columns:64px 1fr;gap:0 8px;margin:-4px 0 8px}
+.leg-in{display:flex;flex-wrap:wrap;align-items:center;gap:5px;font-size:13px;color:var(--ink-soft);padding-left:4px}
+.leg-in .tt{font-size:12px;padding:2px 8px;color:var(--ink)}
+/* 太長的說明先顯示 3 行，點「展開全文」看全部 */
+.card .note.clamp{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.more{
+  align-self:flex-start;font-size:13px;padding:2px 12px;min-height:32px;cursor:pointer;
+  border:2px solid var(--edge);border-radius:var(--r-sm);background:var(--paper-2);color:var(--ink);
+}
 /* 導航按鈕：開 Google Maps，手指好按（高 36px） */
 .go-btn{
   margin-left:auto;display:inline-flex;align-items:center;min-height:36px;padding:0 14px;font-size:14px;text-decoration:none;
-  border:2px solid var(--ink);border-radius:var(--r-sm);background:var(--yama);
+  border:2px solid var(--edge);border-radius:var(--r-sm);background:var(--yama);
 }
 .go-btn::after{content:" ↗";margin-left:3px}
 /* 旅途中「現在」這一站 */
 .ev.now .tpill{background:var(--ink);color:var(--paper);box-shadow:0 0 0 4px var(--yama)}
 .ev.now .card{border-width:4px;background:var(--paper-2)}
-.ev.now .row1::before{content:"現在";font-size:12.5px;line-height:1.3;padding:2px 9px;border-radius:var(--r-sm);background:var(--coral);border:2px solid var(--ink)}
-.kind{font-size:12px;padding:1px 8px;border-radius:var(--r-sm);border:2px solid var(--ink);line-height:1.3}
+.ev.now .row1::before{content:"現在";font-size:12.5px;line-height:1.3;padding:2px 9px;border-radius:var(--r-sm);background:var(--coral);border:2px solid var(--edge)}
+.kind{font-size:12px;padding:1px 8px;border-radius:var(--r-sm);border:2px solid var(--edge);line-height:1.3}
 .k-sight .kind{background:var(--mizu)}
 .k-food .kind{background:var(--coral)}
 .k-shop .kind{background:var(--yama)}
@@ -208,21 +284,21 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
   background:var(--ink);color:var(--paper);display:inline-flex;align-items:center;gap:4px;
 }
 .must-badge svg{width:12px;height:12px}
-.warn{font-size:12px;line-height:1.3;padding:1px 8px;border-radius:var(--r-sm);border:2px dashed var(--ink);color:var(--ink)}
+.warn{font-size:12px;line-height:1.3;padding:1px 8px;border-radius:var(--r-sm);border:2px dashed var(--edge);color:var(--ink)}
 
-.day-notes{margin-top:8px;border:2px solid var(--ink);border-radius:14px;background:var(--paper-2)}
+.day-notes{margin-top:8px;border:2px solid var(--edge);border-radius:14px;background:var(--paper-2)}
 .day-notes summary{
   display:flex;align-items:center;gap:8px;min-height:44px;padding:6px 12px;cursor:pointer;font-size:14.5px;list-style:none;
 }
 .day-notes summary::-webkit-details-marker{display:none}
-.day-notes summary::after{content:"展開";margin-left:auto;font-size:12.5px;padding:1px 10px;border:2px solid var(--ink);border-radius:var(--r-sm);background:var(--paper)}
+.day-notes summary::after{content:"展開";margin-left:auto;font-size:12.5px;padding:1px 10px;border:2px solid var(--edge);border-radius:var(--r-sm);background:var(--paper)}
 .day-notes[open] summary::after{content:"收起"}
 .day-notes summary svg{width:20px;height:20px;flex:none}
 .day-note{font-size:14px;padding:8px 12px;border-top:2px dotted var(--ink-soft)}
 
 .legend{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:13px;color:var(--ink-soft);margin-top:14px}
 .legend span{display:inline-flex;align-items:center;gap:5px}
-.legend i{width:12px;height:12px;border-radius:50%;border:2px solid var(--ink);display:inline-block}
+.legend i{width:12px;height:12px;border-radius:50%;border:2px solid var(--edge);display:inline-block}
 
 /* 換天動畫：只讓前 6 站依序跳出，後面的一起出現，整段 0.5 秒內結束 */
 .pop .day-head{animation:bounceIn .45s cubic-bezier(.3,1.5,.5,1) both}
@@ -230,18 +306,18 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 
 /* ---------- 待辦 ---------- */
 .progress{display:flex;align-items:center;gap:10px;margin-bottom:14px;font-size:14px}
-.bar{flex:1;height:16px;border:var(--line) solid var(--ink);border-radius:var(--r-sm);background:var(--paper);overflow:hidden}
-.bar i{display:block;height:100%;width:0;background:var(--take);border-right:var(--line) solid var(--ink);transition:width .4s ease}
+.bar{flex:1;height:16px;border:var(--line) solid var(--edge);border-radius:var(--r-sm);background:var(--paper);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--take);border-right:var(--line) solid var(--edge);transition:width .4s ease}
 .todo{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .todo label{
   display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;cursor:pointer;
-  border:2px solid var(--ink);border-radius:14px;padding:10px 12px;background:var(--paper);
+  border:2px solid var(--edge);border-radius:14px;padding:10px 12px;background:var(--paper);
 }
 .todo input{
   appearance:none;-webkit-appearance:none;margin:2px 0 0;width:22px;height:22px;flex:none;cursor:pointer;
-  border:var(--line) solid var(--ink);border-radius:7px;background:var(--paper);display:grid;place-items:center;
+  border:var(--line) solid var(--edge);border-radius:7px;background:var(--paper);display:grid;place-items:center;
 }
-.todo input::after{content:"";width:6px;height:11px;border:solid var(--ink);border-width:0 3px 3px 0;transform:rotate(45deg) translate(-1px,-1px);opacity:0}
+.todo input::after{content:"";width:6px;height:11px;border:solid var(--edge);border-width:0 3px 3px 0;transform:rotate(45deg) translate(-1px,-1px);opacity:0}
 .todo input:checked{background:var(--yama)}
 .todo input:checked::after{opacity:1}
 .todo input:checked + span{text-decoration:line-through;text-decoration-thickness:2px;color:var(--ink-soft)}
@@ -251,19 +327,19 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 
 /* ---------- 住宿 ---------- */
 .stay-main{
-  border:var(--line) solid var(--ink);border-radius:var(--r-md);background:var(--take);
+  border:var(--line) solid var(--edge);border-radius:var(--r-md);background:var(--take);
   padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:center;
 }
 .stay-main .big{font-size:22px}
-.stay-main .nights{grid-row:span 2;border:var(--line) solid var(--ink);border-radius:16px;background:var(--paper);padding:6px 12px;text-align:center;line-height:1.2}
+.stay-main .nights{grid-row:span 2;border:var(--line) solid var(--edge);border-radius:16px;background:var(--paper);padding:6px 12px;text-align:center;line-height:1.2}
 .stay-main .nights b{display:block;font-weight:400;font-size:26px}
 .stay-main .sub{font-size:14px}
 .hotels{display:grid;gap:10px;margin-top:14px}
-.hotel{border:2px solid var(--ink);border-radius:14px;padding:11px 13px;background:var(--paper)}
+.hotel{border:2px solid var(--edge);border-radius:14px;padding:11px 13px;background:var(--paper)}
 .hotel h3{font-size:16.5px}
 .hotel p{font-size:14px;color:var(--ink-soft)}
-.access{margin-top:16px;border:2px solid var(--ink);border-radius:14px;overflow:hidden}
-.access h3{font-size:15px;padding:8px 13px;background:var(--mizu);border-bottom:2px solid var(--ink)}
+.access{margin-top:16px;border:2px solid var(--edge);border-radius:14px;overflow:hidden}
+.access h3{font-size:15px;padding:8px 13px;background:var(--mizu);border-bottom:2px solid var(--edge)}
 .access ul{list-style:none;margin:0;padding:4px 13px 8px}
 .access li{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:2px dotted var(--ink-soft);font-size:14.5px}
 .access li:last-child{border-bottom:0}
@@ -271,22 +347,22 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .stay-note{font-size:14px;margin-top:12px;color:var(--ink-soft)}
 .stay-addr{font-size:14px;margin-top:10px}
 .facts{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:12px}
-.fact{border:2px solid var(--ink);border-radius:14px;padding:7px 12px;background:var(--paper-2);display:flex;flex-direction:column;line-height:1.35}
+.fact{border:2px solid var(--edge);border-radius:14px;padding:7px 12px;background:var(--paper-2);display:flex;flex-direction:column;line-height:1.35}
 .fact .k{font-size:12.5px;color:var(--ink-soft)}
 .fact .v{font-size:15.5px}
 .stay-list{margin:12px 0 0;padding-left:20px;display:grid;gap:6px;font-size:14.5px}
 .stay-list .warn{margin-right:4px}
 .stay-h{font-size:18px;margin-top:22px}
 .routes{display:grid;gap:12px;margin-top:10px}
-.route-card{border:var(--line) solid var(--ink);border-radius:var(--r-md);background:var(--paper);padding:12px 14px;display:grid;gap:8px}
+.route-card{border:var(--line) solid var(--edge);border-radius:var(--r-md);background:var(--paper);padding:12px 14px;display:grid;gap:8px}
 .route-top{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:15.5px}
-.route-top .lbl{font-size:12.5px;padding:1px 10px;border:2px solid var(--ink);border-radius:var(--r-sm);background:var(--yama)}
+.route-top .lbl{font-size:12.5px;padding:1px 10px;border:2px solid var(--edge);border-radius:var(--r-sm);background:var(--yama)}
 .route-card ol{margin:0;padding-left:20px;display:grid;gap:4px;font-size:14.5px}
 .route-note{font-size:13.5px;color:var(--ink-soft)}
 .shops{display:grid;gap:12px;margin-top:10px}
-.shop-group{border:2px solid var(--ink);border-radius:14px;padding:10px 13px;background:var(--paper)}
+.shop-group{border:2px solid var(--edge);border-radius:14px;padding:10px 13px;background:var(--paper)}
 .shop-group h4{margin:0 0 6px;font-size:15.5px;font-weight:400;display:flex;align-items:center;gap:8px}
-.shop-group h4 .dot{width:12px;height:12px;border-radius:50%;border:2px solid var(--ink);flex:none}
+.shop-group h4 .dot{width:12px;height:12px;border-radius:50%;border:2px solid var(--edge);flex:none}
 .shop-group ul{margin:0;padding-left:18px;display:grid;gap:5px;font-size:14px}
 .shop-group b{font-weight:400;text-decoration:underline;text-decoration-color:var(--yama);text-decoration-thickness:5px;text-underline-offset:-2px;text-decoration-skip-ink:none}
 .shop-group .warn{margin:0 2px}
@@ -296,40 +372,40 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 }
 
 /* ---------- 路線圖 ---------- */
-.map-wrap{margin-top:10px;border:var(--line) solid var(--ink);border-radius:var(--r-md);background:var(--paper);overflow-x:auto;-webkit-overflow-scrolling:touch}
+.map-wrap{margin-top:10px;border:var(--line) solid var(--edge);border-radius:var(--r-md);background:var(--paper);overflow-x:auto;-webkit-overflow-scrolling:touch}
 .map-hint{display:none;font-size:13px;color:var(--ink-soft);margin-top:6px}
 @media (max-width:600px){.map-hint{display:block}}
 .map-svg{display:block;width:100%;min-width:560px;height:auto;font-family:var(--font)}
 
 /* ---------- 建議備選 ---------- */
 .ideas{display:grid;gap:14px}
-.idea{border:var(--line) solid var(--ink);border-radius:var(--r-md);background:var(--paper);padding:14px 16px;display:grid;gap:8px}
+.idea{border:var(--line) solid var(--edge);border-radius:var(--r-md);background:var(--paper);padding:14px 16px;display:grid;gap:8px}
 .idea h4{font-size:17px;font-weight:400;margin:0}
 .idea .why{font-size:14.5px}
 .idea ol{margin:0;padding-left:20px;display:grid;gap:4px;font-size:14.5px}
 .idea-links{display:flex;flex-wrap:wrap;gap:6px}
-.idea-links a,.idea-links .lk{font-size:13px;text-decoration:none;padding:2px 10px;border:2px solid var(--ink);border-radius:var(--r-sm);background:var(--mizu)}
+.idea-links a,.idea-links .lk{font-size:13px;text-decoration:none;padding:2px 10px;border:2px solid var(--edge);border-radius:var(--r-sm);background:var(--mizu)}
 .idea-links a::after{content:" ↗"}
 .idea-note{display:flex;gap:8px;font-size:13.5px;color:var(--ink-soft);background:var(--paper-2);border-radius:12px;padding:8px 10px}
 .idea-note svg{width:18px;height:18px;flex:none;margin-top:2px}
 .area-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 12px}
-.area-tab{border:var(--line) solid var(--ink);border-radius:var(--r-sm);background:var(--paper);padding:4px 16px;font-size:15px;cursor:pointer}
+.area-tab{border:var(--line) solid var(--edge);border-radius:var(--r-sm);background:var(--paper);padding:4px 16px;font-size:15px;cursor:pointer}
 .area-tab[aria-selected="true"]{background:var(--yama)}
 .pick-grid{display:grid;gap:16px}
 .pick-col h4{margin:0 0 8px;font-size:16px;font-weight:400}
 .picks{list-style:none;margin:0;padding:0;display:grid;gap:8px}
-.pick{border:2px solid var(--ink);border-radius:14px;padding:9px 12px;background:var(--paper);display:grid;gap:5px}
+.pick{border:2px solid var(--edge);border-radius:14px;padding:9px 12px;background:var(--paper);display:grid;gap:5px}
 .pick.on{background:var(--paper-2)}
 .pick-top{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
 .pick-n{font-size:15.5px;margin-right:auto}
-.pick-s{font-size:12px;padding:0 8px;border:2px solid var(--ink);border-radius:var(--r-sm);background:var(--take)}
+.pick-s{font-size:12px;padding:0 8px;border:2px solid var(--edge);border-radius:var(--r-sm);background:var(--take)}
 .pick-p{font-size:12.5px;color:var(--ink-soft);font-variant-numeric:tabular-nums}
 .pick-d{font-size:13.5px;color:var(--ink-soft)}
 .idea-links a.lk-map{background:var(--paper-2)}
 @media (min-width:640px){.pick-grid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}}
 .todo li{display:flex;align-items:center;gap:8px}
 .todo li label{flex:1}
-.todo-link{font-size:13px;white-space:nowrap;padding:2px 10px;border:2px solid var(--ink);border-radius:var(--r-sm);background:var(--yama);text-decoration:none}
+.todo-link{font-size:13px;white-space:nowrap;padding:2px 10px;border:2px solid var(--edge);border-radius:var(--r-sm);background:var(--yama);text-decoration:none}
 
 footer{max-width:760px;margin:0 auto;padding:0 16px 40px;font-size:13px;color:var(--ink-soft);text-align:center}
 
@@ -345,6 +421,9 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;font-size:13px;color:va
 .brand .anim{animation:bob 3s ease-in-out 3}
 .hero-art.paused *{animation-play-state:paused !important}
 
+@keyframes burst{0%{transform:scale(.2);opacity:0}15%{opacity:1}55%{transform:scale(1);opacity:.9}80%,100%{transform:scale(1.08);opacity:0}}
+@keyframes twinkle{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes hop{0%,70%,100%{transform:translateY(0)}80%{transform:translateY(-4px)}90%{transform:translateY(0)}}
 @keyframes drift{from{transform:translateX(-10px)}to{transform:translateX(14px)}}
 @keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-6px) rotate(2deg)}}
 @keyframes spin{to{transform:rotate(360deg)}}
@@ -366,5 +445,5 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;font-size:13px;color:va
   .hero-body{padding:24px 26px 26px}
   .timeline::before{left:35px}
   .tabs{padding-inline:26px;margin-inline:-26px}
-  .ev{grid-template-columns:72px 1fr;gap:0 10px}
+  .ev,.leg{grid-template-columns:72px 1fr;gap:0 10px}
 }

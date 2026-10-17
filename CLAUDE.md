@@ -46,5 +46,6 @@
 - 介面文字一律用繁體中文。
 - 換行統一 LF（見 `.gitattributes`），編碼 UTF-8。
 - **改了任何畫面上的文字（含 data.js）就重跑 `python3 docs/make-font.py`**，字型只包含用到的字；有缺字會印出來。
+- **深色模式**：顏色一律用 `css/style.css` 的變數（`--paper`、`--ink`、`--edge`、`--shadow` 等），深色值在 `:root[data-theme="dark"]` 和 `prefers-color-scheme: dark` 兩處要一起改。SVG 裡寫死的色碼（#3E3A39、#F6D27A…）由 style.css 的屬性選擇器換成變數，新增別的色碼要補對應規則。首頁主圖有淺色 `.hero-art.day` 和深夜 `.hero-art.night` 兩張。
 - 新增檔案要加進 `sw.js` 的 `FILES`。改了 `FILES` 或快取策略時，把 `CACHE` 版本號加一。
 - 改完要在瀏覽器確認畫面正常，再 push。

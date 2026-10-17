@@ -38,12 +38,28 @@
   /* 首頁插圖捲出畫面就暫停動畫和倒數，省電、捲動更順 */
   var heroHidden=false;
   function initHeroPause(){
-    var art=document.querySelector(".hero-art");
-    if(!art||!("IntersectionObserver" in window))return;
+    var arts=document.querySelectorAll(".hero-art");
+    if(!arts.length||!("IntersectionObserver" in window))return;
     new IntersectionObserver(function(es){
       heroHidden=!es[0].isIntersecting;
-      art.classList.toggle("paused",heroHidden);
-    }).observe(document.getElementById("home")||art);
+      Array.prototype.forEach.call(arts,function(a){a.classList.toggle("paused",heroHidden);});
+    }).observe(document.getElementById("home"));
+  }
+
+  /* 深淺色切換：預設跟手機設定，按右上角按鈕就記住選擇 */
+  function initTheme(){
+    var btn=document.getElementById("theme-btn"),root=document.documentElement;
+    var mq=window.matchMedia?window.matchMedia("(prefers-color-scheme: dark)"):null;
+    function current(){return root.dataset.theme||(mq&&mq.matches?"dark":"light");}
+    function paintBar(){
+      Array.prototype.forEach.call(document.querySelectorAll('meta[name="theme-color"]'),function(m){
+        if(root.dataset.theme)m.setAttribute("content",root.dataset.theme==="dark"?"#1C1E21":"#FFFCF6");
+      });
+    }
+    paintBar();
+    btn.addEventListener("click",function(){
+      root.dataset.theme=current()==="dark"?"light":"dark";store("kansai8-theme",root.dataset.theme);paintBar();
+    });
   }
 
   /* ---------- 每日行程 ---------- */
@@ -76,12 +92,13 @@
       }
       h+='<ol class="timeline">';
       day.items.forEach(function(it,j){
+        /* 怎麼到這一站：放在兩張卡片中間 */
+        if(it.tr)h+='<li class="leg" aria-label="交通"><span></span><div class="leg-in">↓ '+it.tr.map(ttag).join("")+'</div></li>';
         var cls="ev k-"+it.k+(it.m?" must":"")+(it.x?" tbd":"");
         h+='<li class="'+cls+'" style="--i:'+j+'"><span class="tpill'+(it.t?'':' empty')+'">'+esc(it.t)+'</span><div class="card">'+
           '<div class="row1">'+(it.m?'<span class="must-badge">'+STAR+'必去</span>':'')+'<span class="kind">'+(it.x?"待安排":KIND[it.k])+'</span>'+(it.w?'<span class="warn">需確認</span>':'')+'</div>'+
-          '<div class="ttl">'+esc(it.n)+'</div>'+(it.o?'<p class="note">'+esc(it.o)+'</p>':'')+
-          ((it.tr||it.q)?'<div class="tags">'+(it.tr||[]).map(ttag).join("")+
-            (it.q?'<a class="go-btn" href="https://www.google.com/maps/dir/?api=1&amp;travelmode=transit&amp;destination='+encodeURIComponent(it.q)+'" target="_blank" rel="noopener">導航</a>':'')+'</div>':'')+'</div></li>';
+          '<div class="ttl">'+esc(it.n)+'</div>'+(it.o?'<p class="note clamp">'+esc(it.o)+'</p>':'')+
+          (it.q?'<div class="tags"><a class="go-btn" href="https://www.google.com/maps/dir/?api=1&amp;travelmode=transit&amp;destination='+encodeURIComponent(it.q)+'" target="_blank" rel="noopener">導航</a></div>':'')+'</div></li>';
       });
       h+='</ol>';
       return h;
@@ -97,6 +114,7 @@
       dayEl.setAttribute("aria-labelledby",tab.id);
       dayEl.innerHTML=renderDay(i);
       markNow();
+      addMore();
       /* 日期分頁黏在頂端時換天，捲回新那天的開頭 */
       if(animate&&tabsEl.getBoundingClientRect().top<=stickyTop()+1){
         window.scrollTo({top:dayEl.getBoundingClientRect().top+window.scrollY-stickyTop()-tabsEl.offsetHeight-8});
@@ -108,6 +126,20 @@
         if(r.left<tr.left||r.right>tr.right){tabsEl.scrollLeft+=r.left-tr.left-12;}
       }
     }
+    /* 說明超過 3 行的才加「展開全文」按鈕 */
+    function addMore(){
+      Array.prototype.forEach.call(dayEl.querySelectorAll(".note.clamp"),function(n){
+        if(n.scrollHeight>n.clientHeight+2&&!(n.nextElementSibling&&n.nextElementSibling.classList.contains("more"))){
+          n.insertAdjacentHTML("afterend",'<button type="button" class="more" aria-expanded="false">展開全文</button>');
+        }
+      });
+    }
+    dayEl.addEventListener("click",function(e){
+      var b=e.target.closest(".more");if(!b)return;
+      var n=b.previousElementSibling,open=n.classList.toggle("clamp")===false;
+      b.textContent=open?"收起":"展開全文";b.setAttribute("aria-expanded",open?"true":"false");
+    });
+    if(document.fonts&&document.fonts.ready)document.fonts.ready.then(addMore);
     function stickyTop(){return parseFloat(getComputedStyle(tabsEl).top)||0;}
     function jst(){return new Date(Date.now()+9*3600*1000);} /* 日本時間 */
     /* 旅途中：今天的行程標出「現在」這一站（時間已經到的最後一站） */
@@ -237,7 +269,7 @@
   }
 
   /* 兩頁共用這支程式：頁面上有哪個區塊就啟動哪個 */
-  [["home",initHeroPause],["cd-d",initCountdown],["tabs",initDays],["todo-list",initTodo],["gift-list",initGifts],["plans-list",initIdeas]].forEach(function(p){
+  [["theme-btn",initTheme],["home",initHeroPause],["cd-d",initCountdown],["tabs",initDays],["todo-list",initTodo],["gift-list",initGifts],["plans-list",initIdeas]].forEach(function(p){
     if(document.getElementById(p[0]))p[1]();
   });
 
