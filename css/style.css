@@ -71,7 +71,7 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .hero-body{padding:20px 18px 22px;display:flex;flex-direction:column;gap:14px}
 .eyebrow{font-size:14px;letter-spacing:.12em;color:var(--ink-soft)}
 .hero h1{font-size:clamp(30px,8vw,44px);letter-spacing:.02em}
-.hero h1 .hl{background:var(--yama);border-radius:10px;padding:0 6px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.hero h1 .hl{background:var(--yama);border-radius:10px;padding:0 6px;white-space:nowrap;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 .hero-meta{display:flex;flex-wrap:wrap;gap:8px}
 .chip{
   display:inline-flex;align-items:center;gap:6px;font-size:14px;line-height:1.2;
