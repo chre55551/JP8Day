@@ -225,11 +225,6 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 /* 換天動畫：只讓前 6 站依序跳出，後面的一起出現，整段 0.5 秒內結束 */
 .pop .day-head{animation:bounceIn .45s cubic-bezier(.3,1.5,.5,1) both}
 .pop .ev{animation:bounceIn .45s cubic-bezier(.3,1.5,.5,1) both;animation-delay:calc(min(var(--i),6) * 30ms + 40ms)}
-/* 滑動換天：整頁從滑動的方向滑進來 */
-.from-right{animation:slideFromRight .28s ease-out both}
-.from-left{animation:slideFromLeft .28s ease-out both}
-@keyframes slideFromRight{from{transform:translateX(36px);opacity:.3}to{transform:none;opacity:1}}
-@keyframes slideFromLeft{from{transform:translateX(-36px);opacity:.3}to{transform:none;opacity:1}}
 
 /* ---------- 待辦 ---------- */
 .progress{display:flex;align-items:center;gap:10px;margin-bottom:14px;font-size:14px}

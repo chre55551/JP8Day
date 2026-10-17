@@ -86,7 +86,7 @@
       h+='</ol>';
       return h;
     }
-    function select(i,animate,dir){
+    function select(i,animate){
       store("kansai8-day",i);
       Array.prototype.forEach.call(tabsEl.children,function(t,k){
         t.setAttribute("aria-selected",k===i?"true":"false");
@@ -103,25 +103,11 @@
       }
       if(animate){
         void tab.offsetWidth; tab.classList.add("bounce");
-        dayEl.classList.remove("pop","from-left","from-right"); void dayEl.offsetWidth;
-        dayEl.classList.add(dir?"from-"+(dir==="left"?"right":"left"):"pop");
+        dayEl.classList.remove("pop"); void dayEl.offsetWidth; dayEl.classList.add("pop");
         var tr=tabsEl.getBoundingClientRect(), r=tab.getBoundingClientRect();
         if(r.left<tr.left||r.right>tr.right){tabsEl.scrollLeft+=r.left-tr.left-12;}
       }
     }
-    /* 在行程上左右滑動換天；從螢幕左邊緣開始的滑動留給 iPhone 的返回手勢 */
-    var sx=0,sy=0,st=0,track=false;
-    dayEl.addEventListener("touchstart",function(e){
-      var t=e.touches[0];track=e.touches.length===1&&t.clientX>24;sx=t.clientX;sy=t.clientY;st=Date.now();
-    },{passive:true});
-    dayEl.addEventListener("touchend",function(e){
-      if(!track)return;track=false;
-      var t=e.changedTouches[0],dx=t.clientX-sx,dy=t.clientY-sy;
-      if(Math.abs(dx)<60||Math.abs(dx)<Math.abs(dy)*1.8||Date.now()-st>700)return;
-      var cur=Number(store("kansai8-day"))||0,next=cur+(dx<0?1:-1);
-      if(next<0||next>=DAYS.length)return;
-      select(next,true,dx<0?"left":"right");
-    },{passive:true});
     function stickyTop(){return parseFloat(getComputedStyle(tabsEl).top)||0;}
     function jst(){return new Date(Date.now()+9*3600*1000);} /* 日本時間 */
     /* 旅途中：今天的行程標出「現在」這一站（時間已經到的最後一站） */
