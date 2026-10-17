@@ -222,8 +222,14 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .legend span{display:inline-flex;align-items:center;gap:5px}
 .legend i{width:12px;height:12px;border-radius:50%;border:2px solid var(--ink);display:inline-block}
 
-.pop .day-head{animation:bounceIn .6s cubic-bezier(.3,1.5,.5,1) both}
-.pop .ev{animation:bounceIn .6s cubic-bezier(.3,1.5,.5,1) both;animation-delay:calc(var(--i) * 45ms + 80ms)}
+/* 換天動畫：只讓前 6 站依序跳出，後面的一起出現，整段 0.5 秒內結束 */
+.pop .day-head{animation:bounceIn .45s cubic-bezier(.3,1.5,.5,1) both}
+.pop .ev{animation:bounceIn .45s cubic-bezier(.3,1.5,.5,1) both;animation-delay:calc(min(var(--i),6) * 30ms + 40ms)}
+/* 滑動換天：整頁從滑動的方向滑進來 */
+.from-right{animation:slideFromRight .28s ease-out both}
+.from-left{animation:slideFromLeft .28s ease-out both}
+@keyframes slideFromRight{from{transform:translateX(36px);opacity:.3}to{transform:none;opacity:1}}
+@keyframes slideFromLeft{from{transform:translateX(-36px);opacity:.3}to{transform:none;opacity:1}}
 
 /* ---------- 待辦 ---------- */
 .progress{display:flex;align-items:center;gap:10px;margin-bottom:14px;font-size:14px}
@@ -339,7 +345,8 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;font-size:13px;color:va
 .deer-head{transform-origin:20% 90%;animation:nod 4s ease-in-out infinite}
 .train{animation:ride 14s linear infinite}
 .lantern{transform-origin:50% 0;animation:sway 3.2s ease-in-out infinite}
-.brand .anim{animation:bob 3s ease-in-out infinite}
+.brand .anim{animation:bob 3s ease-in-out 3}
+.hero-art.paused *{animation-play-state:paused !important}
 
 @keyframes drift{from{transform:translateX(-10px)}to{transform:translateX(14px)}}
 @keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-6px) rotate(2deg)}}

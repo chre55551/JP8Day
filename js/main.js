@@ -18,6 +18,7 @@
     var RETURN=Date.parse("2027-01-05T13:50:00+08:00");
     function pad(n){return (n<10?"0":"")+n;}
     function tick(){
+      if(heroHidden)return;
       var now=Date.now(), diff=DEPART-now;
       var note=document.getElementById("count-note");
       if(diff>0){
@@ -32,6 +33,17 @@
       }
     }
     tick(); setInterval(tick,1000);
+  }
+
+  /* 首頁插圖捲出畫面就暫停動畫和倒數，省電、捲動更順 */
+  var heroHidden=false;
+  function initHeroPause(){
+    var art=document.querySelector(".hero-art");
+    if(!art||!("IntersectionObserver" in window))return;
+    new IntersectionObserver(function(es){
+      heroHidden=!es[0].isIntersecting;
+      art.classList.toggle("paused",heroHidden);
+    }).observe(document.getElementById("home")||art);
   }
 
   /* ---------- 每日行程 ---------- */
@@ -74,7 +86,7 @@
       h+='</ol>';
       return h;
     }
-    function select(i,animate){
+    function select(i,animate,dir){
       store("kansai8-day",i);
       Array.prototype.forEach.call(tabsEl.children,function(t,k){
         t.setAttribute("aria-selected",k===i?"true":"false");
@@ -91,11 +103,25 @@
       }
       if(animate){
         void tab.offsetWidth; tab.classList.add("bounce");
-        dayEl.classList.remove("pop"); void dayEl.offsetWidth; dayEl.classList.add("pop");
+        dayEl.classList.remove("pop","from-left","from-right"); void dayEl.offsetWidth;
+        dayEl.classList.add(dir?"from-"+(dir==="left"?"right":"left"):"pop");
         var tr=tabsEl.getBoundingClientRect(), r=tab.getBoundingClientRect();
         if(r.left<tr.left||r.right>tr.right){tabsEl.scrollLeft+=r.left-tr.left-12;}
       }
     }
+    /* 在行程上左右滑動換天；從螢幕左邊緣開始的滑動留給 iPhone 的返回手勢 */
+    var sx=0,sy=0,st=0,track=false;
+    dayEl.addEventListener("touchstart",function(e){
+      var t=e.touches[0];track=e.touches.length===1&&t.clientX>24;sx=t.clientX;sy=t.clientY;st=Date.now();
+    },{passive:true});
+    dayEl.addEventListener("touchend",function(e){
+      if(!track)return;track=false;
+      var t=e.changedTouches[0],dx=t.clientX-sx,dy=t.clientY-sy;
+      if(Math.abs(dx)<60||Math.abs(dx)<Math.abs(dy)*1.8||Date.now()-st>700)return;
+      var cur=Number(store("kansai8-day"))||0,next=cur+(dx<0?1:-1);
+      if(next<0||next>=DAYS.length)return;
+      select(next,true,dx<0?"left":"right");
+    },{passive:true});
     function stickyTop(){return parseFloat(getComputedStyle(tabsEl).top)||0;}
     function jst(){return new Date(Date.now()+9*3600*1000);} /* 日本時間 */
     /* 旅途中：今天的行程標出「現在」這一站（時間已經到的最後一站） */
@@ -225,7 +251,7 @@
   }
 
   /* 兩頁共用這支程式：頁面上有哪個區塊就啟動哪個 */
-  [["cd-d",initCountdown],["tabs",initDays],["todo-list",initTodo],["gift-list",initGifts],["plans-list",initIdeas]].forEach(function(p){
+  [["home",initHeroPause],["cd-d",initCountdown],["tabs",initDays],["todo-list",initTodo],["gift-list",initGifts],["plans-list",initIdeas]].forEach(function(p){
     if(document.getElementById(p[0]))p[1]();
   });
 
