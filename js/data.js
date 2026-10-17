@@ -132,7 +132,8 @@ var DAYS=[
 /* 待辦：id 用來記住勾選狀態，改文字或順序都不會跑掉；新增項目給一個新的 id */
 /* 伴手禮清單：n 名稱、d 說明、buy 在哪買（行程裡順路的那一站）；id 不要改，打勾紀錄靠它 */
 var GIFTS=[
-  {id:"caramel-crown",n:"THE CARAMEL CROWN",d:"招牌 THE バターキャラメルサンド，2025 年在阪急梅田開的焦糖甜點專賣店",buy:"12/31 阪急梅田本店 B1（跟 Sugar Butter Tree 同一層），平常 10:00–20:00"}
+  {id:"caramel-crown",n:"THE CARAMEL CROWN",d:"招牌 THE バターキャラメルサンド，2025 年在阪急梅田開的焦糖甜點專賣店",buy:"12/31 阪急梅田本店 B1（跟 Sugar Butter Tree 同一層），平常 10:00–20:00"},
+  {id:"sugar-butter-tree",n:"Sugar Butter Tree",d:"招牌シュガーバターサンドの木，酥脆穀物餅乾夾白巧克力",buy:"12/31 阪急うめだ店（阪急梅田本店 B1），平常 10:00–20:00；行程已排 15:40"}
 ];
 
 var TODOS=[
