@@ -81,7 +81,7 @@
           '<div class="row1">'+(it.m?'<span class="must-badge">'+STAR+'必去</span>':'')+'<span class="kind">'+(it.x?"待安排":KIND[it.k])+'</span>'+(it.w?'<span class="warn">需確認</span>':'')+'</div>'+
           '<div class="ttl">'+esc(it.n)+'</div>'+(it.o?'<p class="note">'+esc(it.o)+'</p>':'')+
           ((it.tr||it.q)?'<div class="tags">'+(it.tr||[]).map(ttag).join("")+
-            (it.q?'<a class="go" href="https://www.google.com/maps/dir/?api=1&amp;travelmode=transit&amp;destination='+encodeURIComponent(it.q)+'" target="_blank" rel="noopener">導航</a>':'')+'</div>':'')+'</div></li>';
+            (it.q?'<a class="go-btn" href="https://www.google.com/maps/dir/?api=1&amp;travelmode=transit&amp;destination='+encodeURIComponent(it.q)+'" target="_blank" rel="noopener">導航</a>':'')+'</div>':'')+'</div></li>';
       });
       h+='</ol>';
       return h;

@@ -186,11 +186,11 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .card .note{font-size:14px;color:var(--ink-soft);line-height:1.55}
 .card .tags{display:flex;flex-wrap:wrap;align-items:center;gap:5px;margin-top:2px}
 /* 導航按鈕：開 Google Maps，手指好按（高 36px） */
-.go{
+.go-btn{
   margin-left:auto;display:inline-flex;align-items:center;min-height:36px;padding:0 14px;font-size:14px;text-decoration:none;
   border:2px solid var(--ink);border-radius:var(--r-sm);background:var(--yama);
 }
-.go::after{content:" ↗";margin-left:3px}
+.go-btn::after{content:" ↗";margin-left:3px}
 /* 旅途中「現在」這一站 */
 .ev.now .node{background:var(--ink);box-shadow:0 0 0 4px var(--yama)}
 .ev.now .card{border-width:4px;background:var(--paper-2)}
