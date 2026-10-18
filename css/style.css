@@ -448,10 +448,17 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;font-size:13px;color:va
 .cloud-b{animation:drift 12s ease-in-out infinite alternate-reverse}
 .sun-rays{animation:spin 30s linear infinite}
 .steam{animation:steam 2.4s ease-in-out infinite}
-.fall{animation:fall 7s ease-in-out infinite}
-.fall.f2{animation-duration:8.5s;animation-delay:-3s}
-.fall.f3{animation-duration:7.6s;animation-delay:-5.5s}
-.fall.f4{animation-duration:9s;animation-delay:-1.5s}
+.fall{animation:fall 8s ease-in-out infinite}
+.fall.f1{animation-duration:8.2s;animation-delay:-0.5s}
+.fall.f2{animation-duration:7.4s;animation-delay:-2.6s}
+.fall.f3{animation-duration:9.1s;animation-delay:-5.2s}
+.fall.f4{animation-duration:7.8s;animation-delay:-6.9s}
+.fall.f5{animation-duration:8.6s;animation-delay:-1.7s}
+.fall.f6{animation-duration:7.2s;animation-delay:-4.1s}
+.fall.f7{animation-duration:9.4s;animation-delay:-7.8s}
+.fall.f8{animation-duration:8.0s;animation-delay:-3.3s}
+.fall.f9{animation-duration:7.6s;animation-delay:-6.0s}
+.fall.f10{animation-duration:8.8s;animation-delay:-0.9s}
 .brand .anim{animation:bob 3s ease-in-out 3}
 .hero-art.paused *{animation-play-state:paused !important}
 

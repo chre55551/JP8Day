@@ -44,7 +44,7 @@
 <main>
   <!-- 首頁 -->
   <section id="home" class="page hero">
-    <svg class="hero-art day" viewBox="0 0 360 240" role="img" aria-label="繪本插圖：八坂塔、紅色鳥居、神戶牛燒肉、三色糰子、布丁、草莓千層和抹茶霜淇淋">
+    <svg class="hero-art day" viewBox="0 0 360 240" role="img" aria-label="繪本插圖：八坂塔、紅色鳥居，天上飄下神戶牛燒肉、壽司、糰子、拉麵、飯糰、布丁、鯛魚燒、草莓千層、章魚燒和抹茶霜淇淋">
       <g stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
         <!-- 太陽（往右上角靠，露出一部分） -->
         <g transform="translate(34 -26)">
@@ -79,50 +79,81 @@
         <path d="M206 126 Q249 116 292 126 L290 136 L208 136 Z" fill="#F2A497"/>
         <rect x="214" y="144" width="70" height="8" fill="#F2A497"/>
         <rect x="245" y="136" width="8" height="8" fill="#F2A497"/>
-        <!-- 神戶牛燒肉：七輪烤爐上的霜降肉片 -->
-        <path d="M24 216 L80 216 L75 236 L29 236 Z" fill="#F6D27A"/>
-        <rect x="40" y="224" width="24" height="6" rx="2" fill="#F2A497"/>
-        <ellipse cx="52" cy="215" rx="31" ry="6" fill="#3E3A39"/>
-        <path d="M30 213 L74 213 M32 217 L72 217" fill="none" stroke="#FFFCF6" stroke-width="1.5"/>
-        <path d="M26 212 Q34 206 47 208 L46 212 Q36 214 26 212 Z" fill="#F2A497"/>
-        <path d="M43 209 Q52 203 64 205 L63 209 Q53 211 43 209 Z" fill="#F2A497"/>
-        <path d="M59 213 Q67 207 79 209 L78 213 Q68 215 59 213 Z" fill="#F2A497"/>
-        <path d="M31 210 L41 209 M48 207 L58 206 M64 211 L74 210" fill="none" stroke="#FFFCF6" stroke-width="1.5"/>
-        <g class="steam anim" fill="none" stroke-width="2">
-          <path d="M38 200 Q35 195 38 190 Q41 185 38 180"/>
-          <path d="M50 197 Q47 192 50 187 Q53 182 50 177"/>
-          <path d="M62 200 Q59 195 62 190 Q65 185 62 180"/>
-        </g>
-        <!-- 天上飄下來的甜點（縮小一半）：三色糰子 -->
-        <g class="fall f1 anim"><g transform="translate(112 236) scale(.5) translate(-112 -236)" stroke-width="4">
-          <line x1="112" y1="238" x2="112" y2="186"/>
-          <circle cx="112" cy="224" r="7" fill="#B9DAA5"/>
-          <circle cx="112" cy="210" r="7" fill="#FFFCF6"/>
-          <circle cx="112" cy="196" r="7" fill="#F2A497"/>
+        <!-- 天上飄下來的日本美食（縮小一半）：神戶牛燒肉、握壽司、三色糰子、拉麵、飯糰、布丁、鯛魚燒、草莓千層、章魚燒、抹茶霜淇淋 -->
+        <!-- 神戶牛燒肉 -->
+        <g class="fall f1 anim"><g transform="translate(22 236) scale(.5)" stroke-width="4">
+          <path d="M-28 -20 L28 -20 L23 0 L-23 0 Z" fill="#F6D27A"/>
+          <rect x="-12" y="-12" width="24" height="6" rx="2" fill="#F2A497"/>
+          <ellipse cx="0" cy="-21" rx="31" ry="6" fill="#3E3A39"/>
+          <path d="M-22 -23 L22 -23 M-20 -19 L20 -19" fill="none" stroke="#FFFCF6" stroke-width="3"/>
+          <path d="M-26 -24 Q-18 -30 -5 -28 L-6 -24 Q-16 -22 -26 -24 Z" fill="#F2A497"/>
+          <path d="M-9 -27 Q0 -33 12 -31 L11 -27 Q1 -25 -9 -27 Z" fill="#F2A497"/>
+          <path d="M7 -23 Q15 -29 27 -27 L26 -23 Q16 -21 7 -23 Z" fill="#F2A497"/>
+          <path d="M-21 -26 L-11 -27 M-4 -29 L6 -30 M12 -25 L22 -26" fill="none" stroke="#FFFCF6" stroke-width="3"/>
+          <g class="steam anim" fill="none"><path d="M-14 -36 Q-17 -41 -14 -46 Q-11 -51 -14 -56"/><path d="M-2 -39 Q-5 -44 -2 -49 Q1 -54 -2 -59"/><path d="M10 -36 Q7 -41 10 -46 Q13 -51 10 -56"/></g>
+        </g></g>
+        <!-- 握壽司 -->
+        <g class="fall f2 anim"><g transform="translate(58 236) scale(.5)" stroke-width="4">
+          <path d="M-18 -2 Q-20 -14 -14 -15 L14 -15 Q20 -14 18 -2 Z" fill="#FFFCF6"/>
+          <path d="M-21 -13 Q-20 -24 0 -24 Q20 -24 22 -15 Q0 -10 -21 -13 Z" fill="#F2A497"/>
+          <path d="M-12 -15 L-8 -21 M-2 -14 L2 -22 M8 -14 L11 -20" fill="none" stroke="#FFFCF6" stroke-width="3"/>
+        </g></g>
+        <!-- 三色糰子 -->
+        <g class="fall f3 anim"><g transform="translate(92 236) scale(.5)" stroke-width="4">
+          <line x1="0" y1="2" x2="0" y2="-50"/>
+          <circle cx="0" cy="-12" r="7" fill="#B9DAA5"/><circle cx="0" cy="-26" r="7" fill="#FFFCF6"/><circle cx="0" cy="-40" r="7" fill="#F2A497"/>
+        </g></g>
+        <!-- 拉麵 -->
+        <g class="fall f4 anim"><g transform="translate(128 236) scale(.5)" stroke-width="4">
+          <path d="M-6 -24 L14 -46 M0 -22 L19 -42" fill="none"/>
+          <path d="M-22 -18 L22 -18 Q20 0 0 0 Q-20 0 -22 -18 Z" fill="#F2A497"/>
+          <ellipse cx="0" cy="-18" rx="22" ry="5" fill="#F6D27A"/>
+          <path d="M-15 -18 Q-12 -21 -9 -18 Q-6 -21 -3 -18" fill="none" stroke-width="3"/>
+          <ellipse cx="10" cy="-19" rx="6" ry="4" fill="#FFFCF6"/><circle cx="10" cy="-19" r="2.2" fill="#F6D27A" stroke-width="0"/>
+        </g></g>
+        <!-- 飯糰 -->
+        <g class="fall f5 anim"><g transform="translate(164 236) scale(.5)" stroke-width="4">
+          <path d="M0 -36 Q6 -36 18 -10 Q22 0 12 0 L-12 0 Q-22 0 -18 -10 Q-6 -36 0 -36 Z" fill="#FFFCF6"/>
+          <rect x="-8" y="-14" width="16" height="14" fill="#3E3A39"/>
+          <circle cx="0" cy="-23" r="3" fill="#F2A497" stroke-width="0"/>
         </g></g>
         <!-- 布丁 -->
-        <g class="fall f2 anim"><g transform="translate(200 236) scale(.5) translate(-200 -236)" stroke-width="4">
-          <ellipse cx="200" cy="235" rx="20" ry="4" fill="#FFFCF6"/>
-          <path d="M188 234 L192 214 L208 214 L212 234 Z" fill="#F6D27A"/>
-          <path d="M192 214 L208 214 L207 219 Q200 222 193 219 Z" fill="#3E3A39"/>
-          <path d="M194 213 Q194 207 200 207 Q206 207 206 213 Z" fill="#FFFCF6"/>
-          <circle cx="200" cy="204" r="3.5" fill="#F2A497"/>
+        <g class="fall f6 anim"><g transform="translate(200 236) scale(.5)" stroke-width="4">
+          <ellipse cx="0" cy="-1" rx="20" ry="4" fill="#FFFCF6"/>
+          <path d="M-12 -2 L-8 -22 L8 -22 L12 -2 Z" fill="#F6D27A"/>
+          <path d="M-8 -22 L8 -22 L7 -17 Q0 -14 -7 -17 Z" fill="#3E3A39"/>
+          <path d="M-6 -23 Q-6 -29 0 -29 Q6 -29 6 -23 Z" fill="#FFFCF6"/>
+          <circle cx="0" cy="-32" r="3.5" fill="#F2A497"/>
+        </g></g>
+        <!-- 鯛魚燒 -->
+        <g class="fall f7 anim"><g transform="translate(236 236) scale(.5)" stroke-width="4">
+          <path d="M15 -12 L26 -22 L24 -12 L26 -2 Z" fill="#F6D27A"/>
+          <path d="M-20 -12 Q-14 -26 4 -24 Q14 -22 16 -12 Q14 -2 4 0 Q-14 2 -20 -12 Z" fill="#F6D27A"/>
+          <circle cx="-12" cy="-14" r="2" fill="#3E3A39" stroke-width="0"/>
+          <path d="M-2 -17 Q2 -12 -2 -7 M5 -17 Q9 -12 5 -7" fill="none" stroke-width="3"/>
         </g></g>
         <!-- 草莓千層 -->
-        <g class="fall f3 anim"><g transform="translate(248 236) scale(.5) translate(-248 -236)" stroke-width="4">
-          <ellipse cx="248" cy="235" rx="24" ry="4" fill="#FFFCF6"/>
-          <rect x="231" y="212" width="34" height="21" fill="#FFFCF6"/>
-          <path d="M231 217 L265 217 M231 222 L265 222 M231 227 L265 227" fill="none" stroke="#F6D27A" stroke-width="2.5"/>
-          <path d="M236 212 Q236 202 242 202 Q248 202 248 212 Z M249 212 Q249 202 255 202 Q261 202 261 212 Z" fill="#F2A497"/>
-          <path d="M240 202 L242 198 L244 202 M253 202 L255 198 L257 202" fill="#B9DAA5" stroke-width="2"/>
+        <g class="fall f8 anim"><g transform="translate(272 236) scale(.5)" stroke-width="4">
+          <ellipse cx="0" cy="-1" rx="24" ry="4" fill="#FFFCF6"/>
+          <rect x="-17" y="-24" width="34" height="21" fill="#FFFCF6"/>
+          <path d="M-17 -19 L17 -19 M-17 -14 L17 -14 M-17 -9 L17 -9" fill="none" stroke="#F6D27A" stroke-width="5"/>
+          <path d="M-12 -24 Q-12 -34 -6 -34 Q0 -34 0 -24 Z M1 -24 Q1 -34 7 -34 Q13 -34 13 -24 Z" fill="#F2A497"/>
+          <path d="M-8 -34 L-6 -38 L-4 -34 M5 -34 L7 -38 L9 -34" fill="#B9DAA5"/>
+        </g></g>
+        <!-- 章魚燒 -->
+        <g class="fall f9 anim"><g transform="translate(308 236) scale(.5)" stroke-width="4">
+          <line x1="10" y1="-18" x2="20" y2="-32"/>
+          <path d="M-22 -10 L22 -10 L18 0 L-18 0 Z" fill="#FFFCF6"/>
+          <circle cx="-12" cy="-13" r="7" fill="#F6D27A"/><circle cx="12" cy="-13" r="7" fill="#F6D27A"/><circle cx="0" cy="-15" r="7" fill="#F6D27A"/>
+          <path d="M-16 -16 Q-12 -19 -8 -16 M-4 -18 Q0 -21 4 -18 M8 -16 Q12 -19 16 -16" fill="none" stroke-width="3"/>
         </g></g>
         <!-- 抹茶霜淇淋 -->
-        <g class="fall f4 anim"><g transform="translate(313 236) scale(.5) translate(-313 -236)" stroke-width="4">
-          <path d="M302 207 L324 207 L313 236 Z" fill="#F6D27A"/>
-          <path d="M306 214 L320 214 M309 222 L317 222" fill="none" stroke-width="2"/>
-          <path d="M299 208 Q299 197 313 197 Q327 197 327 208 Z" fill="#B9DAA5"/>
-          <path d="M303 198 Q303 188 313 188 Q323 188 323 198 Z" fill="#B9DAA5"/>
-          <path d="M307 189 Q310 180 313 177 Q316 180 319 189 Z" fill="#B9DAA5"/>
+        <g class="fall f10 anim"><g transform="translate(340 236) scale(.5)" stroke-width="4">
+          <path d="M-11 -29 L11 -29 L0 0 Z" fill="#F6D27A"/>
+          <path d="M-7 -22 L7 -22 M-4 -14 L4 -14" fill="none"/>
+          <path d="M-14 -28 Q-14 -39 0 -39 Q14 -39 14 -28 Z" fill="#B9DAA5"/>
+          <path d="M-10 -38 Q-10 -48 0 -48 Q10 -48 10 -38 Z" fill="#B9DAA5"/>
+          <path d="M-6 -47 Q-3 -56 0 -59 Q3 -56 6 -47 Z" fill="#B9DAA5"/>
         </g></g>
       </g>
     </svg>
