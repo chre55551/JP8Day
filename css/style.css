@@ -38,6 +38,8 @@
 svg [fill="#FFFCF6"]{fill:var(--paper)}
 svg [fill="#3E3A39"]{fill:var(--ink)}
 svg [stroke="#3E3A39"]{stroke:var(--edge)}
+svg [stroke="#FFFCF6"]{stroke:var(--paper)}
+svg [stroke="#F6D27A"]{stroke:var(--yama)}
 svg [fill="#F2A497"]{fill:var(--coral)}
 svg [fill="#F6D27A"]{fill:var(--yama)}
 svg [fill="#A8D3E6"]{fill:var(--mizu)}
@@ -444,11 +446,10 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;font-size:13px;color:va
 .anim{transform-box:fill-box;transform-origin:center}
 .cloud-a{animation:drift 9s ease-in-out infinite alternate}
 .cloud-b{animation:drift 12s ease-in-out infinite alternate-reverse}
-.plane{animation:bob 3.6s ease-in-out infinite}
 .sun-rays{animation:spin 30s linear infinite}
-.deer-head{transform-origin:20% 90%;animation:nod 4s ease-in-out infinite}
-.train{animation:ride 14s linear infinite}
-.lantern{transform-origin:50% 0;animation:sway 3.2s ease-in-out infinite}
+.coin{animation:bob 2.6s ease-in-out infinite}
+.mush{animation:peek 3.4s ease-in-out infinite}
+.steam{animation:steam 2.4s ease-in-out infinite}
 .brand .anim{animation:bob 3s ease-in-out 3}
 .hero-art.paused *{animation-play-state:paused !important}
 
@@ -458,16 +459,14 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;font-size:13px;color:va
 @keyframes drift{from{transform:translateX(-10px)}to{transform:translateX(14px)}}
 @keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-6px) rotate(2deg)}}
 @keyframes spin{to{transform:rotate(360deg)}}
-@keyframes nod{0%,70%,100%{transform:rotate(0)}80%{transform:rotate(14deg)}90%{transform:rotate(-4deg)}}
-@keyframes ride{from{transform:translateX(-140px)}to{transform:translateX(420px)}}
-@keyframes sway{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+@keyframes peek{0%,100%{transform:translateY(10px)}35%,75%{transform:translateY(0)}}
+@keyframes steam{0%{transform:translateY(4px);opacity:0}40%{opacity:1}100%{transform:translateY(-6px);opacity:0}}
 @keyframes bounceIn{0%{transform:translateY(16px) scale(.97)}55%{transform:translateY(-6px) scale(1.01)}80%{transform:translateY(2px) scale(1)}100%{transform:none}}
 @keyframes tabBounce{0%{transform:scale(1)}35%{transform:scale(1.14,.9)}65%{transform:scale(.95,1.06)}100%{transform:scale(1)}}
 
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none !important;transition:none !important}
-  .train{transform:translateX(150px)}
 }
 
 @media (min-width:640px){
