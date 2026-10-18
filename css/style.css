@@ -448,17 +448,18 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;font-size:13px;color:va
 .cloud-b{animation:drift 12s ease-in-out infinite alternate-reverse}
 .sun-rays{animation:spin 30s linear infinite}
 .steam{animation:steam 2.4s ease-in-out infinite}
+/* 三種飄法（左右搖、反向搖、邊轉邊落）× 不同長度、起點、快慢，讓食物交錯落下 */
 .fall{animation:fall 8s ease-in-out infinite}
-.fall.f1{animation-duration:8.2s;animation-delay:-0.5s}
-.fall.f2{animation-duration:7.4s;animation-delay:-2.6s}
-.fall.f3{animation-duration:9.1s;animation-delay:-5.2s}
-.fall.f4{animation-duration:7.8s;animation-delay:-6.9s}
-.fall.f5{animation-duration:8.6s;animation-delay:-1.7s}
-.fall.f6{animation-duration:7.2s;animation-delay:-4.1s}
-.fall.f7{animation-duration:9.4s;animation-delay:-7.8s}
-.fall.f8{animation-duration:8.0s;animation-delay:-3.3s}
-.fall.f9{animation-duration:7.6s;animation-delay:-6.0s}
-.fall.f10{animation-duration:8.8s;animation-delay:-0.9s}
+.fall.f1{animation:fall 6.0s ease-in-out -0.3s infinite}
+.fall.f2{animation:fall-b 10.5s ease-in -6.1s infinite}
+.fall.f3{animation:fall-c 7.3s ease-out -2.4s infinite}
+.fall.f4{animation:fall 12.0s ease-in-out -9.5s infinite}
+.fall.f5{animation:fall-b 8.4s ease-in-out -4.8s infinite}
+.fall.f6{animation:fall-c 5.6s ease-in -1.2s infinite}
+.fall.f7{animation:fall 9.7s ease-out -7.7s infinite}
+.fall.f8{animation:fall-b 11.2s ease-in-out -3.6s infinite}
+.fall.f9{animation:fall-c 6.8s ease-in-out -5.9s infinite}
+.fall.f10{animation:fall 8.9s ease-in -8.4s infinite}
 .brand .anim{animation:bob 3s ease-in-out 3}
 .hero-art.paused *{animation-play-state:paused !important}
 
@@ -469,6 +470,8 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;font-size:13px;color:va
 @keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-6px) rotate(2deg)}}
 @keyframes spin{to{transform:rotate(360deg)}}
 @keyframes fall{0%{transform:translate(-10px,-210px) rotate(-18deg);opacity:0}8%{opacity:1}30%{transform:translate(12px,-140px) rotate(14deg)}55%{transform:translate(-10px,-70px) rotate(-10deg)}75%{transform:translate(4px,0) rotate(0)}92%{transform:translate(4px,0);opacity:1}100%{transform:translate(4px,0);opacity:0}}
+@keyframes fall-b{0%{transform:translate(12px,-220px) rotate(16deg);opacity:0}10%{opacity:1}25%{transform:translate(-14px,-165px) rotate(-12deg)}45%{transform:translate(10px,-100px) rotate(10deg)}65%{transform:translate(-2px,0) rotate(0)}94%{transform:translate(-2px,0);opacity:1}100%{transform:translate(-2px,0);opacity:0}}
+@keyframes fall-c{0%{transform:translate(0,-215px) rotate(-200deg);opacity:0}8%{opacity:1}82%{transform:translate(0,0) rotate(0)}95%{transform:translate(0,0);opacity:1}100%{transform:translate(0,0);opacity:0}}
 @keyframes steam{0%{transform:translateY(4px);opacity:0}40%{opacity:1}100%{transform:translateY(-6px);opacity:0}}
 @keyframes bounceIn{0%{transform:translateY(16px) scale(.97)}55%{transform:translateY(-6px) scale(1.01)}80%{transform:translateY(2px) scale(1)}100%{transform:none}}
 @keyframes tabBounce{0%{transform:scale(1)}35%{transform:scale(1.14,.9)}65%{transform:scale(.95,1.06)}100%{transform:scale(1)}}
