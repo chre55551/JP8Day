@@ -44,16 +44,18 @@
 <main>
   <!-- 首頁 -->
   <section id="home" class="page hero">
-    <svg class="hero-art day" viewBox="0 0 360 240" role="img" aria-label="繪本插圖：八坂塔、紅色鳥居、冒出蘑菇的綠水管和問號磚、神戶牛排、三色糰子、布丁、草莓千層和抹茶霜淇淋">
+    <svg class="hero-art day" viewBox="0 0 360 240" role="img" aria-label="繪本插圖：八坂塔、紅色鳥居、神戶牛排、三色糰子、布丁、草莓千層和抹茶霜淇淋">
       <g stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
-        <!-- 太陽 -->
-        <g class="sun-rays anim">
-          <line x1="306" y1="14" x2="306" y2="22"/><line x1="306" y1="74" x2="306" y2="82"/>
-          <line x1="272" y1="48" x2="280" y2="48"/><line x1="332" y1="48" x2="340" y2="48"/>
-          <line x1="282" y1="24" x2="288" y2="30"/><line x1="324" y1="66" x2="330" y2="72"/>
-          <line x1="330" y1="24" x2="324" y2="30"/><line x1="288" y1="66" x2="282" y2="72"/>
+        <!-- 太陽（往右上角靠，露出一部分） -->
+        <g transform="translate(34 -26)">
+          <g class="sun-rays anim">
+            <line x1="306" y1="14" x2="306" y2="22"/><line x1="306" y1="74" x2="306" y2="82"/>
+            <line x1="272" y1="48" x2="280" y2="48"/><line x1="332" y1="48" x2="340" y2="48"/>
+            <line x1="282" y1="24" x2="288" y2="30"/><line x1="324" y1="66" x2="330" y2="72"/>
+            <line x1="330" y1="24" x2="324" y2="30"/><line x1="288" y1="66" x2="282" y2="72"/>
+          </g>
+          <circle cx="306" cy="48" r="18" fill="#F6D27A"/>
         </g>
-        <circle cx="306" cy="48" r="18" fill="#F6D27A"/>
         <!-- 雲 -->
         <path class="cloud-a anim" d="M120 46 Q120 32 134 32 Q138 22 152 22 Q166 22 170 32 Q184 32 184 46 Z" fill="#FFFCF6"/>
         <path class="cloud-b anim" d="M214 84 Q214 74 224 74 Q227 66 238 66 Q249 66 252 74 Q262 74 262 84 Z" fill="#FFFCF6"/>
@@ -77,27 +79,6 @@
         <path d="M206 126 Q249 116 292 126 L290 136 L208 136 Z" fill="#F2A497"/>
         <rect x="214" y="144" width="70" height="8" fill="#F2A497"/>
         <rect x="245" y="136" width="8" height="8" fill="#F2A497"/>
-        <!-- 問號磚和金幣 -->
-        <g class="coin anim">
-          <ellipse cx="158" cy="84" rx="6" ry="8" fill="#F6D27A"/>
-          <line x1="158" y1="80" x2="158" y2="88"/>
-        </g>
-        <rect x="147" y="98" width="22" height="22" rx="3" fill="#F6D27A"/>
-        <path d="M153 106 Q153 102 158 102 Q163 102 163 106 Q163 109 158 110 L158 113" fill="none" stroke-width="2.5"/>
-        <circle cx="158" cy="116.5" r="1.4" fill="#3E3A39" stroke-width="0"/>
-        <circle cx="150.5" cy="101.5" r="1" fill="#3E3A39" stroke-width="0"/><circle cx="165.5" cy="101.5" r="1" fill="#3E3A39" stroke-width="0"/>
-        <circle cx="150.5" cy="116.5" r="1" fill="#3E3A39" stroke-width="0"/><circle cx="165.5" cy="116.5" r="1" fill="#3E3A39" stroke-width="0"/>
-        <!-- 綠水管冒出蘑菇 -->
-        <g class="mush anim">
-          <path d="M146 152 Q146 134 158 134 Q170 134 170 152 Z" fill="#F2A497"/>
-          <circle cx="158" cy="142" r="4" fill="#FFFCF6" stroke-width="0"/>
-          <circle cx="150.5" cy="147" r="2.5" fill="#FFFCF6" stroke-width="0"/><circle cx="165.5" cy="147" r="2.5" fill="#FFFCF6" stroke-width="0"/>
-          <rect x="151" y="152" width="14" height="10" rx="3" fill="#FFFCF6"/>
-          <circle cx="155.5" cy="156" r="1.2" fill="#3E3A39" stroke-width="0"/><circle cx="160.5" cy="156" r="1.2" fill="#3E3A39" stroke-width="0"/>
-        </g>
-        <rect x="143" y="166" width="30" height="32" fill="#B9DAA5"/>
-        <rect x="139" y="156" width="38" height="12" rx="2" fill="#B9DAA5"/>
-        <line x1="148" y1="171" x2="148" y2="192" stroke-width="2.5"/>
         <!-- 神戶牛排 -->
         <ellipse cx="52" cy="229" rx="38" ry="7" fill="#FFFCF6"/>
         <path d="M28 222 Q25 211 42 210 Q60 205 73 211 Q82 217 75 225 Q54 232 35 228 Z" fill="#F2A497"/>
