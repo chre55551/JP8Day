@@ -191,7 +191,10 @@
     TODOS.forEach(function(td,i){
       var li=document.createElement("li");
       li.innerHTML='<label class="'+(td.u?"urgent":"")+'" for="todo-'+i+'"><input type="checkbox" id="todo-'+i+'"'+(done[td.id]?" checked":"")+'><span>'+esc(td.t)+(td.when?'<span class="when">'+esc(td.when)+'</span>':'')+'</span></label>';
-      if(td.href){li.innerHTML+='<a class="todo-link" href="'+esc(td.href)+'" target="_blank" rel="noopener">'+esc(td.hl||"連結")+'</a>';}
+      function link(l){return '<a class="todo-link" href="'+esc(l.href)+'" target="_blank" rel="noopener">'+esc(l.hl||"連結")+'</a>';}
+      /* 一個連結用 href/hl，放在右邊；多個連結用 links:[{href,hl}]，排在下一行 */
+      if(td.links){li.innerHTML+='<div class="todo-links">'+td.links.map(link).join("")+'</div>';}
+      else if(td.href){li.innerHTML+=link(td);}
       list.appendChild(li);
     });
     function prog(){
