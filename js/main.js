@@ -62,6 +62,50 @@
     });
   }
 
+  /* ---------- 附近可換：行程卡片可以換成距離近的備選 ---------- */
+  var SWAP_KEY="kansai8-swaps";
+  var RADIUS=1.5; /* 直線 1.5 公里內（走路約 25 分）才列出來 */
+  var swaps=store(SWAP_KEY)||{};
+  /* 備選的代號：清單＋名稱，資料順序改了也不會跑掉 */
+  var PICKS=[];
+  if(typeof FOODS!=="undefined"){
+    FOODS.forEach(function(p){PICKS.push({id:"F:"+p.n,food:true,p:p});});
+    SPOTS.concat(SHOPS).forEach(function(p){PICKS.push({id:"S:"+p.n,food:false,p:p});});
+  }
+  function pickById(id){for(var i=0;i<PICKS.length;i++)if(PICKS[i].id===id)return PICKS[i];return null;}
+  function ll(q){return q&&typeof LL!=="undefined"?LL[q]:null;}
+  function km(a,b){
+    var r=Math.PI/180,dl=(b[0]-a[0])*r,dg=(b[1]-a[1])*r;
+    var h=Math.sin(dl/2)*Math.sin(dl/2)+Math.cos(a[0]*r)*Math.cos(b[0]*r)*Math.sin(dg/2)*Math.sin(dg/2);
+    return 6371*2*Math.asin(Math.sqrt(h));
+  }
+  /* 直線距離 × 1.3 估實際路程，走路每分鐘 80 公尺 */
+  function walkMin(d){return Math.max(1,Math.round(d*1.3*1000/80));}
+  function swapKey(day,it){return day.d+"|"+it.n;}
+  /* 這一站的位置；待安排、沒填地點的，用前面最近一站的位置 */
+  function anchor(day,j){
+    for(var k=j;k>=0;k--){var p=ll(day.items[k].q);if(p)return {ll:p,q:day.items[k].q};if(k===j&&!day.items[j].x)return null;}
+    return null;
+  }
+  function alternatives(day,j){
+    var it=day.items[j];
+    /* 必去不能換；最後一站固定是便利商店＋超市，也不換 */
+    if(it.m||/^最後一站/.test(it.n)||(it.k!=="food"&&it.k!=="shop"&&it.k!=="sight"))return null;
+    var a=anchor(day,j);if(!a)return null;
+    var today={};day.items.forEach(function(x){if(x.q)today[x.q]=1;});
+    var out=[];
+    PICKS.forEach(function(pk){
+      if(pk.food!==(it.k==="food")||today[pk.p.q]||/官方/.test(pk.p.n))return;
+      var p=ll(pk.p.q);if(!p)return;
+      var d=km(a.ll,p);if(d<=RADIUS)out.push({pk:pk,d:d});
+    });
+    out.sort(function(x,y){return x.d-y.d;});
+    return {from:a,list:out.slice(0,8)};
+  }
+  function dirUrl(from,to){
+    return "https://www.google.com/maps/dir/?api=1&amp;travelmode=walking&amp;origin="+encodeURIComponent(from)+"&amp;destination="+encodeURIComponent(to);
+  }
+
   /* ---------- 每日行程 ---------- */
   function initDays(){
     var tabsEl=document.getElementById("tabs"), dayEl=document.getElementById("day");
@@ -94,11 +138,18 @@
       day.items.forEach(function(it,j){
         /* 怎麼到這一站：放在兩張卡片中間 */
         if(it.tr)h+='<li class="leg" aria-label="交通"><span></span><div class="leg-in">↓ '+it.tr.map(ttag).join("")+'</div></li>';
-        var cls="ev k-"+it.k+(it.m?" must":"")+(it.x?" tbd":"");
+        var alt=alternatives(day,j), sw=alt&&swaps[swapKey(day,it)]?pickById(swaps[swapKey(day,it)]):null;
+        var cls="ev k-"+it.k+(it.m?" must":"")+(it.x&&!sw?" tbd":"")+(sw?" swapped":"");
+        var show=sw?{n:sw.p.n,o:sw.p.d,q:sw.p.q,h:sw.p.h}:it;
+        var go=show.q?'<a class="go-btn" href="https://www.google.com/maps/dir/?api=1&amp;travelmode=transit&amp;destination='+encodeURIComponent(show.q)+'" target="_blank" rel="noopener">導航</a>':'';
+        var altBtn=alt&&(alt.list.length||sw)?'<button type="button" class="alt-btn" aria-expanded="false" data-j="'+j+'">附近可換（'+alt.list.length+'）</button>':'';
         h+='<li class="'+cls+'" style="--i:'+j+'"><span class="tpill'+(it.t?'':' empty')+'">'+esc(it.t)+'</span><div class="card">'+
-          '<div class="row1">'+(it.m?'<span class="must-badge">'+STAR+'必去</span>':'')+'<span class="kind">'+(it.x?"待安排":KIND[it.k])+'</span>'+(it.w?'<span class="warn">需確認</span>':'')+'</div>'+
-          '<div class="ttl">'+esc(it.n)+'</div>'+(it.o?'<p class="note clamp">'+esc(it.o)+'</p>':'')+
-          (it.q?'<div class="tags"><a class="go-btn" href="https://www.google.com/maps/dir/?api=1&amp;travelmode=transit&amp;destination='+encodeURIComponent(it.q)+'" target="_blank" rel="noopener">導航</a></div>':'')+'</div></li>';
+          '<div class="row1">'+(it.m?'<span class="must-badge">'+STAR+'必去</span>':'')+'<span class="kind">'+(it.x&&!sw?"待安排":KIND[it.k])+'</span>'+(sw?'<span class="swap-badge">已替換</span>':'')+(it.w&&!sw?'<span class="warn">需確認</span>':'')+'</div>'+
+          '<div class="ttl">'+esc(show.n)+'</div>'+(show.o?'<p class="note clamp">'+esc(show.o)+'</p>':'')+
+          (show.h?'<p class="hours">營業：'+esc(show.h)+'</p>':'')+
+          (sw?'<p class="orig">原本：'+esc(it.n)+'<button type="button" class="alt-undo" data-j="'+j+'">換回</button></p>':'')+
+          (go||altBtn?'<div class="tags">'+altBtn+go+'</div>':'')+
+          (altBtn?'<div class="alts" id="alts-'+j+'" hidden></div>':'')+'</div></li>';
       });
       h+='</ol>';
       return h;
@@ -134,7 +185,40 @@
         }
       });
     }
+    /* 附近可換的清單：按下去才產生 */
+    function renderAlts(day,j){
+      var it=day.items[j],alt=alternatives(day,j),cur=swaps[swapKey(day,it)];
+      var rows=alt.list.map(function(x){
+        var p=x.pk.p,on=cur===x.pk.id;
+        return '<li class="alt'+(on?' on':'')+'"><div class="alt-top"><span class="alt-n">'+esc(p.n)+'</span>'+
+          '<span class="alt-dist">走路約 '+walkMin(x.d)+' 分</span>'+(p.p?'<span class="pick-p">¥'+esc(p.p)+'</span>':'')+
+          (p.s?'<span class="pick-s">已排 '+esc(p.s)+'</span>':'')+'</div>'+
+          '<p class="alt-d">'+esc(p.d)+'</p>'+
+          '<p class="hours">營業：'+(p.h?esc(p.h):'還沒查，出發前看 Google Maps')+'</p>'+
+          '<div class="alt-btns">'+(on?'<span class="alt-cur">目前選這間</span>':'<button type="button" class="alt-use" data-j="'+j+'" data-id="'+esc(x.pk.id)+'">換成這間</button>')+
+          '<a class="lk" href="'+dirUrl(alt.from.q,p.q)+'" target="_blank" rel="noopener">路線</a></div></li>';
+      }).join("");
+      return (rows?'<ul class="alt-list">'+rows+'</ul>':'<p class="alt-d">附近沒有其他備選。</p>')+
+        '<p class="alt-foot">距離是從「'+esc(alt.from.q)+'」算的直線估計，實際走法按「路線」看 Google Maps。換過的只記在這支手機。</p>';
+    }
+    function curDay(){return DAYS[Number(store("kansai8-day"))||0];}
+    function setSwap(j,id){
+      var day=curDay(),k=swapKey(day,day.items[j]);
+      if(id)swaps[k]=id;else delete swaps[k];
+      store(SWAP_KEY,swaps);
+      var y=window.scrollY;dayEl.innerHTML=renderDay(Number(store("kansai8-day"))||0);markNow();addMore();window.scrollTo(0,y);
+    }
     dayEl.addEventListener("click",function(e){
+      var t=e.target.closest(".alt-btn,.alt-use,.alt-undo");
+      if(t){
+        var j=Number(t.dataset.j);
+        if(t.classList.contains("alt-btn")){
+          var box=document.getElementById("alts-"+j),open=box.hidden;
+          if(open)box.innerHTML=renderAlts(curDay(),j);
+          box.hidden=!open;t.setAttribute("aria-expanded",open?"true":"false");
+        }else setSwap(j,t.classList.contains("alt-use")?t.dataset.id:null);
+        return;
+      }
       var b=e.target.closest(".more");if(!b)return;
       var n=b.previousElementSibling,open=n.classList.toggle("clamp")===false;
       b.textContent=open?"收起":"展開全文";b.setAttribute("aria-expanded",open?"true":"false");
@@ -230,7 +314,7 @@
       return '<li class="pick'+(it.s?" on":"")+'"><div class="pick-top"><span class="pick-n">'+esc(it.n)+'</span>'+
         (it.s?'<span class="pick-s">已排 '+esc(it.s)+'</span>':'')+
         (food&&it.p?'<span class="pick-p">¥'+esc(it.p)+'</span>':'')+'</div>'+
-        '<p class="pick-d">'+esc(it.d)+'</p><div class="idea-links">'+links.join("")+'</div></li>';
+        '<p class="pick-d">'+esc(it.d)+'</p>'+(it.h?'<p class="pick-h">營業：'+esc(it.h)+'</p>':'')+'<div class="idea-links">'+links.join("")+'</div></li>';
     }
     var AREAS=["大阪","京都","宇治","奈良","神戶"];
     var areaTabs=document.getElementById("area-tabs"), picksEl=document.getElementById("picks");

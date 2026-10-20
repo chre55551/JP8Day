@@ -14,7 +14,7 @@ function links(x) {
   return l.join("・");
 }
 function item(x, price) {
-  return "- **" + x.n + "**" + (x.s ? "（已排 " + x.s + "）" : "") + (price && x.p ? "｜¥" + x.p : "") + "：" + x.d + "　" + links(x) + "\n";
+  return "- **" + x.n + "**" + (x.s ? "（已排 " + x.s + "）" : "") + (price && x.p ? "｜¥" + x.p : "") + "：" + x.d + (x.h ? "（營業：" + x.h + "）" : "") + "　" + links(x) + "\n";
 }
 var out = "## 景點・美食・購物備選（依地區）\n\n> 「已排」是已經在行程裡的；美食的預算是每人大約金額（日圓）。網站「建議備選」區塊是同一份資料。\n\n";
 ["大阪", "京都", "宇治", "奈良", "神戶"].forEach(function (a) {
