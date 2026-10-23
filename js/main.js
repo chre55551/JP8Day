@@ -102,6 +102,23 @@
     out.sort(function(x,y){return x.d-y.d;});
     return {from:a,list:out.slice(0,8)};
   }
+  /* 這個備選已經排在哪幾站：每日行程（搜尋字相同或名稱有包含）＋別站換成它的；skip 是正在換的這一站，不算 */
+  function scheduledAt(pk,skip){
+    var core=pk.p.n.replace(/（[^）]*）/g,"").trim(),out=[];
+    DAYS.forEach(function(day){
+      day.items.forEach(function(it){
+        var k=swapKey(day,it);if(k===skip)return;
+        var when=day.d+(/^\d/.test(it.t)?" "+it.t:"");
+        var sw=swaps[k];
+        if(sw){if(sw===pk.id)out.push(when+"（你換的）");return;}
+        if((it.q&&it.q===pk.p.q)||it.n.indexOf(core)>=0)out.push(when);
+      });
+    });
+    /* 名稱、搜尋字都對不上的，用 data.js 手填的 s */
+    if(!out.length&&pk.p.s)out.push(pk.p.s);
+    return out;
+  }
+  function pickByObj(p){for(var i=0;i<PICKS.length;i++)if(PICKS[i].p===p)return PICKS[i];return null;}
   function dirUrl(from,to){
     return "https://www.google.com/maps/dir/?api=1&amp;travelmode=walking&amp;origin="+encodeURIComponent(from)+"&amp;destination="+encodeURIComponent(to);
   }
@@ -187,12 +204,16 @@
     }
     /* 附近可換的清單：按下去才產生 */
     function renderAlts(day,j){
-      var it=day.items[j],alt=alternatives(day,j),cur=swaps[swapKey(day,it)];
-      var rows=alt.list.map(function(x){
-        var p=x.pk.p,on=cur===x.pk.id;
-        return '<li class="alt'+(on?' on':'')+'"><div class="alt-top"><span class="alt-n">'+esc(p.n)+'</span>'+
+      var it=day.items[j],alt=alternatives(day,j),key=swapKey(day,it),cur=swaps[key];
+      /* 已經排在別站的放到最後 */
+      var list=alt.list.map(function(x){return {pk:x.pk,d:x.d,at:scheduledAt(x.pk,key)};});
+      list.sort(function(x,y){return (x.at.length?1:0)-(y.at.length?1:0)||x.d-y.d;});
+      var rows=list.map(function(x){
+        var p=x.pk.p,on=cur===x.pk.id,at=x.at;
+        return '<li class="alt'+(on?' on':'')+(at.length&&!on?' taken':'')+'"><div class="alt-top"><span class="alt-n">'+esc(p.n)+'</span>'+
           '<span class="alt-dist">走路約 '+walkMin(x.d)+' 分</span>'+(p.p?'<span class="pick-p">¥'+esc(p.p)+'</span>':'')+
-          (p.s?'<span class="pick-s">已排 '+esc(p.s)+'</span>':'')+'</div>'+
+          (at.length?'<span class="pick-s">已排 '+esc(at.join("、"))+'</span>':'')+'</div>'+
+          (at.length&&!on?'<p class="alt-taken">'+NOTE_ICON+'<span>行程裡 '+esc(at.join("、"))+' 已經有這站，換了會重複</span></p>':'')+
           '<p class="alt-d">'+esc(p.d)+'</p>'+
           '<p class="hours">營業：'+(p.h?esc(p.h):'還沒查，出發前看 Google Maps')+'</p>'+
           '<div class="alt-btns">'+(on?'<span class="alt-cur">目前選這間</span>':'<button type="button" class="alt-use" data-j="'+j+'" data-id="'+esc(x.pk.id)+'">換成這間</button>')+
@@ -311,8 +332,9 @@
       if(it.u2)links.push(a(it.u2,"介紹 2","lk"));
       if(it.tb)links.push(a(tbUrl(it.q),"食べログ","lk"));
       links.push(a(mapUrl(it.q),"地圖","lk lk-map"));
-      return '<li class="pick'+(it.s?" on":"")+'"><div class="pick-top"><span class="pick-n">'+esc(it.n)+'</span>'+
-        (it.s?'<span class="pick-s">已排 '+esc(it.s)+'</span>':'')+
+      var pk=pickByObj(it),at=pk?scheduledAt(pk,null):(it.s?[it.s]:[]);
+      return '<li class="pick'+(at.length?" on":"")+'"><div class="pick-top"><span class="pick-n">'+esc(it.n)+'</span>'+
+        (at.length?'<span class="pick-s">已排 '+esc(at.join("、"))+'</span>':'')+
         (food&&it.p?'<span class="pick-p">¥'+esc(it.p)+'</span>':'')+'</div>'+
         '<p class="pick-d">'+esc(it.d)+'</p>'+(it.h?'<p class="pick-h">營業：'+esc(it.h)+'</p>':'')+'<div class="idea-links">'+links.join("")+'</div></li>';
     }
