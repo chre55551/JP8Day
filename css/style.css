@@ -176,7 +176,12 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .port.to{text-align:right}
 .port .code{font-size:32px;line-height:1;letter-spacing:.04em}
 .port .city{font-size:14px;color:var(--ink-soft)}
-.port .term{font-size:13px;color:var(--ink-soft);margin-top:2px}
+.port .term{font-size:12px;color:var(--ink-soft);margin-top:4px;display:flex;align-items:center;gap:5px}
+.port.to .term{justify-content:flex-end}
+.port .term b{font-weight:400;font-size:15px;color:var(--ink);border:2px solid var(--edge);border-radius:8px;padding:0 6px;background:var(--yama);line-height:1.3}
+.bag{display:inline-flex;align-items:center;gap:4px;font-size:13px;color:var(--ink)}
+.bag svg{width:20px;height:20px}
+.bag b{font-weight:400;font-size:16px}
 .port .time{font-size:22px;font-variant-numeric:tabular-nums;margin-top:6px}
 .path{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:12px;color:var(--ink-soft)}
 .path svg{width:74px;height:28px}
@@ -217,7 +222,15 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .day-icon svg{width:34px;height:34px}
 .day-head .num{font-size:12.5px;color:var(--ink-soft)}
 .day-head h3{font-size:17px}
-.day-head .where{font-size:13px;margin-top:2px;color:var(--ink-soft)}
+/* 今天的路線條：站名用點和線串起來 */
+.where-strip{grid-column:1 / -1;list-style:none;margin:2px 0 0;padding:0;display:flex;flex-wrap:wrap;align-items:center;row-gap:6px}
+.where-strip li{display:flex;align-items:center;font-size:13px;white-space:nowrap}
+.where-strip li::before{content:"";width:10px;height:10px;border-radius:50%;border:2px solid var(--edge);background:var(--yama);margin-right:5px;flex:none}
+.where-strip li:not(:last-child)::after{content:"";width:16px;height:0;border-top:2px dashed var(--ink-soft);margin:0 6px}
+.where-strip li:first-child::before,.where-strip li:last-child::before{background:var(--coral)}
+.wx{grid-column:1 / -1;display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
+.wx-tip{font-size:12.5px;color:var(--ink-soft)}
+.chip-wx{background:var(--paper)}
 .route{grid-column:1 / -1;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
 .route .arrow{font-size:13px;color:var(--ink-soft)}
 
@@ -375,6 +388,11 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .todo input:checked::after{opacity:1}
 .todo input:checked + span{text-decoration:line-through;text-decoration-thickness:2px;color:var(--ink-soft)}
 .todo .when{display:block;font-size:12.5px;color:var(--ink-soft)}
+.todo-meta{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:3px}
+.todo-cat{display:inline-flex;align-items:center;gap:3px;font-size:12px;line-height:1;padding:3px 8px 3px 4px;border:2px solid var(--edge);border-radius:var(--r-sm);background:var(--paper)}
+.todo-cat svg{width:15px;height:15px}
+.due{display:inline-flex;align-items:center;font-size:12px;line-height:1;padding:3px 8px;border:2px solid var(--edge);border-radius:var(--r-sm);background:var(--paper-2)}
+.due.soon,.due.over{background:var(--coral)}
 .gtag{display:inline-block;font-size:12px;line-height:1.5;border:2px solid var(--edge);border-radius:var(--r-sm);padding:0 8px;margin-right:6px;background:var(--paper);vertical-align:1px}
 .gtag.gift{background:var(--coral)}
 /* 購物清單：整張卡片包住照片、勾選和商品頁按鈕 */

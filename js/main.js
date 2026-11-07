@@ -21,6 +21,18 @@
     book:'<rect x="4" y="5" width="16" height="15" rx="2" fill="#F2A497" stroke="#3E3A39" stroke-width="2"/><path d="M4 10h16M8 3v4M16 3v4M9 15l2 2 4-4" fill="none" stroke="#3E3A39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
     info:'<circle cx="12" cy="12" r="9" fill="#FFFCF6" stroke="#3E3A39" stroke-width="2"/><path d="M12 11v6" stroke="#3E3A39" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="7.5" r="1.2" fill="#3E3A39"/>'
   };
+  var THERMO='<path d="M10 4a2 2 0 0 1 4 0v9.5a4 4 0 1 1-4 0Z" fill="#FFFCF6" stroke="#3E3A39" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="17" r="2" fill="#F2A497" stroke="#3E3A39" stroke-width="1.5"/><path d="M12 15V8" stroke="#3E3A39" stroke-width="2" stroke-linecap="round"/>';
+  /* 待辦類別圖示 */
+  var TODO_CAT={ticket:["票券",'<rect x="3" y="7" width="18" height="10" rx="2" fill="#F6D27A" stroke="#3E3A39" stroke-width="2"/><path d="M15 7v10" stroke="#3E3A39" stroke-width="2" stroke-dasharray="2 2"/>'],
+    book:["訂位",'<rect x="4" y="5" width="16" height="15" rx="2" fill="#F2A497" stroke="#3E3A39" stroke-width="2"/><path d="M4 10h16M8 3v4M16 3v4" fill="none" stroke="#3E3A39" stroke-width="2" stroke-linecap="round"/>'],
+    check:["查資料",'<circle cx="10.5" cy="10.5" r="6" fill="#A8D3E6" stroke="#3E3A39" stroke-width="2"/><path d="M15 15l5 5" stroke="#3E3A39" stroke-width="2.5" stroke-linecap="round"/>'],
+    prep:["準備",'<rect x="5" y="4" width="14" height="17" rx="2" fill="#B9DAA5" stroke="#3E3A39" stroke-width="2"/><path d="M9 4h6v3H9zM9 12l2 2 4-4" fill="none" stroke="#3E3A39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>']};
+  /* 截止日標籤：過期、7 天內標紅，其他顯示日期 */
+  function dueTag(due){
+    var d=new Date(due+"T23:59:59+09:00"),days=Math.ceil((d-Date.now())/86400000),md=Number(due.slice(5,7))+"/"+Number(due.slice(8,10));
+    var cls=days<0?"due over":days<=7?"due soon":"due";
+    return '<span class="'+cls+'">'+(days<0?md+" 已過":days===0?"今天截止":days<=7?"剩 "+days+" 天（"+md+"）":md+" 前")+'</span>';
+  }
   function chips(c){
     return '<div class="chips">'+c.map(function(x){return '<span class="chip chip-'+x[0]+'"><svg viewBox="0 0 24 24" aria-hidden="true">'+(CHIP[x[0]]||CHIP.info)+'</svg>'+esc(x[1])+'</span>';}).join("")+'</div>';
   }
@@ -158,7 +170,11 @@
     function renderDay(i){
       var day=DAYS[i];
       var h='<div class="day-head"><div class="day-icon">'+ICONS[day.icon]+'</div><div>'+
-        '<div class="num">Day '+(i+1)+'・'+day.d+'（'+day.w+'）</div><h3>'+esc(day.title)+'</h3><div class="where">'+esc(day.where)+'</div></div>'+
+        '<div class="num">Day '+(i+1)+'・'+day.d+'（'+day.w+'）</div><h3>'+esc(day.title)+'</h3></div>'+
+        /* 今天會去的地區：一站一站排成路線條 */
+        '<ol class="where-strip" aria-label="今天的路線">'+day.where.split(/\s*→\s*/).map(function(w){return '<li>'+esc(w)+'</li>';}).join("")+'</ol>'+
+        /* 往年氣溫和穿著提示 */
+        (day.wx?'<div class="wx"><span class="chip chip-wx"><svg viewBox="0 0 24 24" aria-hidden="true">'+THERMO+'</svg>往年 '+day.wx[0]+'–'+day.wx[1]+'°C</span><span class="wx-tip">'+esc(day.wx[2])+'</span></div>':'')+
         '<div class="route">'+day.route.map(ttag).join('<span class="arrow">→</span>')+'</div></div>';
       if(day.notes){
         /* 注意事項預設收起來，第一站不會被擠到螢幕外 */
@@ -314,7 +330,9 @@
     }
     TODOS.forEach(function(td,i){
       var li=document.createElement("li");
-      li.innerHTML='<label class="'+(td.u?"urgent":"")+'" for="todo-'+i+'"><input type="checkbox" id="todo-'+i+'"'+(done[td.id]?" checked":"")+'><span>'+esc(td.t)+(td.when?'<span class="when">'+esc(td.when)+'</span>':'')+'</span></label>';
+      var cat=TODO_CAT[td.cat];
+      li.innerHTML='<label class="'+(td.u?"urgent":"")+'" for="todo-'+i+'"><input type="checkbox" id="todo-'+i+'"'+(done[td.id]?" checked":"")+'><span>'+
+        (cat||td.due?'<span class="todo-meta">'+(cat?'<span class="todo-cat"><svg viewBox="0 0 24 24" aria-hidden="true">'+cat[1]+'</svg>'+cat[0]+'</span>':'')+(td.due&&!done[td.id]?dueTag(td.due):'')+'</span>':'')+esc(td.t)+(td.when?'<span class="when">'+esc(td.when)+'</span>':'')+'</span></label>';
       function link(l){return '<a class="todo-link" href="'+esc(l.href)+'" target="_blank" rel="noopener">'+esc(l.hl||"連結")+'</a>';}
       /* 一個連結用 href/hl，放在右邊；多個連結用 links:[{href,hl}]，排在下一行 */
       if(td.links){li.innerHTML+='<div class="todo-links">'+td.links.map(link).join("")+'</div>';}
