@@ -144,7 +144,7 @@
       var b=document.createElement("button");
       b.type="button";b.className="tab";b.id="tab-"+i;b.setAttribute("role","tab");
       b.setAttribute("aria-controls","day");
-      b.innerHTML='<span class="d">'+day.d+'</span><span class="w">Day '+(i+1)+'・'+day.w+'</span>';
+      b.innerHTML='<span class="d">'+esc(day.d)+'</span><span class="w">Day '+(i+1)+'・'+esc(day.w)+'</span>';
       b.addEventListener("click",function(){select(i,true);});
       tabsEl.appendChild(b);
     });

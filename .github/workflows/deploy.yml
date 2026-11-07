@@ -26,8 +26,13 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - uses: actions/configure-pages@v6
+      # 只公開網站本身的檔案；CLAUDE.md、docs/ 這些開發用的檔案不放上網站
+      - name: 整理要公開的檔案
+        run: |
+          mkdir _site
+          cp -r index.html prep.html sw.js manifest.webmanifest css js fonts icons images _site/
       - uses: actions/upload-pages-artifact@v5
         with:
-          path: .
+          path: _site
       - id: deployment
         uses: actions/deploy-pages@v5
