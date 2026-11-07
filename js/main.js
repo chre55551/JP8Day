@@ -352,10 +352,16 @@
       if(it.tb)links.push(a(tbUrl(it.q),"食べログ","lk"));
       links.push(a(mapUrl(it.q),"地圖","lk lk-map"));
       var pk=pickByObj(it),at=pk?scheduledAt(pk,null):(it.s?[it.s]:[]);
+      /* 一行說明＋小標籤（營業時間一定排第一個），完整說明收進「細節」 */
+      var brief=it.b||it.d, more=it.b&&it.d&&it.d!==it.b;
+      var c=it.h==="—"?[]:[["time",it.h||"營業時間待查"]];  /* h 填 "—" 表示不是店家（例如官方網站），不顯示營業時間 */
+      if(it.p)c.push(["yen",it.p]);
+      if(it.c)c=c.concat(it.c);
+      if(more)links.unshift('<button type="button" class="det-btn pick-det" aria-expanded="false">細節</button>');
       return '<li class="pick'+(at.length?" on":"")+'"><div class="pick-top"><span class="pick-n">'+esc(it.n)+'</span>'+
-        (at.length?'<span class="pick-s">已排 '+esc(at.join("、"))+'</span>':'')+
-        (food&&it.p?'<span class="pick-p">¥'+esc(it.p)+'</span>':'')+'</div>'+
-        '<p class="pick-d">'+esc(it.d)+'</p>'+(it.h?'<p class="pick-h">營業：'+esc(it.h)+'</p>':'')+'<div class="idea-links">'+links.join("")+'</div></li>';
+        (at.length?'<span class="pick-s">已排 '+esc(at.join("、"))+'</span>':'')+'</div>'+
+        '<p class="pick-d">'+esc(brief)+'</p>'+(c.length?chips(c):'')+
+        '<div class="idea-links">'+links.join("")+'</div>'+(more?'<p class="pick-full" hidden>'+esc(it.d)+'</p>':'')+'</li>';
     }
     var AREAS=["大阪","京都","宇治","奈良","神戶"];
     var areaTabs=document.getElementById("area-tabs"), picksEl=document.getElementById("picks");
@@ -371,6 +377,11 @@
     AREAS.forEach(function(ar){
       var b=document.createElement("button");b.type="button";b.className="area-tab";b.dataset.a=ar;b.setAttribute("role","tab");
       b.textContent=ar;b.addEventListener("click",function(){showArea(ar);});areaTabs.appendChild(b);
+    });
+    picksEl.addEventListener("click",function(e){
+      var d=e.target.closest(".pick-det");if(!d)return;
+      var f=d.closest(".pick").querySelector(".pick-full"),open=f.hidden;f.hidden=!open;
+      d.textContent=open?"收起":"細節";d.setAttribute("aria-expanded",open?"true":"false");
     });
     var savedArea=store("kansai8-area");showArea(AREAS.indexOf(savedArea)>=0?savedArea:"大阪");
   }

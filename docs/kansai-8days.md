@@ -341,27 +341,27 @@
 
 **景點**
 
-- **梅田藍天大廈空中庭園**（已排 12/31）：360 度露天展望台，夕陽轉夜景（營業：9:30–22:30（除夕延長））　[介紹](https://www.skybldg.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%A2%85%E7%94%B0%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%93%E3%83%AB%20%E7%A9%BA%E4%B8%AD%E5%BA%AD%E5%9C%92)
-- **LUCUA／LUCUA 1100**（已排 12/31）：大阪站直結的百貨，兩棟都很好逛　[介紹](https://www.lucua.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%AB%E3%82%AF%E3%82%A2%E5%A4%A7%E9%98%AA)
+- **梅田藍天大廈空中庭園**（已排 12/31）：360 度露天展望台，夕陽轉夜景（營業：9:30–22:30（最後入場 22:00））　[介紹](https://www.skybldg.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%A2%85%E7%94%B0%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%93%E3%83%AB%20%E7%A9%BA%E4%B8%AD%E5%BA%AD%E5%9C%92)
+- **LUCUA／LUCUA 1100**（已排 12/31）：大阪站直結的百貨，兩棟都很好逛（營業：10:30–20:30）　[介紹](https://www.lucua.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%AB%E3%82%AF%E3%82%A2%E5%A4%A7%E9%98%AA)
 - **環球影城**（已排 12/30）：任天堂世界、哈利波特、好萊塢、芙莉蓮、小小兵　[介紹](https://www.usj.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%A6%E3%83%8B%E3%83%90%E3%83%BC%E3%82%B5%E3%83%AB%E3%83%BB%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%AA%E3%83%BB%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3)
-- **新世界・通天閣**（已排 1/1）：懷舊下町、串炸一條街　[介紹](https://www.tsutenkaku.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%80%9A%E5%A4%A9%E9%96%A3)
-- **心齋橋筋商店街**（已排 1/3）：有屋頂的購物街，藥妝、服飾一路逛到道頓堀　[介紹](https://www.shinsaibashi.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%BF%83%E6%96%8E%E6%A9%8B%E7%AD%8B%E5%95%86%E5%BA%97%E8%A1%97)
-- **阪急梅田本店**（已排 12/31）：B1 Grand Calbee 現炸洋芋片、伴手禮　[介紹](https://www.hankyu-dept.co.jp/honten/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%98%AA%E6%80%A5%E3%81%86%E3%82%81%E3%81%A0%E6%9C%AC%E5%BA%97)
+- **新世界・通天閣**（已排 1/1）：懷舊下町、串炸一條街（營業：通天閣 9:00–22:00）　[介紹](https://www.tsutenkaku.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%80%9A%E5%A4%A9%E9%96%A3)
+- **心齋橋筋商店街**（已排 1/3）：有屋頂的購物街，藥妝、服飾一路逛到道頓堀（營業：店家各異）　[介紹](https://www.shinsaibashi.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%BF%83%E6%96%8E%E6%A9%8B%E7%AD%8B%E5%95%86%E5%BA%97%E8%A1%97)
+- **阪急梅田本店**（已排 12/31）：B1 Grand Calbee 現炸洋芋片、伴手禮（營業：10:00–20:00）　[介紹](https://www.hankyu-dept.co.jp/honten/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%98%AA%E6%80%A5%E3%81%86%E3%82%81%E3%81%A0%E6%9C%AC%E5%BA%97)
 - **大阪城公園・天守閣**：護城河和石牆很好拍；天守閣去年 12/28–1/1 休館，公園照常開（營業：公園全天；天守閣 9:00–17:00，年末休館）　[介紹](https://www.osakacastle.net/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%98%AA%E5%9F%8E%E5%A4%A9%E5%AE%88%E9%96%A3)
 - **阿倍野 HARUKAS 300**：300 公尺高的全玻璃展望台，看夕陽夜景；從新世界走約 15 分（營業：9:00–22:00）　[介紹](https://www.abenoharukas-300.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%81%82%E3%81%B9%E3%81%AE%E3%83%8F%E3%83%AB%E3%82%AB%E3%82%B9%E5%B1%95%E6%9C%9B%E5%8F%B0)
-- **天神橋筋商店街**：日本最長的商店街，約 2.6 km，藥妝、小吃、雜貨；離飯店近　[介紹](https://www.tenjin123.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E7%A5%9E%E6%A9%8B%E7%AD%8B%E5%95%86%E5%BA%97%E8%A1%97)
+- **天神橋筋商店街**：日本最長的商店街，約 2.6 km，藥妝、小吃、雜貨；離飯店近（營業：店家各異）　[介紹](https://www.tenjin123.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E7%A5%9E%E6%A9%8B%E7%AD%8B%E5%95%86%E5%BA%97%E8%A1%97)
 - **HEP FIVE 摩天輪**（已排 12/29、1/1）：梅田的紅色摩天輪，離飯店走路約 7 分，晚上最容易塞進行程（營業：11:00–23:00）　[介紹](https://www.hepfive.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=HEP%20FIVE%20%E8%A6%B3%E8%A6%A7%E8%BB%8A)
-- **中之島公園**：河岸散步道和中央公會堂紅磚建築　[介紹](https://osaka-info.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E4%B9%8B%E5%B3%B6%E5%85%AC%E5%9C%92)
+- **中之島公園**：河岸散步道和中央公會堂紅磚建築（營業：隨時）　[介紹](https://osaka-info.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E4%B9%8B%E5%B3%B6%E5%85%AC%E5%9C%92)
 
 **美食**
 
-- **おにぎり ごりちゃん 中崎町本店**（已排 1/3）｜¥400–800：料塞滿的大飯糰，7:00 開門、不定休；離飯店約 5 分（營業：7:00 開門、不定休）　[介紹](https://www.instagram.com/onigiri_gorichan_nakazaki/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E3%81%AB%E3%81%8E%E3%82%8A%20%E3%81%94%E3%82%8A%E3%81%A1%E3%82%83%E3%82%93%20%E4%B8%AD%E5%B4%8E%E7%94%BA%E6%9C%AC%E5%BA%97)
-- **居酒屋 月盗**（已排 12/31）｜¥午餐約 1,000：谷町四丁目，名物是包半熟蛋黃的玉子燒＋牛しぐれ煮定食；午餐 11:30 起、賣完為止，常排隊；晚上 18:00–23:00 居酒屋，週日和不定休（Instagram 公告）（營業：午餐 11:30 起；晚上 18:00–23:00；週日休）　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E6%9C%88%E7%9B%97%20%E8%B0%B7%E7%94%BA%E5%9B%9B%E4%B8%81%E7%9B%AE)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9C%88%E7%9B%97%20%E8%B0%B7%E7%94%BA%E5%9B%9B%E4%B8%81%E7%9B%AE)
-- **串炸 松葉總本店**（已排 12/29）｜¥約 1,500：新梅田食道街的立食串炸，只收現金、週一休（營業：週一休）　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E6%9D%BE%E8%91%89%E7%B7%8F%E6%9C%AC%E5%BA%97%20%E6%96%B0%E6%A2%85%E7%94%B0%E9%A3%9F%E9%81%93%E8%A1%97)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9D%BE%E8%91%89%E7%B7%8F%E6%9C%AC%E5%BA%97%20%E6%96%B0%E6%A2%85%E7%94%B0%E9%A3%9F%E9%81%93%E8%A1%97)
+- **おにぎり ごりちゃん 中崎町本店**（已排 1/3）｜¥400–800：料塞滿的大飯糰，7:00 開門、不定休；離飯店約 5 分（營業：7:00 開，關門待查）　[介紹](https://www.instagram.com/onigiri_gorichan_nakazaki/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E3%81%AB%E3%81%8E%E3%82%8A%20%E3%81%94%E3%82%8A%E3%81%A1%E3%82%83%E3%82%93%20%E4%B8%AD%E5%B4%8E%E7%94%BA%E6%9C%AC%E5%BA%97)
+- **居酒屋 月盗**（已排 12/31）｜¥午餐約 1,000：谷町四丁目，名物是包半熟蛋黃的玉子燒＋牛しぐれ煮定食；午餐 11:30 起、賣完為止，常排隊；晚上 18:00–23:00 居酒屋，週日和不定休（Instagram 公告）（營業：午餐 11:30 起；晚上 18:00–23:00）　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E6%9C%88%E7%9B%97%20%E8%B0%B7%E7%94%BA%E5%9B%9B%E4%B8%81%E7%9B%AE)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9C%88%E7%9B%97%20%E8%B0%B7%E7%94%BA%E5%9B%9B%E4%B8%81%E7%9B%AE)
+- **串炸 松葉總本店**（已排 12/29）｜¥約 1,500：新梅田食道街的立食串炸，只收現金、週一休（營業：平日 14:00–22:00）　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E6%9D%BE%E8%91%89%E7%B7%8F%E6%9C%AC%E5%BA%97%20%E6%96%B0%E6%A2%85%E7%94%B0%E9%A3%9F%E9%81%93%E8%A1%97)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9D%BE%E8%91%89%E7%B7%8F%E6%9C%AC%E5%BA%97%20%E6%96%B0%E6%A2%85%E7%94%B0%E9%A3%9F%E9%81%93%E8%A1%97)
 - **麺に光を 別邸**（已排 1/3）｜¥1,000–1,500：難波中，貝類高湯鹽味拉麵「貝の光」；午餐 11:30–15:00、晚餐 18:00–20:00，不定休（營業：11:30–15:00、18:00–20:00；不定休）　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E9%BA%BA%E3%81%AB%E5%85%89%E3%82%92%20%E5%88%A5%E9%82%B8)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E3%81%AB%E5%85%89%E3%82%92%20%E5%88%A5%E9%82%B8)
 - **八百屋とごはん もりした**（已排 1/3）｜¥1,000–1,500：北堀江，手作熟食和定食，平常 11:00–23:00；橘通旁邊（營業：11:00–23:00）　[介紹](https://sasaya-company.jp/brand/okura)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E7%99%BE%E5%B1%8B%E3%81%A8%E3%81%94%E3%81%AF%E3%82%93%20%E3%82%82%E3%82%8A%E3%81%97%E3%81%9F%20%E5%8C%97%E5%A0%80%E6%B1%9F)
 - **㐂舌響**｜¥約 2,080：法善寺橫丁，午間黑毛和牛丼（午餐 12:00–15:00）（營業：午餐 12:00–15:00）　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E3%90%82%E8%88%8C%E9%9F%BF%20%E6%B3%95%E5%96%84%E5%AF%BA)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%90%82%E8%88%8C%E9%9F%BF%20%E6%B3%95%E5%96%84%E5%AF%BA)
-- **串カツだるま 新世界總本店**（已排 1/1）｜¥1,500–2,500：醬汁禁止沾兩次（營業：全年無休）　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E3%81%A0%E3%82%8B%E3%81%BE%20%E6%96%B0%E4%B8%96%E7%95%8C%E7%B7%8F%E6%9C%AC%E5%BA%97)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%81%A0%E3%82%8B%E3%81%BE%20%E6%96%B0%E4%B8%96%E7%95%8C%E7%B7%8F%E6%9C%AC%E5%BA%97)
+- **串カツだるま 新世界總本店**（已排 1/1）｜¥1,500–2,500：醬汁禁止沾兩次（營業：11:00–22:30（假日 10:30 開））　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E3%81%A0%E3%82%8B%E3%81%BE%20%E6%96%B0%E4%B8%96%E7%95%8C%E7%B7%8F%E6%9C%AC%E5%BA%97)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%81%A0%E3%82%8B%E3%81%BE%20%E6%96%B0%E4%B8%96%E7%95%8C%E7%B7%8F%E6%9C%AC%E5%BA%97)
 - **牛かつもと村**｜¥1,500–2,500：炸牛排，梅田有分店　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E7%89%9B%E3%81%8B%E3%81%A4%E3%82%82%E3%81%A8%E6%9D%91%20%E6%A2%85%E7%94%B0)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%89%9B%E3%81%8B%E3%81%A4%E3%82%82%E3%81%A8%E6%9D%91%20%E6%A2%85%E7%94%B0)
 - **りくろーおじさん**｜¥約 1,000：現烤起司蛋糕，剛出爐會搖鈴；一個兩人分　[介紹](https://www.rikuro.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%8A%E3%81%8F%E3%82%8D%E3%83%BC%E3%81%8A%E3%81%98%E3%81%95%E3%82%93%E3%81%AE%E5%BA%97%20%E3%81%AA%E3%82%93%E3%81%B0%E6%9C%AC%E5%BA%97)
 - **章魚燒：くくる vs わなか**｜¥600–1,000：兩家各買一盒比一比　[介紹](https://www.shirohato.com/kukuru/)・[介紹 2](https://takoyaki-wanaka.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%81%9F%E3%81%93%E5%AE%B6%E9%81%93%E9%A0%93%E5%A0%80%E3%81%8F%E3%81%8F%E3%82%8B%20%E6%9C%AC%E5%BA%97)
@@ -376,9 +376,9 @@
 
 **購物**
 
-- **Nintendo OSAKA**（已排 12/31）：大丸梅田 13 樓的任天堂官方商店，扭蛋　[介紹](https://www.nintendo.com/jp/officialstore/)・[地圖](https://www.google.com/maps/search/?api=1&query=Nintendo%20OSAKA%20%E5%A4%A7%E4%B8%B8%E6%A2%85%E7%94%B0)
-- **阪急梅田本店 B1 Grand Calbee**（已排 12/31）：現炸洋芋片最頂級的產線，伴手禮　[介紹](https://calbee.co.jp/grandcalbee/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%AB%E3%83%AB%E3%83%93%E3%83%BC%20%E9%98%AA%E6%80%A5%E3%81%86%E3%82%81%E3%81%A0%E6%9C%AC%E5%BA%97)
-- **阪神梅田本店**：地下食品樓很好逛，阪神虎周邊　[介紹](https://www.hanshin-dept.jp/hshonten/index.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%98%AA%E7%A5%9E%E6%A2%85%E7%94%B0%E6%9C%AC%E5%BA%97)
+- **Nintendo OSAKA**（已排 12/31）：大丸梅田 13 樓的任天堂官方商店，扭蛋（營業：10:00–20:00（大丸））　[介紹](https://www.nintendo.com/jp/officialstore/)・[地圖](https://www.google.com/maps/search/?api=1&query=Nintendo%20OSAKA%20%E5%A4%A7%E4%B8%B8%E6%A2%85%E7%94%B0)
+- **阪急梅田本店 B1 Grand Calbee**（已排 12/31）：現炸洋芋片最頂級的產線，伴手禮（營業：10:00–20:00）　[介紹](https://calbee.co.jp/grandcalbee/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%AB%E3%83%AB%E3%83%93%E3%83%BC%20%E9%98%AA%E6%80%A5%E3%81%86%E3%82%81%E3%81%A0%E6%9C%AC%E5%BA%97)
+- **阪神梅田本店**：地下食品樓很好逛，阪神虎周邊（營業：10:00–20:00）　[介紹](https://www.hanshin-dept.jp/hshonten/index.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%98%AA%E7%A5%9E%E6%A2%85%E7%94%B0%E6%9C%AC%E5%BA%97)
 - **PLST**：UNIQLO 旗下的高階品牌，簡約上班服　[介紹](https://www.plst.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=PLST%20%E6%A2%85%E7%94%B0)
 - **無印良品 Grand Front 大阪**：梅田的大型店　[地圖](https://www.google.com/maps/search/?api=1&query=%E7%84%A1%E5%8D%B0%E8%89%AF%E5%93%81%20%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E5%A4%A7%E9%98%AA)
 - **唐吉訶德 梅田本店**：24 小時營業，藥妝零食一次買齊；離飯店近（營業：24 小時）　[介紹](https://www.donki.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86%20%E6%A2%85%E7%94%B0%E6%9C%AC%E5%BA%97)
@@ -390,7 +390,7 @@
 
 **景點**
 
-- **清水寺**（已排 1/2）：6:00 開門，清晨人少拍清水舞台（營業：6:00 開門）　[介紹](https://www.kiyomizudera.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%B8%85%E6%B0%B4%E5%AF%BA%20%E4%BA%AC%E9%83%BD)
+- **清水寺**（已排 1/2）：6:00 開門，清晨人少拍清水舞台（營業：6:00–18:00）　[介紹](https://www.kiyomizudera.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%B8%85%E6%B0%B4%E5%AF%BA%20%E4%BA%AC%E9%83%BD)
 - **teamLab Biovortex Kyoto**（已排 1/2）：teamLab 在日本最大的美術館，預留 2 小時（營業：通常 9:00–21:00，預約制）　[介紹](https://www.teamlab.art/e/kyoto/)・[地圖](https://www.google.com/maps/search/?api=1&query=teamLab%20Biovortex%20Kyoto)
 - **伏見稻荷大社**：千本鳥居，跨年夜深夜參拜（營業：24 小時）　[介紹](https://inari.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%BC%8F%E8%A6%8B%E7%A8%B2%E8%8D%B7%E5%A4%A7%E7%A4%BE)
 - **今宮神社**：歌姬籤、阿呆賢さん　[介紹](http://www.imamiyajinja.org/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%BB%8A%E5%AE%AE%E7%A5%9E%E7%A4%BE%20%E4%BA%AC%E9%83%BD)
@@ -399,12 +399,12 @@
 - **金閣寺**：金色舍利殿倒映在鏡湖池，京都最經典的一張照片；在北邊，要另外排　[介紹](https://www.shokoku-ji.jp/kinkakuji/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%87%91%E9%96%A3%E5%AF%BA)
 - **南禪寺水路閣 → 哲學之道 → 銀閣寺**：紅磚拱橋光影、2 公里的散步道，一路往北約 3 小時　[介紹](https://nanzenji.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E7%A6%85%E5%AF%BA%20%E6%B0%B4%E8%B7%AF%E9%96%A3)
 - **銀閣寺**：哲學之道的終點，枯山水庭園　[介紹](https://www.shokoku-ji.jp/ginkakuji/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%8A%80%E9%96%A3%E5%AF%BA)
-- **嵐山**：竹林小徑、天龍寺、渡月橋；要排就是半天　[介紹](https://www.arashiyamahoshokai.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B5%90%E5%B1%B1%20%E7%AB%B9%E6%9E%97%E3%81%AE%E5%B0%8F%E5%BE%84)
+- **嵐山**：竹林小徑、天龍寺、渡月橋；要排就是半天（營業：店家各異）　[介紹](https://www.arashiyamahoshokai.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B5%90%E5%B1%B1%20%E7%AB%B9%E6%9E%97%E3%81%AE%E5%B0%8F%E5%BE%84)
 - **天龍寺**：嵐山的世界遺產，曹源池庭園　[介紹](https://www.tenryuji.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E9%BE%8D%E5%AF%BA)
-- **錦市場**（已排 1/2）：京都的廚房，邊走邊吃；除夕最熱鬧但很多店下午就收，1/1–1/3 大多休息（營業：約 9:00–18:00，店家各自不同；1/1–1/3 多數休）　[介紹](https://www.kyoto-nishiki.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%8C%A6%E5%B8%82%E5%A0%B4)
+- **錦市場**（已排 1/2）：京都的廚房，邊走邊吃；除夕最熱鬧但很多店下午就收，1/1–1/3 大多休息（營業：約 9:00–18:00，店家各異）　[介紹](https://www.kyoto-nishiki.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%8C%A6%E5%B8%82%E5%A0%B4)
 - **京都塔**：京都站對面的展望台，去年年末年始照常開放　[介紹](https://www.kyoto-tower.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E9%83%BD%E3%82%BF%E3%83%AF%E3%83%BC)
 - **寺町：一保堂茶舖、松榮堂**：老字號抹茶和香舖，可以買抹茶和線香　[介紹](https://www.ippodo-tea.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E4%BF%9D%E5%A0%82%E8%8C%B6%E8%88%97%20%E4%BA%AC%E9%83%BD%E6%9C%AC%E5%BA%97)
-- **京都城市觀光官方網站**：想找其他京都景點可以從這裡查　[介紹](https://kyoto.travel/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E9%83%BD%E9%A7%85)
+- **京都城市觀光官方網站**：想找其他京都景點可以從這裡查（營業：—）　[介紹](https://kyoto.travel/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E9%83%BD%E9%A7%85)
 
 **美食**
 
@@ -430,8 +430,8 @@
 **購物**
 
 - **TRAVELER'S FACTORY KYOTO**：新風館裡的旅行筆記本專賣店，很適合買來送人　[介紹](https://travelers-factory.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=TRAVELER'S%20FACTORY%20KYOTO)
-- **よーじや 祇園店**（已排 1/2）：藝妓吸油面紙、手霜　[介紹](https://www.yojiya.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%88%E3%83%BC%E3%81%98%E3%82%84%20%E7%A5%87%E5%9C%92%E5%BA%97)
-- **七味家本舖 清水本店**（已排 1/2）：約 370 年的七味粉老店，可以試味道（營業：9:30 開門、全年無休）　[介紹](https://shichimiya.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%83%E5%91%B3%E5%AE%B6%E6%9C%AC%E8%88%97%20%E6%B8%85%E6%B0%B4)
+- **よーじや 祇園店**（已排 1/2）：藝妓吸油面紙、手霜（營業：10:30–18:30（週末 19:00））　[介紹](https://www.yojiya.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%88%E3%83%BC%E3%81%98%E3%82%84%20%E7%A5%87%E5%9C%92%E5%BA%97)
+- **七味家本舖 清水本店**（已排 1/2）：約 370 年的七味粉老店，可以試味道（營業：9:30–18:00）　[介紹](https://shichimiya.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%83%E5%91%B3%E5%AE%B6%E6%9C%AC%E8%88%97%20%E6%B8%85%E6%B0%B4)
 - **一保堂茶舖 京都本店**：老字號抹茶、煎茶（寺町）　[介紹](https://www.ippodo-tea.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E4%BF%9D%E5%A0%82%E8%8C%B6%E8%88%97%20%E4%BA%AC%E9%83%BD%E6%9C%AC%E5%BA%97)
 - **丸久小山園 西洞院店**：宇治本店沒開時的備案；週三、1/1–1/3 休（營業：週三、1/1–1/3 休）　[介紹](https://www.marukyu-koyamaen.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%B8%E4%B9%85%E5%B0%8F%E5%B1%B1%E5%9C%92%20%E8%A5%BF%E6%B4%9E%E9%99%A2%E5%BA%97)
 - **祇園辻利**：抹茶伴手禮，樓上是茶寮都路里　[介紹](https://www.giontsujiri.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%A5%87%E5%9C%92%E8%BE%BB%E5%88%A9%20%E7%A5%87%E5%9C%92%E6%9C%AC%E5%BA%97)
@@ -468,7 +468,7 @@
 
 **景點**
 
-- **奈良公園**（已排 1/3）：餵鹿，先鞠躬鹿會回禮　[介紹](https://narashikanko.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A5%88%E8%89%AF%E5%85%AC%E5%9C%92)
+- **奈良公園**（已排 1/3）：餵鹿，先鞠躬鹿會回禮（營業：隨時）　[介紹](https://narashikanko.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A5%88%E8%89%AF%E5%85%AC%E5%9C%92)
 - **興福寺**（已排 1/3）：五重塔，去奈良公園順路經過　[介紹](https://www.kohfukuji.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E8%88%88%E7%A6%8F%E5%AF%BA)
 - **東大寺大佛殿**：8:30 開門，大人 600 日圓，早上人最少（營業：8:30 開門）　[介紹](https://www.todaiji.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E5%A4%A7%E5%AF%BA%20%E5%A4%A7%E4%BB%8F%E6%AE%BF)
 - **春日大社**：參道一整排石燈籠；1/3 初詣人多　[介紹](https://www.kasugataisha.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%98%A5%E6%97%A5%E5%A4%A7%E7%A4%BE)
@@ -476,7 +476,7 @@
 
 **美食**
 
-- **中谷堂**（已排 1/3）｜¥約 200：看高速搗麻糬，艾草麻糬　[介紹](https://www.nakatanidou.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E8%B0%B7%E5%A0%82%20%E5%A5%88%E8%89%AF)
+- **中谷堂**（已排 1/3）｜¥約 200：看高速搗麻糬，艾草麻糬（營業：10:00–19:00）　[介紹](https://www.nakatanidou.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E8%B0%B7%E5%A0%82%20%E5%A5%88%E8%89%AF)
 - **志津香 公園店**｜¥2,000–3,000：1959 年創業的釜飯，常排隊　[介紹](https://kamameshi-shizuka.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%BF%97%E6%B4%A5%E9%A6%99%20%E5%85%AC%E5%9C%92%E5%BA%97)
 - **柿葉壽司：平宗／ゐざさ**｜¥約 1,000：一口大小，可以買幾種分著吃　[介紹](https://www.hiraso.jp/)・[介紹 2](https://www.izasa.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9F%BF%E3%81%AE%E8%91%89%E3%81%9A%E3%81%97%20%E5%B9%B3%E5%AE%97%20%E5%A5%88%E8%89%AF%E5%BA%97)
 
@@ -486,19 +486,19 @@
 
 - **北野異人館街**：坡道上的西洋老房子，從三宮往上坡約 15 分　[介紹](https://www.kobeijinkan.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E9%87%8E%E7%95%B0%E4%BA%BA%E9%A4%A8%E8%A1%97)
 - **生田神社**：三宮站旁的結緣神社，有搞怪御守和水占卜（籤紙泡水才會浮出字），可以一起抽戀愛籤（算一間寺社）　[介紹](https://ikutajinja.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%94%9F%E7%94%B0%E7%A5%9E%E7%A4%BE)
-- **南京町**：中華街小吃，份量小可以吃好幾種　[介紹](https://www.nankinmachi.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E4%BA%AC%E7%94%BA%20%E7%A5%9E%E6%88%B8)
-- **舊居留地**（已排 12/29）：石造洋館街景，精品和咖啡廳　[介紹](https://www.kobe-kyoryuchi.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%97%A7%E5%B1%85%E7%95%99%E5%9C%B0%20%E7%A5%9E%E6%88%B8)
-- **元町商店街**（已排 12/29）：風月堂、Juchheim 等神戶伴手禮　[介紹](https://www.kobe-motomachi.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%85%83%E7%94%BA%E5%95%86%E5%BA%97%E8%A1%97%20%E7%A5%9E%E6%88%B8)
+- **南京町**：中華街小吃，份量小可以吃好幾種（營業：店家各異）　[介紹](https://www.nankinmachi.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E4%BA%AC%E7%94%BA%20%E7%A5%9E%E6%88%B8)
+- **舊居留地**（已排 12/29）：石造洋館街景，精品和咖啡廳（營業：街道隨時；店家各異）　[介紹](https://www.kobe-kyoryuchi.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%97%A7%E5%B1%85%E7%95%99%E5%9C%B0%20%E7%A5%9E%E6%88%B8)
+- **元町商店街**（已排 12/29）：風月堂、Juchheim 等神戶伴手禮（營業：店家各異）　[介紹](https://www.kobe-motomachi.or.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%85%83%E7%94%BA%E5%95%86%E5%BA%97%E8%A1%97%20%E7%A5%9E%E6%88%B8)
 - **美利堅公園 BE KOBE 字牌・神戶港塔**：BE KOBE 字牌拍照、港塔屋頂甲板。想拍的話建議放在 12/29 晚餐後：三宮搭 JR 1 站到元町，走約 10 分拍照，再沿港邊走到 Harborland 約 15 分，之後行程往後約 15 分　[介紹](https://www.kobe-port-tower.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=BE%20KOBE%20%E3%83%A1%E3%83%AA%E3%82%B1%E3%83%B3%E3%83%91%E3%83%BC%E3%82%AF)
 - **摩耶山 掬星台夜景**：日本三大夜景之一，海拔約 700 公尺的展望台看整片神戶、大阪灣夜景。三宮搭市營巴士約 25 分到摩耶ケーブル下，再轉纜車＋空中纜車約 15 分。去年 12/29–1/3 有部分日子夜間特別運行（最後一班下山 19:50），今年的時刻約 11 月公布；山上很冷要穿暖　[介紹](https://koberope.jp/maya/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%91%A9%E8%80%B6%E5%B1%B1%20%E6%8E%AC%E6%98%9F%E5%8F%B0)
 - **Harborland umie MOSAIC**：港灣夕陽夜景、摩天輪　[介紹](https://umie.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=umie%20MOSAIC)
 - **神戶麵包超人兒童博物館＆購物中心**：Harborland 裡，umie MOSAIC 旁邊；購物中心免費進，博物館國中以上 2,000–2,500 日圓、要網路預約日期時段（28 天前開賣）。冬天約 10:00–17:00、最後入館 16:00，年末營業要看官網。12/29 從榮町通往西南走約 15 分（營業：冬天約 10:00–17:00）　[介紹](https://www.kobe-anpanman.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%A5%9E%E6%88%B8%E3%82%A2%E3%83%B3%E3%83%91%E3%83%B3%E3%83%9E%E3%83%B3%E3%81%93%E3%81%A9%E3%82%82%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%82%A2%E3%83%A0%26%E3%83%A2%E3%83%BC%E3%83%AB)
 - **布引香草園**：搭纜車上山，日本最大級香草園和夜景；冬季營業時間要確認　[介紹](https://www.kobeherb.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B8%83%E5%BC%95%E3%83%8F%E3%83%BC%E3%83%96%E5%9C%92)
-- **神戶官方觀光網站**：想找其他神戶景點可以從這裡查　[介紹](https://www.feel-kobe.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%89%E5%AE%AE%E9%A7%85)
+- **神戶官方觀光網站**：想找其他神戶景點可以從這裡查（營業：—）　[介紹](https://www.feel-kobe.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%89%E5%AE%AE%E9%A7%85)
 
 **美食**
 
-- **HARBS 神戶クレフィ三宮店**（已排 12/29）｜¥約 1,050：水果千層，11:00 開門，通常不用排隊（營業：11:00 開門）　[介紹](https://www.harbs.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=HARBS%20%E7%A5%9E%E6%88%B8%E3%82%AF%E3%83%AC%E3%83%95%E3%82%A3%E4%B8%89%E5%AE%AE%E5%BA%97)
+- **HARBS 神戶クレフィ三宮店**（已排 12/29）｜¥約 1,050：水果千層，11:00 開門，通常不用排隊（營業：11:00–20:00）　[介紹](https://www.harbs.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=HARBS%20%E7%A5%9E%E6%88%B8%E3%82%AF%E3%83%AC%E3%83%95%E3%82%A3%E4%B8%89%E5%AE%AE%E5%BA%97)
 - **Freundlieb 本店**｜¥麵包 300–600：1924 年創業的德國麵包店，老教堂改建，2 樓咖啡廳吃三明治；SHOP 10:00–17:30、週三休，官方行事曆 12/29、12/30 有開、12/31 休。三宮站往北走約 15 分（營業：10:00–17:30、週三休）　[介紹](https://h-freundlieb.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%83%AD%E3%82%A4%E3%83%B3%E3%83%89%E3%83%AA%E3%83%BC%E3%83%96%20%E6%9C%AC%E5%BA%97%20%E7%94%9F%E7%94%B0%E7%94%BA)
 - **DONQ 三宮店**｜¥麵包 200–500：1905 年創業，把法國麵包帶進日本的老店；三宮中心街，元町站走約 5 分　[介紹](https://donq.co.jp/shop/kinki)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%89%E3%83%B3%E3%82%AF%20%E4%B8%89%E5%AE%AE%E5%BA%97%20%E4%B8%89%E5%AE%AE%E7%94%BA2%E4%B8%81%E7%9B%AE)
 - **Isuzu Bakery 元町店**｜¥麵包 200–400：1946 年創業，神戶人日常的麵包店，種類很多；8:00–21:00（營業：8:00–21:00）　[介紹](https://www.isuzu-bakery.jp/?cat=5)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%A4%E3%82%B9%E3%82%BA%E3%83%99%E3%83%BC%E3%82%AB%E3%83%AA%E3%83%BC%20%E5%85%83%E7%94%BA%E5%BA%97)

@@ -271,6 +271,9 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .chip-book{background:var(--paper-2)}
 .det-btn{font-size:13px;padding:2px 12px;min-height:32px;cursor:pointer;border:2px solid var(--edge);border-radius:var(--r-sm);background:var(--paper-2);color:var(--ink)}
 .card .note.det{margin-top:2px}
+.pick .chips{margin-top:6px}
+.pick-full{font-size:13.5px;color:var(--ink-soft);line-height:1.55;margin-top:6px}
+.pick .det-btn{min-height:28px}
 /* 兩站之間的交通：放在卡片和卡片中間 */
 .leg{display:grid;grid-template-columns:64px 1fr;gap:0 8px;margin:-4px 0 8px}
 .leg-in{display:flex;flex-wrap:wrap;align-items:center;gap:5px;font-size:13px;color:var(--ink-soft);padding-left:4px}
