@@ -63,31 +63,56 @@
   <!-- 退稅 -->
   <section id="tax" class="page">
     <div class="sec-head"><span class="dot" style="background:var(--take)"></span><h2>退稅（2026/11 新制）</h2></div>
-    <p class="sec-sub">2026/11/1 起改成「先付含稅價，出境時海關確認後再退錢」。不買免稅品的話，這些都不用做。</p>
-    <div class="routes">
-      <article class="route-card">
-        <div class="route-top"><span>① 結帳時</span><span class="lbl">在店裡</span></div>
-        <ol>
-          <li>帶<b>護照正本</b>，結帳說要免稅（Tax-free），店員刷護照時就會登錄這筆消費</li>
-          <li>同一家店、同一天買滿 5,000 日圓（未稅）以上才能退</li>
-          <li><b>收好明細單</b>：上面的 QR code 是登錄退款方式（信用卡、帳戶）的網站；不急，回台灣後在單據寫的期限內（約 90–180 天）登錄就好</li>
-          <li>退款可以退到自己指定的信用卡，不一定是結帳刷的那張；付現金、ICOCA 也能退到信用卡</li>
-        </ol>
-        <p class="route-note">不用再特殊包裝，但食品、藥妝在出境前不能拆、不能吃；同一張單據的東西少一樣，整張都不退。</p>
-      </article>
-      <article class="route-card">
-        <div class="route-top"><span>② 1/5 神戶機場</span><span class="lbl">先退稅、再托運</span></div>
-        <ol>
-          <li>到機場<b>先到海關退稅機台刷護照</b>，確認退稅資格，<b>之後才去托運</b></li>
-          <li>綠燈就完成；紅燈要把免稅品拿給海關看，所以免稅品集中放、好拿出來</li>
-          <li>Visit Japan Web 線上確認目前只開放成田、羽田、關西、中部、福岡、新千歲、那霸，神戶直接刷機台</li>
-          <li>想拿現金：神戶機場有現金退稅機台（會扣手續費），但有些店配合的退稅公司不支援</li>
-          <li>退到信用卡大約幾小時到 5 個工作天</li>
-        </ol>
-        <p class="route-note">海關確認要在購買日起 90 天內出境時完成。新制剛上路，規則可能再調整，出發前再看一次最新公告。</p>
-      </article>
-    </div>
-    <p class="stay-note"><a href="https://www.customs.go.jp/kaigairyoko/taxrefund/jpn.htm" target="_blank" rel="noopener">日本海關：外國旅客免稅制度 ↗</a></p>
+    <p class="sec-sub">先付含稅價，出境時海關確認後再退錢。沒買免稅品就不用管。</p>
+    <ol class="tax-flow">
+      <li class="tax-step shop">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="16" y="8" width="32" height="48" rx="5" fill="#A8D3E6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="32" cy="28" r="9" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M23 28h18M32 19c-4 5-4 13 0 18M32 19c4 5 4 13 0 18M24 46h16" fill="none" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>
+        <span class="tax-where">店裡</span>
+        <b>出示護照</b>
+        <span>同店同日滿 ¥5,000（未稅）</span>
+      </li>
+      <li class="tax-step shop">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M16 8h32v48l-5-4-5 4-6-4-6 4-5-4-5 4Z" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="22" y="16" width="20" height="20" rx="2" fill="#F6D27A" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M27 21h4v4h-4zM33 27h4v4h-4zM27 29h2M35 21h2M22 43h20" fill="none" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>
+        <span class="tax-where">店裡</span>
+        <b>收好明細</b>
+        <span>掃 QR 登錄退款，回台再登也行</span>
+      </li>
+      <li class="tax-step air">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="18" y="6" width="28" height="52" rx="5" fill="#F6D27A" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="23" y="12" width="18" height="16" rx="2" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M27 20l3 3 6-6" fill="none" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="24" y="36" width="16" height="10" rx="2" fill="#A8D3E6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M26 52h12" fill="none" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>
+        <span class="tax-where">1/5 神戶機場</span>
+        <b>刷海關機台</b>
+        <span>綠燈完成；紅燈給海關看東西</span>
+      </li>
+      <li class="tax-step air">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="12" y="20" width="40" height="32" rx="6" fill="#F2A497" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M24 20v-7h16v7M22 20v32M42 20v32" fill="none" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="20" cy="56" r="3" fill="#3E3A39"/><circle cx="44" cy="56" r="3" fill="#3E3A39"/></svg>
+        <span class="tax-where">1/5 神戶機場</span>
+        <b>再托運</b>
+        <span>一定要在退稅之後</span>
+      </li>
+      <li class="tax-step air">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="6" y="16" width="38" height="26" rx="4" fill="#B9DAA5" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M6 24h38M12 34h10" fill="none" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="44" cy="42" r="13" fill="#F6D27A" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M39 35l5 6 5-6M44 41v9M39 44h10" fill="none" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>
+        <span class="tax-where">之後</span>
+        <b>收退款</b>
+        <span>信用卡幾小時～5 天；現金要扣手續費</span>
+      </li>
+    </ol>
+    <ul class="tax-warn">
+      <li>⚠️ 食品、藥妝出境前別拆</li>
+      <li>⚠️ 同一張單少一樣，整張不退</li>
+      <li>⚠️ 購買後 90 天內出境確認</li>
+    </ul>
+    <details class="tax-more">
+      <summary>詳細說明</summary>
+      <ul class="stay-list">
+        <li>結帳說要免稅（Tax-free），店員刷護照時就登錄了這筆消費</li>
+        <li>退款可以指定任何一張信用卡；付現金、ICOCA 也能退到信用卡</li>
+        <li>明細單上的退款登錄期限約 90–180 天，看單據寫的</li>
+        <li>紅燈時要把同一張單的東西全部拿出來，所以免稅品集中放、好拿</li>
+        <li>Visit Japan Web 線上確認目前沒有神戶，直接刷機台</li>
+        <li>神戶有現金退稅機台，但有些店配合的退稅公司不支援</li>
+        <li>新制剛上路，出發前再看一次<a href="https://www.customs.go.jp/kaigairyoko/taxrefund/jpn.htm" target="_blank" rel="noopener">日本海關公告 ↗</a></li>
+      </ul>
+    </details>
   </section>
 
   <!-- 建議備選 -->

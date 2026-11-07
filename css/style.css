@@ -396,6 +396,28 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .stay-list .warn{margin-right:4px}
 .stay-h{font-size:18px;margin-top:22px}
 .routes{display:grid;gap:12px;margin-top:10px}
+/* 退稅流程：手機一行一步（圖示在左），寬螢幕五步排成一列 */
+.tax-flow{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:tax}
+.tax-step{counter-increment:tax;position:relative;border:var(--line) solid var(--edge);border-radius:var(--r-md);background:var(--paper);padding:12px 14px;display:grid;grid-template-columns:56px 1fr;column-gap:12px;align-items:center}
+.tax-step.air{background:var(--paper-2)}
+.tax-step svg{width:56px;height:56px;grid-row:span 3}
+.tax-step b{font-weight:400;font-size:18px}
+.tax-step b::before{content:counter(tax) ". "}
+.tax-step span{font-size:13.5px;color:var(--ink-soft)}
+.tax-step .tax-where{justify-self:start;font-size:12px;color:var(--ink);border:2px solid var(--edge);border-radius:var(--r-sm);padding:0 8px;background:var(--yama)}
+.tax-step.air .tax-where{background:var(--mizu)}
+@media (min-width:700px){
+  .tax-flow{grid-template-columns:repeat(5,1fr);gap:14px}
+  .tax-step{grid-template-columns:1fr;justify-items:center;align-content:start;text-align:center;row-gap:6px;padding:14px 8px}
+  .tax-step b{font-size:16px;white-space:nowrap}
+  .tax-step svg{grid-row:auto;width:64px;height:64px}
+  .tax-step .tax-where{justify-self:center}
+  .tax-step:not(:last-child)::after{content:"→";position:absolute;right:-13px;top:38px;font-size:16px;color:var(--ink-soft)}
+}
+.tax-warn{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.tax-warn li{font-size:13.5px;border:2px solid var(--edge);border-radius:var(--r-sm);padding:3px 12px;background:var(--paper)}
+.tax-more{margin-top:12px;font-size:14px}
+.tax-more summary{cursor:pointer;color:var(--ink-soft)}
 .route-card{border:var(--line) solid var(--edge);border-radius:var(--r-md);background:var(--paper);padding:12px 14px;display:grid;gap:8px}
 .route-top{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:15.5px}
 .route-top .lbl{font-size:12.5px;padding:1px 10px;border:2px solid var(--edge);border-radius:var(--r-sm);background:var(--yama)}
