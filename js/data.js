@@ -142,14 +142,14 @@ var DAYS=[
 ];
 
 /* 待辦：id 用來記住勾選狀態，改文字或順序都不會跑掉；新增項目給一個新的 id */
-/* 購物清單：n 名稱、g:1 伴手禮（沒填＝自己想買的）、d 說明、buy 在哪買（行程裡順路的那一站）；id 不要改，打勾紀錄靠它 */
+/* 購物清單：n 名稱、g:1 伴手禮（沒填＝自己想買的）、d 說明、buy 在哪買（行程裡順路的那一站）、u 官方商品頁、img:1 有商品照（images/shop/{id}.jpg 縮圖、{id}-l.jpg 大圖，取自官網）；id 不要改，打勾紀錄靠它 */
 var GIFTS=[
-  {id:"caramel-crown",g:1,n:"THE CARAMEL CROWN",d:"招牌 THE バターキャラメルサンド，2025 年在阪急梅田開的焦糖甜點專賣店",buy:"12/31 阪急梅田本店 B1（跟 Sugar Butter Tree 同一層），平常 10:00–20:00"},
-  {id:"sugar-butter-tree",g:1,n:"Sugar Butter Tree",d:"招牌シュガーバターサンドの木，酥脆穀物餅乾夾白巧克力",buy:"12/31 阪急うめだ店（阪急梅田本店 B1），平常 10:00–20:00；行程已排 16:00"},
-  {id:"grand-calbee",g:1,n:"Grand Calbee",d:"Calbee 的高級洋芋片品牌，厚切洋芋片，主要在阪急梅田本店才買得到",buy:"12/31 阪急梅田本店 B1，平常 10:00–20:00；行程已排 15:45"},
-  {id:"baton-dor",g:1,n:"BATON d'OR（必買）",d:"固力果的高級 Pocky「金色權杖」，只在關西幾家百貨和博多阪急有店、沒有網購",buy:"12/31 阪急梅田本店 B1，平常 10:00–20:00；行程已排 16:00，跟 Sugar Butter Tree 一起買"},
-  {id:"kaldi-choco-creams",g:1,n:"KALDI 比利時巧克力奶油球（香草）",d:"Belgian Chocolate Creams Vanilla：巧克力殼包香草奶油、外面裹糖粉，比利時製，100 g 約 645 日圓；去年賣到缺貨，今年冬天再販，可能買不到",buy:"12/31 LUCUA 1100（ルクア イーレ）2F 的 KALDI，逛 LUCUA 時順便買；另一間在茶屋町 NU茶屋町プラス 2F"},
-  {id:"3coins-dog-hood",n:"3COINS 狗狗頭套盲包",d:"3COINS 的隨機款（盲包）狗狗頭套；款式和有沒有貨要到店看",buy:"12/29 晚上逛 HEP FIVE 時，6F 的 3COINS"}
+  {id:"caramel-crown",g:1,img:1,u:"https://www.caramelcrown.jp/",n:"THE CARAMEL CROWN",d:"招牌 THE バターキャラメルサンド，2025 年在阪急梅田開的焦糖甜點專賣店",buy:"12/31 阪急梅田本店 B1（跟 Sugar Butter Tree 同一層），平常 10:00–20:00"},
+  {id:"sugar-butter-tree",g:1,img:1,u:"https://www.sugarbuttertree.jp/",n:"Sugar Butter Tree",d:"招牌シュガーバターサンドの木，酥脆穀物餅乾夾白巧克力",buy:"12/31 阪急うめだ店（阪急梅田本店 B1），平常 10:00–20:00；行程已排 16:00"},
+  {id:"grand-calbee",g:1,img:1,u:"https://www.calbee.co.jp/grandcalbee/",n:"Grand Calbee",d:"Calbee 的高級洋芋片品牌，厚切洋芋片，主要在阪急梅田本店才買得到",buy:"12/31 阪急梅田本店 B1，平常 10:00–20:00；行程已排 15:45"},
+  {id:"baton-dor",g:1,img:1,u:"https://www.glico.com/jp/batondor/",n:"BATON d'OR（必買）",d:"固力果的高級 Pocky「金色權杖」，只在關西幾家百貨和博多阪急有店、沒有網購",buy:"12/31 阪急梅田本店 B1，平常 10:00–20:00；行程已排 16:00，跟 Sugar Butter Tree 一起買"},
+  {id:"kaldi-choco-creams",g:1,img:1,u:"https://www.kaldi.co.jp/ec/pro/disp/1/5425001304103",n:"KALDI 比利時巧克力奶油球（香草）",d:"Belgian Chocolate Creams Vanilla：巧克力殼包香草奶油、外面裹糖粉，比利時製，100 g 約 645 日圓；去年賣到缺貨，今年冬天再販，可能買不到",buy:"12/31 LUCUA 1100（ルクア イーレ）2F 的 KALDI，逛 LUCUA 時順便買；另一間在茶屋町 NU茶屋町プラス 2F"},
+  {id:"3coins-dog-hood",u:"https://www.palcloset.jp/3coins/",n:"3COINS 狗狗頭套盲包",d:"3COINS 的隨機款（盲包）狗狗頭套；款式和有沒有貨要到店看",buy:"12/29 晚上逛 HEP FIVE 時，6F 的 3COINS"}
 ];
 
 var TODOS=[

@@ -361,8 +361,10 @@
     var list=document.getElementById("gift-list"),got=store("kansai8-gifts")||{};
     GIFTS.forEach(function(g,i){
       var li=document.createElement("li");
-      li.innerHTML='<label for="gift-'+i+'"><input type="checkbox" id="gift-'+i+'"'+(got[g.id]?" checked":"")+'><span><span class="gtag'+(g.g?' gift':'')+'">'+(g.g?"伴手禮":"自己買")+'</span>'+esc(g.n)+
-        (g.d?'<span class="when">'+esc(g.d)+'</span>':'')+(g.buy?'<span class="when">在哪買：'+esc(g.buy)+'</span>':'')+'</span></label>';
+      /* 有商品照：左邊放縮圖，點了開大圖；右邊放官方商品頁 */
+      li.innerHTML=(g.img?'<a class="gift-pic" href="images/shop/'+esc(g.id)+'-l.jpg" target="_blank" rel="noopener"><img src="images/shop/'+esc(g.id)+'.jpg" alt="'+esc(g.n)+' 商品照" width="64" height="64" loading="lazy"></a>':'')+'<label for="gift-'+i+'"><input type="checkbox" id="gift-'+i+'"'+(got[g.id]?" checked":"")+'><span><span class="gtag'+(g.g?' gift':'')+'">'+(g.g?"伴手禮":"自己買")+'</span>'+esc(g.n)+
+        (g.d?'<span class="when">'+esc(g.d)+'</span>':'')+(g.buy?'<span class="when">在哪買：'+esc(g.buy)+'</span>':'')+'</span></label>'+
+        (g.u?'<a class="todo-link" href="'+esc(g.u)+'" target="_blank" rel="noopener">商品頁</a>':'');
       list.appendChild(li);
     });
     function prog(){
