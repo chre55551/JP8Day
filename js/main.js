@@ -340,7 +340,12 @@
     function a(href,label,cls){return '<a class="'+cls+'" href="'+esc(href)+'" target="_blank" rel="noopener">'+esc(label)+'</a>';}
     document.getElementById("plans-list").innerHTML=PLANS.map(function(it){
       return '<article class="idea"><h4>'+esc(it.title)+'</h4><p class="why">'+esc(it.why)+'</p>'+
-        '<ol>'+it.plan.map(function(p){return '<li>'+esc(p)+'</li>';}).join("")+'</ol>'+
+        /* 「8:30 店名：說明」拆成時間、店名、說明三段；「已排：xx」這種前綴也當標題 */
+        '<ol class="plan-steps">'+it.plan.map(function(p){
+          var m=p.match(/^(\d{1,2}:\d{2})\s+(.*)$/),t=m?m[1]:"",rest=m?m[2]:p,k=rest.indexOf("：");
+          var head=k>0?rest.slice(0,k):rest,tail=k>0?rest.slice(k+1):"";
+          return '<li>'+(t?'<span class="ps-t">'+esc(t)+'</span>':'')+'<span class="ps-n">'+esc(head)+'</span>'+(tail?'<span class="ps-d">'+esc(tail)+'</span>':'')+'</li>';
+        }).join("")+'</ol>'+
         '<div class="idea-links">'+it.links.map(function(l){return a(l.u||mapUrl(l.q),l.n,"lk");}).join("")+'</div>'+
         (it.note?'<p class="idea-note">'+NOTE_ICON+'<span>'+esc(it.note)+'</span></p>':'')+'</article>';
     }).join("");
