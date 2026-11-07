@@ -178,11 +178,11 @@
           '<div class="row1">'+(it.m?'<span class="must-badge">'+STAR+'必去</span>':'')+'<span class="kind">'+(it.x&&!sw?"待安排":KIND[it.k])+'</span>'+(sw?'<span class="swap-badge">已替換</span>':'')+(it.w&&!sw?'<span class="warn">需確認</span>':'')+'</div>'+
           '<div class="ttl">'+esc(show.n)+'</div>'+
           /* 有 b（一句話摘要）的卡片：先顯示摘要和小標籤，完整說明收進「細節」 */
-          (show.b?'<p class="brief">'+esc(show.b)+'</p>'+(show.c?chips(show.c):''):(show.o?'<p class="note clamp">'+esc(show.o)+'</p>':''))+
+          (show.b!=null?(show.b?'<p class="brief">'+esc(show.b)+'</p>':'')+(show.c?chips(show.c):''):(show.o?'<p class="note clamp">'+esc(show.o)+'</p>':''))+
           (show.h?'<p class="hours">營業：'+esc(show.h)+'</p>':'')+
           (sw?'<p class="orig">原本：'+esc(it.n)+'<button type="button" class="alt-undo" data-j="'+j+'">換回</button></p>':'')+
-          (go||altBtn||(show.b&&show.o)?'<div class="tags">'+(show.b&&show.o?'<button type="button" class="det-btn" aria-expanded="false" aria-controls="det-'+j+'">細節</button>':'')+altBtn+go+'</div>':'')+
-          (show.b&&show.o?'<p class="note det" id="det-'+j+'" hidden>'+esc(show.o)+'</p>':'')+
+          (go||altBtn||(show.b!=null&&show.o)?'<div class="tags">'+(show.b!=null&&show.o?'<button type="button" class="det-btn" aria-expanded="false" aria-controls="det-'+j+'">細節</button>':'')+altBtn+go+'</div>':'')+
+          (show.b!=null&&show.o?'<p class="note det" id="det-'+j+'" hidden>'+esc(show.o)+'</p>':'')+
           (altBtn?'<div class="alts" id="alts-'+j+'" hidden></div>':'')+'</div></li>';
       });
       h+='</ol>';
