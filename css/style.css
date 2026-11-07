@@ -402,6 +402,31 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .stay-list{margin:12px 0 0;padding-left:20px;display:grid;gap:6px;font-size:14.5px}
 .stay-list .warn{margin-right:4px}
 .stay-h{font-size:18px;margin-top:22px}
+/* 住宿：圖示小方塊 */
+.stay-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+.stay-tile{border:2px solid var(--edge);border-radius:14px;background:var(--paper-2);padding:10px 6px;display:flex;flex-direction:column;align-items:center;text-align:center;line-height:1.3}
+.stay-tile svg{width:40px;height:40px;margin-bottom:4px}
+.stay-tile .k{font-size:12.5px;color:var(--ink-soft)}
+.stay-tile .v{font-size:15px}
+.stay-two{display:grid;gap:12px;margin-top:4px}
+@media (min-width:700px){.stay-tiles{grid-template-columns:repeat(6,1fr)}.stay-two{grid-template-columns:1fr 1fr}}
+.st-list li,.dest-list li{align-items:center}
+.st-list .tt{flex:none}
+.st-list .nm,.dest-list .nm{flex:1}
+.st-list .mins{display:flex;align-items:center;gap:2px;font-variant-numeric:tabular-nums}
+.st-list .mins::after{content:"分";font-size:12.5px;margin-left:1px}
+.st-list .walk{width:16px;height:16px}
+.dest-list .mins-big{order:-1;min-width:3.2em;font-size:20px;line-height:1;font-variant-numeric:tabular-nums}
+.dest-list .mins-big small{font-size:12px;margin-left:1px}
+.dest-list .how{font-size:12.5px;color:var(--ink-soft);text-align:right}
+.shop-tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:10px}
+@media (min-width:700px){.shop-tiles{grid-template-columns:repeat(4,1fr)}}
+.shop-tile{border:2px solid var(--edge);border-radius:14px;background:var(--paper);padding:10px 12px}
+.shop-tile svg{width:40px;height:40px}
+.shop-tile h4{margin:2px 0 6px;font-size:15.5px;font-weight:400}
+.shop-tile ul{list-style:none;margin:0;padding:0;display:grid;gap:4px;font-size:13.5px}
+.shop-tile b{font-weight:400;text-decoration:underline;text-decoration-color:var(--yama);text-decoration-thickness:5px;text-underline-offset:-2px;text-decoration-skip-ink:none}
+.shop-tile .warn{display:inline-block;font-size:12px;color:var(--ink-soft)}
 .routes{display:grid;gap:12px;margin-top:10px}
 /* 退稅流程：手機一行一步（圖示在左），寬螢幕五步排成一列 */
 .tax-flow{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:tax}
