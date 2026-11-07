@@ -275,6 +275,7 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .leg{display:grid;grid-template-columns:64px 1fr;gap:0 8px;margin:-4px 0 8px}
 .leg-in{display:flex;flex-wrap:wrap;align-items:center;gap:5px;font-size:13px;color:var(--ink-soft);padding-left:4px}
 .leg-in .tt{font-size:12px;padding:2px 8px;color:var(--ink)}
+.leg-tm{font-size:13px;color:var(--ink);font-variant-numeric:tabular-nums}
 /* 太長的說明先顯示 3 行，點「展開全文」看全部 */
 .card .note.clamp{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .more{

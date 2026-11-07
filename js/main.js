@@ -168,7 +168,7 @@
       h+='<ol class="timeline">';
       day.items.forEach(function(it,j){
         /* 怎麼到這一站：放在兩張卡片中間 */
-        if(it.tr)h+='<li class="leg" aria-label="交通"><span></span><div class="leg-in">↓ '+it.tr.map(ttag).join("")+'</div></li>';
+        if(it.tr)h+='<li class="leg" aria-label="交通"><span></span><div class="leg-in">↓ '+it.tr.map(ttag).join("")+(it.tm?'<span class="leg-tm">'+esc(it.tm)+'</span>':'')+'</div></li>';
         var alt=alternatives(day,j), sw=alt&&swaps[swapKey(day,it)]?pickById(swaps[swapKey(day,it)]):null;
         var cls="ev k-"+it.k+(it.m?" must":"")+(it.x&&!sw?" tbd":"")+(sw?" swapped":"");
         var show=sw?{n:sw.p.n,o:sw.p.d,q:sw.p.q,h:sw.p.h}:it;
