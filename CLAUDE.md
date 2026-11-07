@@ -49,4 +49,6 @@
 - **改了任何畫面上的文字（含 data.js）就重跑 `python3 docs/make-font.py`**，字型只包含用到的字；有缺字會印出來。
 - **深色模式**：顏色一律用 `css/style.css` 的變數（`--paper`、`--ink`、`--edge`、`--shadow` 等），深色值在 `:root[data-theme="dark"]` 和 `prefers-color-scheme: dark` 兩處要一起改。SVG 裡寫死的色碼（#3E3A39、#F6D27A…）由 style.css 的屬性選擇器換成變數，新增別的色碼要補對應規則。首頁主圖有淺色 `.hero-art.day` 和深夜 `.hero-art.night` 兩張。
 - 新增檔案要加進 `sw.js` 的 `FILES`。改了 `FILES` 或快取策略時，把 `CACHE` 版本號加一。
+- **部署只公開網站檔案**：`.github/workflows/deploy.yml` 只把 `index.html`、`prep.html`、`sw.js`、`manifest.webmanifest`、`css/`、`js/`、`fonts/`、`icons/`、`images/` 複製到 `_site` 發佈；根目錄新增網站要用的檔案或資料夾時，要一起加進那行 `cp`。
+- **資安**：兩頁 `<head>` 有 CSP（只允許同站資源；行內那段主題 script 用 sha256 放行，**改了那段 script 要重算 hash**）、`noindex`。不要引入外部 script／字型／圖片 CDN；訂位代號、票號、護照這類個資一律不寫進 repo（訂位資料只存在裝置 localStorage `kansai8-booking`）。
 - 改完要在瀏覽器確認畫面正常，再 push。
