@@ -377,8 +377,18 @@
     prog();
   }
 
+  /* ---------- 訂位資料：只存在這台裝置的 localStorage，不寫進網站 ---------- */
+  function initBooking(){
+    var saved=store("kansai8-booking")||{};
+    ["bk-pnr","bk-ticket"].forEach(function(id){
+      var el=document.getElementById(id);
+      el.value=saved[id]||"";
+      el.addEventListener("input",function(){saved[id]=el.value.trim();store("kansai8-booking",saved);});
+    });
+  }
+
   /* 兩頁共用這支程式：頁面上有哪個區塊就啟動哪個 */
-  [["theme-btn",initTheme],["home",initHeroPause],["cd-d",initCountdown],["tabs",initDays],["todo-list",initTodo],["gift-list",initGifts],["plans-list",initIdeas]].forEach(function(p){
+  [["theme-btn",initTheme],["home",initHeroPause],["cd-d",initCountdown],["booking",initBooking],["tabs",initDays],["todo-list",initTodo],["gift-list",initGifts],["plans-list",initIdeas]].forEach(function(p){
     if(document.getElementById(p[0]))p[1]();
   });
 

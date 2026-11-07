@@ -181,6 +181,12 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .path{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:12px;color:var(--ink-soft)}
 .path svg{width:74px;height:28px}
 .ticket-foot{display:flex;flex-wrap:wrap;gap:6px 14px;padding:0 16px 14px;font-size:14px;color:var(--ink-soft)}
+.booking{margin-top:16px;border:var(--line) solid var(--edge);border-radius:var(--r-md);background:var(--paper);padding:14px 16px;display:grid;gap:10px}
+.booking h3{margin:0;font-size:16px}
+.booking label{display:grid;grid-template-columns:5em 1fr;align-items:center;gap:10px;font-size:14px}
+.booking input{min-width:0;font:inherit;font-size:16px;letter-spacing:.06em;color:var(--ink);background:transparent;border:2px solid var(--edge);border-radius:8px;padding:6px 10px}
+.booking input::placeholder{color:var(--ink-soft);letter-spacing:0}
+.booking-note{margin:0;font-size:12px;color:var(--ink-soft)}
 
 /* ---------- 每日行程 ---------- */
 /* 日期分頁黏在頂端選單下面，看到一天的最後也能直接換天 */
