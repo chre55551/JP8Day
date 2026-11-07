@@ -30,7 +30,8 @@
     <div class="nav-links">
       <a class="nav-page" href="index.html"><span class="nav-arrow">← </span>行程</a>
       <a href="#todo">待辦</a>
-      <a href="#gifts">伴手禮</a>
+      <a href="#gifts">購物</a>
+      <a href="#tax">退稅</a>
       <a href="#ideas">備選</a>
     </div>
     <button class="theme-btn" type="button" id="theme-btn" aria-label="切換深色／淺色">
@@ -50,13 +51,43 @@
     <p class="todo-hint">打勾的紀錄只存在這台裝置的瀏覽器裡。</p>
   </section>
 
-  <!-- 伴手禮清單 -->
+  <!-- 購物清單 -->
   <section id="gifts" class="page">
-    <div class="sec-head"><span class="dot" style="background:var(--take)"></span><h2>伴手禮清單</h2></div>
-    <p class="sec-sub">想買的伴手禮和行程中順路能買的地方；買到就打勾。</p>
+    <div class="sec-head"><span class="dot" style="background:var(--take)"></span><h2>購物清單</h2></div>
+    <p class="sec-sub">想買的東西和行程中順路能買的地方；標「伴手禮」的是送人的，「自己買」是自己要的。買到就打勾。</p>
     <div class="progress"><div class="bar"><i id="gift-bar"></i></div><span id="gift-prog">0 / 0</span></div>
     <ul class="todo" id="gift-list"></ul>
     <p class="todo-hint">打勾的紀錄只存在這台裝置的瀏覽器裡。</p>
+  </section>
+
+  <!-- 退稅 -->
+  <section id="tax" class="page">
+    <div class="sec-head"><span class="dot" style="background:var(--take)"></span><h2>退稅（2026/11 新制）</h2></div>
+    <p class="sec-sub">2026/11/1 起改成「先付含稅價，出境時海關確認後再退錢」。不買免稅品的話，這些都不用做。</p>
+    <div class="routes">
+      <article class="route-card">
+        <div class="route-top"><span>① 結帳時</span><span class="lbl">在店裡</span></div>
+        <ol>
+          <li>帶<b>護照正本</b>，結帳說要免稅（Tax-free），店員刷護照時就會登錄這筆消費</li>
+          <li>同一家店、同一天買滿 5,000 日圓（未稅）以上才能退</li>
+          <li><b>收好明細單</b>：上面的 QR code 是登錄退款方式（信用卡、帳戶）的網站；不急，回台灣後在單據寫的期限內（約 90–180 天）登錄就好</li>
+          <li>退款可以退到自己指定的信用卡，不一定是結帳刷的那張；付現金、ICOCA 也能退到信用卡</li>
+        </ol>
+        <p class="route-note">不用再特殊包裝，但食品、藥妝在出境前不能拆、不能吃；同一張單據的東西少一樣，整張都不退。</p>
+      </article>
+      <article class="route-card">
+        <div class="route-top"><span>② 1/5 神戶機場</span><span class="lbl">先退稅、再托運</span></div>
+        <ol>
+          <li>到機場<b>先到海關退稅機台刷護照</b>，確認退稅資格，<b>之後才去托運</b></li>
+          <li>綠燈就完成；紅燈要把免稅品拿給海關看，所以免稅品集中放、好拿出來</li>
+          <li>Visit Japan Web 線上確認目前只開放成田、羽田、關西、中部、福岡、新千歲、那霸，神戶直接刷機台</li>
+          <li>想拿現金：神戶機場有現金退稅機台（會扣手續費），但有些店配合的退稅公司不支援</li>
+          <li>退到信用卡大約幾小時到 5 個工作天</li>
+        </ol>
+        <p class="route-note">海關確認要在購買日起 90 天內出境時完成。新制剛上路，規則可能再調整，出發前再看一次最新公告。</p>
+      </article>
+    </div>
+    <p class="stay-note"><a href="https://www.customs.go.jp/kaigairyoko/taxrefund/jpn.htm" target="_blank" rel="noopener">日本海關：外國旅客免稅制度 ↗</a></p>
   </section>
 
   <!-- 建議備選 -->

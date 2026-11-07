@@ -356,12 +356,12 @@
     var savedArea=store("kansai8-area");showArea(AREAS.indexOf(savedArea)>=0?savedArea:"大阪");
   }
 
-  /* 伴手禮清單：買到就打勾，用 id 記在這台裝置 */
+  /* 購物清單：買到就打勾，用 id 記在這台裝置；g:1 標「伴手禮」，其他標「自己買」 */
   function initGifts(){
     var list=document.getElementById("gift-list"),got=store("kansai8-gifts")||{};
     GIFTS.forEach(function(g,i){
       var li=document.createElement("li");
-      li.innerHTML='<label for="gift-'+i+'"><input type="checkbox" id="gift-'+i+'"'+(got[g.id]?" checked":"")+'><span>'+esc(g.n)+
+      li.innerHTML='<label for="gift-'+i+'"><input type="checkbox" id="gift-'+i+'"'+(got[g.id]?" checked":"")+'><span><span class="gtag'+(g.g?' gift':'')+'">'+(g.g?"伴手禮":"自己買")+'</span>'+esc(g.n)+
         (g.d?'<span class="when">'+esc(g.d)+'</span>':'')+(g.buy?'<span class="when">在哪買：'+esc(g.buy)+'</span>':'')+'</span></label>';
       list.appendChild(li);
     });
