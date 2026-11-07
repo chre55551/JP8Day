@@ -10,6 +10,20 @@
     }catch(e){return null;}
   }
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+  /* 行程卡片的資訊小標籤：c:[["walk","15 分"],...]，類型 walk/time/yen/train/ok/warn/book/info */
+  var CHIP={
+    walk:'<circle cx="13" cy="4" r="2" fill="#3E3A39"/><path d="M10 22l2-7 3 3v4M12 15l1-6 3 3h3M13 9l-4 2-1 4" fill="none" stroke="#3E3A39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
+    time:'<circle cx="12" cy="12" r="9" fill="#FFFCF6" stroke="#3E3A39" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="#3E3A39" stroke-width="2" stroke-linecap="round"/>',
+    yen:'<circle cx="12" cy="12" r="9" fill="#F6D27A" stroke="#3E3A39" stroke-width="2"/><path d="M8.5 7l3.5 5 3.5-5M12 12v6M9 13.5h6" fill="none" stroke="#3E3A39" stroke-width="2" stroke-linecap="round"/>',
+    train:'<rect x="5" y="3" width="14" height="15" rx="3" fill="#A8D3E6" stroke="#3E3A39" stroke-width="2"/><path d="M5 11h14M8 21l2-3M16 21l-2-3" fill="none" stroke="#3E3A39" stroke-width="2" stroke-linecap="round"/>',
+    ok:'<circle cx="12" cy="12" r="9" fill="#B9DAA5" stroke="#3E3A39" stroke-width="2"/><path d="M8 12l3 3 5-6" fill="none" stroke="#3E3A39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
+    warn:'<path d="M12 3l10 18H2Z" fill="#F6D27A" stroke="#3E3A39" stroke-width="2" stroke-linejoin="round"/><path d="M12 10v5" stroke="#3E3A39" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="18" r="1.2" fill="#3E3A39"/>',
+    book:'<rect x="4" y="5" width="16" height="15" rx="2" fill="#F2A497" stroke="#3E3A39" stroke-width="2"/><path d="M4 10h16M8 3v4M16 3v4M9 15l2 2 4-4" fill="none" stroke="#3E3A39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
+    info:'<circle cx="12" cy="12" r="9" fill="#FFFCF6" stroke="#3E3A39" stroke-width="2"/><path d="M12 11v6" stroke="#3E3A39" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="7.5" r="1.2" fill="#3E3A39"/>'
+  };
+  function chips(c){
+    return '<div class="chips">'+c.map(function(x){return '<span class="chip chip-'+x[0]+'"><svg viewBox="0 0 24 24" aria-hidden="true">'+(CHIP[x[0]]||CHIP.info)+'</svg>'+esc(x[1])+'</span>';}).join("")+'</div>';
+  }
   function ttag(name){return '<span class="tt tt-'+name.replace(/\s/g,"")+'">'+esc(name)+'</span>';}
 
   /* ---------- 倒數 ---------- */
@@ -162,10 +176,13 @@
         var altBtn=alt&&(alt.list.length||sw)?'<button type="button" class="alt-btn" aria-expanded="false" data-j="'+j+'">附近可換（'+alt.list.length+'）</button>':'';
         h+='<li class="'+cls+'" style="--i:'+j+'"><span class="tpill'+(it.t?'':' empty')+'">'+esc(it.t)+'</span><div class="card">'+
           '<div class="row1">'+(it.m?'<span class="must-badge">'+STAR+'必去</span>':'')+'<span class="kind">'+(it.x&&!sw?"待安排":KIND[it.k])+'</span>'+(sw?'<span class="swap-badge">已替換</span>':'')+(it.w&&!sw?'<span class="warn">需確認</span>':'')+'</div>'+
-          '<div class="ttl">'+esc(show.n)+'</div>'+(show.o?'<p class="note clamp">'+esc(show.o)+'</p>':'')+
+          '<div class="ttl">'+esc(show.n)+'</div>'+
+          /* 有 b（一句話摘要）的卡片：先顯示摘要和小標籤，完整說明收進「細節」 */
+          (show.b?'<p class="brief">'+esc(show.b)+'</p>'+(show.c?chips(show.c):''):(show.o?'<p class="note clamp">'+esc(show.o)+'</p>':''))+
           (show.h?'<p class="hours">營業：'+esc(show.h)+'</p>':'')+
           (sw?'<p class="orig">原本：'+esc(it.n)+'<button type="button" class="alt-undo" data-j="'+j+'">換回</button></p>':'')+
-          (go||altBtn?'<div class="tags">'+altBtn+go+'</div>':'')+
+          (go||altBtn||(show.b&&show.o)?'<div class="tags">'+(show.b&&show.o?'<button type="button" class="det-btn" aria-expanded="false" aria-controls="det-'+j+'">細節</button>':'')+altBtn+go+'</div>':'')+
+          (show.b&&show.o?'<p class="note det" id="det-'+j+'" hidden>'+esc(show.o)+'</p>':'')+
           (altBtn?'<div class="alts" id="alts-'+j+'" hidden></div>':'')+'</div></li>';
       });
       h+='</ol>';
@@ -230,6 +247,8 @@
       var y=window.scrollY;dayEl.innerHTML=renderDay(Number(store("kansai8-day"))||0);markNow();addMore();window.scrollTo(0,y);
     }
     dayEl.addEventListener("click",function(e){
+      var d=e.target.closest(".det-btn");
+      if(d){var p=document.getElementById(d.getAttribute("aria-controls")),open=p.hidden;p.hidden=!open;d.textContent=open?"收起":"細節";d.setAttribute("aria-expanded",open?"true":"false");return;}
       var t=e.target.closest(".alt-btn,.alt-use,.alt-undo");
       if(t){
         var j=Number(t.dataset.j);

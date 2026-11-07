@@ -262,6 +262,15 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .card .ttl{font-size:16.5px;line-height:1.35}
 .card .note{font-size:14px;color:var(--ink-soft);line-height:1.55}
 .card .tags{display:flex;flex-wrap:wrap;align-items:center;gap:5px;margin-top:2px}
+/* 一句話摘要＋資訊小標籤 */
+.card .brief{font-size:14.5px;line-height:1.5}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;line-height:1;padding:4px 9px 4px 5px;border:2px solid var(--edge);border-radius:var(--r-sm);background:var(--paper);white-space:nowrap}
+.chip svg{width:16px;height:16px;flex:none}
+.chip-warn{background:var(--paper-2)}
+.chip-book{background:var(--paper-2)}
+.det-btn{font-size:13px;padding:2px 12px;min-height:32px;cursor:pointer;border:2px solid var(--edge);border-radius:var(--r-sm);background:var(--paper-2);color:var(--ink)}
+.card .note.det{margin-top:2px}
 /* 兩站之間的交通：放在卡片和卡片中間 */
 .leg{display:grid;grid-template-columns:64px 1fr;gap:0 8px;margin:-4px 0 8px}
 .leg-in{display:flex;flex-wrap:wrap;align-items:center;gap:5px;font-size:13px;color:var(--ink-soft);padding-left:4px}
