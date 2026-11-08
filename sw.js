@@ -1,10 +1,11 @@
 /* 離線快取：第一次打開就把整個網站存起來，之後沒網路也能看。
    網頁、CSS、JS 先抓網路的新版（略過瀏覽器的 HTTP 快取，3 秒沒回應就用快取）；字型、圖示直接用快取，背景再更新。
    新增檔案時記得加進 FILES。 */
-var CACHE = "jp8day-v6";
+var CACHE = "jp8day-v7";
 var FILES = [
   "./", "index.html", "prep.html", "css/style.css",
-  "js/icons.js", "js/data.js", "js/main.js",
+  "js/icons.js", "js/art.js", "js/main.js",
+  "js/data/days.js", "js/data/todos.js", "js/data/plans.js", "js/data/spots.js", "js/data/foods.js", "js/data/ll.js",
   "fonts/huninn-subset.woff2", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png",
   "images/shop/baton-dor-l.jpg", "images/shop/baton-dor.jpg", "images/shop/caramel-crown-l.jpg", "images/shop/caramel-crown.jpg", "images/shop/grand-calbee-l.jpg", "images/shop/grand-calbee.jpg", "images/shop/kaldi-choco-creams-l.jpg", "images/shop/kaldi-choco-creams.jpg", "images/shop/sugar-butter-tree-l.jpg", "images/shop/sugar-butter-tree.jpg"

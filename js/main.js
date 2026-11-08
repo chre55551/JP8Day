@@ -1,4 +1,4 @@
-/* 畫面邏輯：倒數、每日行程分頁、待辦清單、建議備選。index.html 和 prep.html 共用；資料來自 data.js，圖示來自 icons.js */
+/* 畫面邏輯：倒數、每日行程分頁、待辦清單、建議備選。index.html 和 prep.html 共用；資料來自 js/data/，圖示來自 icons.js，大張插圖來自 art.js */
 (function(){
   "use strict";
   var KIND={sight:"景點",food:"美食",shop:"購物",move:"交通",rest:"休息"};
@@ -140,7 +140,7 @@
         if((it.q&&it.q===pk.p.q)||it.n.indexOf(core)>=0)out.push(when);
       });
     });
-    /* 名稱、搜尋字都對不上的，用 data.js 手填的 s */
+    /* 名稱、搜尋字都對不上的，用 js/data/ 手填的 s */
     if(!out.length&&pk.p.s)out.push(pk.p.s);
     return out;
   }
@@ -447,6 +447,11 @@
       el.addEventListener("input",function(){saved[id]=el.value.trim();store("kansai8-booking",saved);});
     });
   }
+
+  /* 大張插圖（js/art.js）放回頁面上預留的位置；要在啟動各區塊之前，主圖暫停動畫才找得到圖 */
+  if(typeof ART!=="undefined")Array.prototype.forEach.call(document.querySelectorAll("[data-art]"),function(el){
+    if(ART[el.dataset.art])el.outerHTML=ART[el.dataset.art];
+  });
 
   /* 兩頁共用這支程式：頁面上有哪個區塊就啟動哪個 */
   [["theme-btn",initTheme],["home",initHeroPause],["cd-d",initCountdown],["booking",initBooking],["tabs",initDays],["todo-list",initTodo],["gift-list",initGifts],["plans-list",initIdeas]].forEach(function(p){

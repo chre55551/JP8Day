@@ -10,7 +10,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC_URL = "https://github.com/google/fonts/raw/main/ofl/huninn/Huninn-Regular.ttf"
 SRC = ROOT / "fonts" / ".src" / "Huninn-Regular.ttf"
 OUT = ROOT / "fonts" / "huninn-subset.woff2"
-TEXT_FILES = ["index.html", "prep.html", *sorted(str(p.relative_to(ROOT)) for p in (ROOT / "js").glob("*.js"))]
+TEXT_FILES = ["index.html", "prep.html", *sorted(str(p.relative_to(ROOT)) for p in (ROOT / "js").rglob("*.js"))]
 
 if not SRC.exists():
     SRC.parent.mkdir(parents=True, exist_ok=True)

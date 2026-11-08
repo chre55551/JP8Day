@@ -1,4 +1,4 @@
-# 產生網站「路線圖」區塊的兩張 SVG（大阪市區、關西各城市）。用法：python3 docs/make-maps.py <輸出資料夾>，再把 map1.svg、map2.svg 貼進 index.html 的 #maps 區塊
+# 產生網站「路線圖」區塊的兩張 SVG（大阪市區、關西各城市）。用法：python3 docs/make-maps.py，會直接改寫 js/art.js 裡的 map1、map2
 # 顏色全部用 class，由 css/style.css 的 .map-svg 規則上色：淺色是各線代表色（降低飽和度），深色改用同色系的深淺區分
 # 座標是示意位置，不照實際比例
 C={k:k for k in ("mido","tani","sakai","loop","jr","hankyu","keihan","kintetsu","port","yume")}
@@ -99,6 +99,11 @@ for x,y,t,an in tags: o.append(lab(x,y,t,an,14))
 o.append(lab(600,244,"任天堂博物館・丸久小山園","middle",13))
 o.append(lab(690,262,"平等院表參道","middle",13))
 svg2=f'<svg class="map-svg" viewBox="0 0 780 400" role="img" aria-labelledby="map2-t"><title id="map2-t">關西各城市之間的交通示意圖</title><rect class="m-bg" width="780" height="400"/>'+"".join(o)+'</svg>'
-import sys
-open(sys.argv[1]+"/map1.svg","w",encoding="utf-8").write(svg1)
-open(sys.argv[1]+"/map2.svg","w",encoding="utf-8").write(svg2)
+# 直接改寫 js/art.js 裡 maps:begin～maps:end 之間的內容
+import pathlib
+art=pathlib.Path(__file__).resolve().parent.parent/"js"/"art.js"
+t=art.read_text(encoding="utf-8")
+B,E="/* maps:begin */","/* maps:end */"
+i,j=t.index(B),t.index(E)
+art.write_text(t[:i+len(B)]+"\nmap1:`"+svg1+"`,\nmap2:`"+svg2+"`\n"+t[j:],encoding="utf-8")
+print("已更新 js/art.js 的路線圖")
