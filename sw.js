@@ -1,7 +1,7 @@
 /* 離線快取：第一次打開就把整個網站存起來，之後沒網路也能看。
    網頁、CSS、JS 先抓網路的新版（略過瀏覽器的 HTTP 快取，3 秒沒回應就用快取）；字型、圖示直接用快取，背景再更新。
    新增檔案時記得加進 FILES。 */
-var CACHE = "jp8day-v5";
+var CACHE = "jp8day-v6";
 var FILES = [
   "./", "index.html", "prep.html", "css/style.css",
   "js/icons.js", "js/data.js", "js/main.js",
