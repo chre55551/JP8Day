@@ -138,7 +138,7 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
 .fw{transform-box:fill-box;transform-origin:center;animation:burst 3.6s ease-out infinite}
 .fw-2{animation-delay:1.2s}
 .fw-3{animation-delay:2.4s}
-.twinkle{animation:twinkle 2.8s ease-in-out infinite}
+.twinkle{transform-box:fill-box;transform-origin:center;animation:twinkle 2.8s ease-in-out infinite}
 .twinkle.t2{animation-delay:1.4s}
 .tako{transform-box:fill-box;transform-origin:50% 100%;animation:hop 2.4s ease-in-out infinite}
 .tako.k2{animation-delay:.3s}
@@ -602,7 +602,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;font-size:13px;color:va
 .hero-art.paused *{animation-play-state:paused !important}
 
 @keyframes burst{0%{transform:scale(.2);opacity:0}15%{opacity:1}55%{transform:scale(1);opacity:.9}80%,100%{transform:scale(1.08);opacity:0}}
-@keyframes twinkle{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes twinkle{0%,100%{opacity:.35;transform:scale(.7)}50%{opacity:1;transform:scale(1.1)}}
 @keyframes hop{0%,70%,100%{transform:translateY(0)}80%{transform:translateY(-4px)}90%{transform:translateY(0)}}
 @keyframes drift{from{transform:translateX(-10px)}to{transform:translateX(14px)}}
 @keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-6px) rotate(2deg)}}
