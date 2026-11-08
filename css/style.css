@@ -134,15 +134,16 @@ section{scroll-margin-top:calc(var(--nav-h) + 16px)}
   :root:not([data-theme="light"]) .hero-art.day{display:none}
   :root:not([data-theme="light"]) .hero-art.night{display:block}
 }
-/* 深夜主圖：煙火綻放、星星閃爍、章魚燒彈跳 */
+/* 深夜主圖：煙火綻放、星星閃爍，貓狗搖尾巴、愛心飄 */
 .fw{transform-box:fill-box;transform-origin:center;animation:burst 3.6s ease-out infinite}
 .fw-2{animation-delay:1.2s}
 .fw-3{animation-delay:2.4s}
 .twinkle{transform-box:fill-box;transform-origin:center;animation:twinkle 2.8s ease-in-out infinite}
 .twinkle.t2{animation-delay:1.4s}
-.tako{transform-box:fill-box;transform-origin:50% 100%;animation:hop 2.4s ease-in-out infinite}
-.tako.k2{animation-delay:.3s}
-.tako.k3{animation-delay:.6s}
+.cat-tail{transform-box:fill-box;transform-origin:0 100%;animation:wag 2.6s ease-in-out infinite}
+.dog-tail{transform-box:fill-box;transform-origin:0 100%;animation:wag 0.7s ease-in-out infinite}
+.pet-heart{transform-box:fill-box;transform-origin:center;animation:heart 2.4s ease-in-out infinite}
+.pet-heart.h2{animation-delay:-1.2s}
 .hero-body{padding:20px 18px 22px;display:flex;flex-direction:column;gap:14px}
 .eyebrow{font-size:14px;letter-spacing:.12em;color:var(--ink-soft)}
 .hero h1{font-size:clamp(22px,6.4vw,44px);letter-spacing:.02em}
@@ -603,6 +604,8 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;font-size:13px;color:va
 
 @keyframes burst{0%{transform:scale(.2);opacity:0}15%{opacity:1}55%{transform:scale(1);opacity:.9}80%,100%{transform:scale(1.08);opacity:0}}
 @keyframes twinkle{0%,100%{opacity:.35;transform:scale(.7)}50%{opacity:1;transform:scale(1.1)}}
+@keyframes wag{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(8deg)}}
+@keyframes heart{0%,100%{transform:translateY(0) scale(.9);opacity:.95}50%{transform:translateY(-5px) scale(1.08);opacity:1}}
 @keyframes hop{0%,70%,100%{transform:translateY(0)}80%{transform:translateY(-4px)}90%{transform:translateY(0)}}
 @keyframes drift{from{transform:translateX(-10px)}to{transform:translateX(14px)}}
 @keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-6px) rotate(2deg)}}
