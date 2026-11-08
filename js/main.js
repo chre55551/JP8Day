@@ -368,13 +368,15 @@
         (it.note?'<p class="idea-note">'+NOTE_ICON+'<span>'+esc(it.note)+'</span></p>':'')+'</article>';
     }).join("");
 
+    /* 這個備選排在行程的哪幾天（對不上 DAYS 時才用手填的 s） */
+    function schedOf(it){var pk=pickByObj(it);return pk?scheduledAt(pk,null):(it.s?[it.s]:[]);}
     function row(it,food){
       var links=[];
       if(it.u)links.push(a(it.u,"介紹","lk"));
       if(it.u2)links.push(a(it.u2,"介紹 2","lk"));
       if(it.tb)links.push(a(tbUrl(it.q),"食べログ","lk"));
       links.push(a(mapUrl(it.q),"地圖","lk lk-map"));
-      var pk=pickByObj(it),at=pk?scheduledAt(pk,null):(it.s?[it.s]:[]);
+      var at=schedOf(it);
       /* 一行說明＋小標籤（營業時間一定排第一個），完整說明收進「細節」 */
       var brief=it.b||it.d, more=it.b&&it.d&&it.d!==it.b;
       var c=it.h==="—"?[]:[["time",it.h||"營業時間待查"]];  /* h 填 "—" 表示不是店家（例如官方網站），不顯示營業時間 */
@@ -393,8 +395,12 @@
       Array.prototype.forEach.call(areaTabs.children,function(b){b.setAttribute("aria-selected",b.dataset.a===area?"true":"false");});
       picksEl.innerHTML=[["景點",SPOTS,false],["美食",FOODS,true],["購物",SHOPS,false]].map(function(g){
         var list=g[1].filter(function(x){return x.a===area;});
+        /* 還沒排進行程的放前面，挑行程時先看到；已排的收到下面，中間用一條撕線隔開 */
+        var todo=list.filter(function(x){return !schedOf(x).length;}), done=list.filter(function(x){return schedOf(x).length;});
         return '<div class="pick-col"><h4>'+g[0]+'（'+list.length+'）</h4>'+
-          (list.length?'<ul class="picks">'+list.map(function(x){return row(x,g[2]);}).join("")+'</ul>':'<p class="pick-d">這區還沒有'+g[0]+'備選。</p>')+'</div>';
+          (list.length?'<ul class="picks">'+todo.map(function(x){return row(x,g[2]);}).join("")+
+            (done.length?'<li class="picks-sep" aria-hidden="true">已排進行程（'+done.length+'）</li>'+done.map(function(x){return row(x,g[2]);}).join(""):'')+
+            '</ul>':'<p class="pick-d">這區還沒有'+g[0]+'備選。</p>')+'</div>';
       }).join("");
     }
     AREAS.forEach(function(ar){
