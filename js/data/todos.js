@@ -10,10 +10,7 @@ var GIFTS=[
 ];
 
 var TODOS=[
-  {id:"nm-account",cat:"ticket",due:"2026-10-31",t:"任天堂博物館①：申請任天堂帳號",when:"10/31 前；要手機號碼收驗證碼",u:1,href:"https://museum-tickets.nintendo.com/en/calendar",hl:"官方網站"},
-  {id:"nm-lottery",cat:"ticket",due:"2026-10-31",t:"任天堂博物館②：抽籤報名，三個志願都選 1/4 的不同時段",when:"10/31 23:59（日本時間）截止。兩人姓名跟護照一模一樣；只送一次，不要找代購",u:1,href:"https://museum-tickets.nintendo.com/en/calendar",hl:"官方網站"},
-  {id:"nm-result",cat:"ticket",t:"任天堂博物館③：看抽籤結果",when:"11 月已公布：沒抽中"},
-  {id:"nm-resale",cat:"ticket",t:"任天堂博物館④：沒抽中，找其他管道入場（官網釋出的票等）",when:"參觀日前約兩個月起常上官網看，一釋出幾分鐘就被搶光；拿到票就把 1/4 下午排回去",href:"https://museum-tickets.nintendo.com/en/calendar",hl:"官方網站"},
+  {id:"nm-resale",cat:"ticket",t:"任天堂博物館：抽籤沒中，等官網釋出的票",when:"參觀日前約兩個月起常上官網看，一釋出幾分鐘就被搶光；拿到票就把 1/4 下午排回去",href:"https://museum-tickets.nintendo.com/en/calendar",hl:"官方網站"},
   {id:"usj",cat:"ticket",t:"環球影城 12/30 門票＋快速通關（已買快速通關）",when:"快速通關：任天堂世界保證入場 9:00–10:00、瑪利歐賽車 9:00–9:30、咚奇剛的瘋狂礦車 9:30–10:00、大白鯊、飛天翼龍。門票如果還沒買也要買好",links:[{href:"https://www.kkday.com/zh-tw/product/18618-universal-studios-japan-express-pass-osaka",hl:"KKday"},{href:"https://www.klook.com/zh-TW/activity/3407-universal-studios-japan-express-pass-osaka/",hl:"Klook"},{href:"https://www.usj.co.jp/web/zh/tw/tickets/lineup/expresspass",hl:"官方網站"}]},
   {id:"teamlab",cat:"book",t:"teamLab Biovortex Kyoto（數位藝術美術館）1/2 下午的時段預約（14:45 左右）"},
   {id:"tonemon",cat:"book",t:"TableCheck 訂宮川豚衛門 1/2 午餐（12:30）"},

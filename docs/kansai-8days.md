@@ -387,7 +387,6 @@
 - **串炸 松葉總本店**（已排 12/29）｜¥約 1,500：新梅田食道街的立食串炸，只收現金、週一休（營業：平日 14:00–22:00）　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E6%9D%BE%E8%91%89%E7%B7%8F%E6%9C%AC%E5%BA%97%20%E6%96%B0%E6%A2%85%E7%94%B0%E9%A3%9F%E9%81%93%E8%A1%97)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9D%BE%E8%91%89%E7%B7%8F%E6%9C%AC%E5%BA%97%20%E6%96%B0%E6%A2%85%E7%94%B0%E9%A3%9F%E9%81%93%E8%A1%97)
 - **麺に光を 別邸**（已排 1/3）｜¥1,000–1,500：難波中，貝類高湯鹽味拉麵「貝の光」；午餐 11:30–15:00、晚餐 18:00–20:00，不定休（營業：11:30–15:00、18:00–20:00；不定休）　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E9%BA%BA%E3%81%AB%E5%85%89%E3%82%92%20%E5%88%A5%E9%82%B8)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E3%81%AB%E5%85%89%E3%82%92%20%E5%88%A5%E9%82%B8)
 - **八百屋とごはん もりした**（已排 1/3）｜¥1,000–1,500：北堀江，手作熟食和定食，平常 11:00–23:00；橘通旁邊（營業：11:00–23:00）　[介紹](https://sasaya-company.jp/brand/okura)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E7%99%BE%E5%B1%8B%E3%81%A8%E3%81%94%E3%81%AF%E3%82%93%20%E3%82%82%E3%82%8A%E3%81%97%E3%81%9F%20%E5%8C%97%E5%A0%80%E6%B1%9F)
-- **㐂舌響**｜¥約 2,080：法善寺橫丁，午間黑毛和牛丼（午餐 12:00–15:00）（營業：午餐 12:00–15:00）　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E3%90%82%E8%88%8C%E9%9F%BF%20%E6%B3%95%E5%96%84%E5%AF%BA)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%90%82%E8%88%8C%E9%9F%BF%20%E6%B3%95%E5%96%84%E5%AF%BA)
 - **串カツだるま 新世界總本店**（已排 1/1）｜¥1,500–2,500：醬汁禁止沾兩次（營業：11:00–22:30（假日 10:30 開））　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E3%81%A0%E3%82%8B%E3%81%BE%20%E6%96%B0%E4%B8%96%E7%95%8C%E7%B7%8F%E6%9C%AC%E5%BA%97)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%81%A0%E3%82%8B%E3%81%BE%20%E6%96%B0%E4%B8%96%E7%95%8C%E7%B7%8F%E6%9C%AC%E5%BA%97)
 - **牛かつもと村**｜¥1,500–2,500：炸牛排，梅田有分店　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E7%89%9B%E3%81%8B%E3%81%A4%E3%82%82%E3%81%A8%E6%9D%91%20%E6%A2%85%E7%94%B0)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%89%9B%E3%81%8B%E3%81%A4%E3%82%82%E3%81%A8%E6%9D%91%20%E6%A2%85%E7%94%B0)
 - **りくろーおじさん**｜¥約 1,000：現烤起司蛋糕，剛出爐會搖鈴；一個兩人分（營業：9:30–21:30（1/1 休））　[介紹](https://www.rikuro.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%8A%E3%81%8F%E3%82%8D%E3%83%BC%E3%81%8A%E3%81%98%E3%81%95%E3%82%93%E3%81%AE%E5%BA%97%20%E3%81%AA%E3%82%93%E3%81%B0%E6%9C%AC%E5%BA%97)
@@ -411,7 +410,6 @@
 - **唐吉訶德 梅田本店**：24 小時營業，藥妝零食一次買齊；離飯店近（營業：24 小時）　[介紹](https://www.donki.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86%20%E6%A2%85%E7%94%B0%E6%9C%AC%E5%BA%97)
 - **SNKR DUNK（橘通）**（已排 1/3）：球鞋、潮流選品　[介紹](https://snkrdunk.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=SNKR%20DUNK%20%E5%A4%A7%E9%98%AA)
 - **BIOTOP OSAKA（橘通）**（已排 1/3）：香氛、服飾選品，樓上有咖啡（營業：11:00–20:00）　[介紹](https://www.biotop.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=BIOTOP%20OSAKA)
-- **APFR**：日本香氛品牌，線香、香氛蠟燭；門市地點以官網為準　[介紹](https://apfr.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=APFR%20%E5%A4%A7%E9%98%AA)
 
 ### 京都
 
@@ -438,13 +436,11 @@
 - **TEA LOUNGE ISOLA**｜¥焙茶約 730；套餐 2,500–3,300：四條烏丸 MOKU KYOTO 2 樓的日本茶茶室，焙茶單杯約 730；套餐較貴（16 種小菜御膳 3,000、團子麻糬甜點膳 2,500、茶套餐 3,300），下午茶 15:00 起、一天 10 份要網路預約。官網去年寫年內營業到 12/30 15:00、1/5 15:00 才開，這趟京都日（1/2）可能沒開，12 月中再確認（營業：11:30–19:00（L.O. 18:00））　[介紹](https://www.tealounge-isola.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=TEA%20LOUNGE%20ISOLA%20MOKU%20KYOTO)
 - **さらさ西陣**｜¥1,000–1,500：錢湯改建的咖啡廳，招牌法式吐司（營業：11:30–21:00（週五六到 22:00））　[介紹](https://www.cafe-sarasa.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%81%95%E3%82%89%E3%81%95%E8%A5%BF%E9%99%A3)
 - **宮川豚衛門**（已排 1/2）｜¥2,500–3,500：NewBabe 姊妹店的厚切豬排，TableCheck 訂位（營業：午餐 11:00–15:00；週一、二休）　[介紹](https://www.tablecheck.com/miyagawatonemon)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%AE%AE%E5%B7%9D%E8%B1%9A%E8%A1%9B%E9%96%80)
-- **松葉 本店**｜¥約 1,800：鯡魚蕎麥麵，除夕吃年越蕎麥；當天大排長龍（營業：10:30–21:00）　[介紹](https://www.sobamatsuba.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%B7%8F%E6%9C%AC%E5%AE%B6%E3%81%AB%E3%81%97%E3%82%93%E3%81%9D%E3%81%B0%E6%9D%BE%E8%91%89%20%E6%9C%AC%E5%BA%97)
 - **おめん 銀閣寺本店**｜¥約 1,500：烏龍沾麵，配哲學之道；週四休，去年 12/30–1/2 也休（營業：週四休）　[介紹](https://www.omen.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E3%82%81%E3%82%93%20%E9%8A%80%E9%96%A3%E5%AF%BA%E6%9C%AC%E5%BA%97)
 - **本家 第一旭 たかばし**｜¥約 1,000：京都站旁的醬油拉麵，營業時間長（營業：5:00–翌 2:00）　[介紹](https://www.honke-daiichiasahi.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9C%AC%E5%AE%B6%E7%AC%AC%E4%B8%80%E6%97%AD%20%E3%81%9F%E3%81%8B%E3%81%B0%E3%81%97)
 - **鍵善良房**｜¥1,000–1,500：祇園老字號，葛切涼粉（營業：9:30–18:00；喫茶 10:00–18:00）　[介紹](https://www.kagizen.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%8D%B5%E5%96%84%E8%89%AF%E6%88%BF%20%E5%9B%9B%E6%9D%A1%E6%9C%AC%E5%BA%97)
 - **祇園辻利・茶寮都路里**｜¥1,500–2,000：抹茶聖代（營業：10:30–20:00）　[介紹](https://www.giontsujiri.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E8%8C%B6%E5%AF%AE%E9%83%BD%E8%B7%AF%E9%87%8C%20%E7%A5%87%E5%9C%92%E6%9C%AC%E5%BA%97)
 - **肉のおだきち 伏見稲荷本店**（已排 1/2）｜¥約 1,200：整隻生蝦壓的京風大仙貝，現壓現吃；JR 稻荷站走約 3 分，嵐山也有分店（營業：11:00–19:00、不定休）　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E8%82%89%E3%81%AE%E3%81%8A%E3%81%A0%E3%81%8D%E3%81%A1%20%E4%BC%8F%E8%A6%8B%E7%A8%B2%E8%8D%B7%E6%9C%AC%E5%BA%97)・[地圖](https://www.google.com/maps/search/?api=1&query=%E8%82%89%E3%81%AE%E3%81%8A%E3%81%A0%E3%81%8D%E3%81%A1%20%E4%BC%8F%E8%A6%8B%E7%A8%B2%E8%8D%B7%E6%9C%AC%E5%BA%97)
-- **Gion Duck Rice（祇園ダックライス）**｜¥2,000–3,000：煙燻鴨肉飯，像鰻魚飯三吃那樣吃，最後加高湯；祇園四條站走約 3 分，不能訂位。人均約 2,000–3,000 日圓，超過平常的預算上限（營業：10:00–21:00、全年無休（食べログ））　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E7%A5%87%E5%9C%92%E3%83%80%E3%83%83%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%B9)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%A5%87%E5%9C%92%E3%83%80%E3%83%83%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%B9)
 - **寿しのむさし 三条本店**｜¥1,000–2,000：1/2 晚餐備選｜河原町三條的迴轉壽司，一盤盤拿、小份量能多吃幾種；食べログ寫只有元旦休，1/2 應該有開。11:00–21:45，不能訂位，晚餐時段常排隊；從四條河原町走約 10 分（營業：11:00–21:45）　[介紹](https://sushinomusashi.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%AF%BF%E3%81%97%E3%81%AE%E3%82%80%E3%81%95%E3%81%97%20%E4%B8%89%E6%9D%A1%E6%9C%AC%E5%BA%97)
 - **たつみ**｜¥1,000–2,000：1/2 晚餐備選｜裏寺町的老牌立飲居酒屋，小皿料理和天婦羅一盤幾百日圓，兩人點很多樣分著吃；12:00–22:00，週四休，河原町站走約 2 分；過年營業要確認（營業：12:00–22:00、週四休）　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E3%81%9F%E3%81%A4%E3%81%BF%20%E8%A3%8F%E5%AF%BA%E7%94%BA)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%81%9F%E3%81%A4%E3%81%BF%20%E8%A3%8F%E5%AF%BA%E7%94%BA)
 - **京極スタンド**｜¥1,500–2,500：1/2 晚餐備選｜1927 年開到現在的新京極大眾食堂，長桌併桌，小菜、洋食都便宜；12:00–21:15，週二休，河原町站走 1 分；過年營業要確認（營業：12:00–21:15、週二休）　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E4%BA%AC%E6%A5%B5%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%89)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E6%A5%B5%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%89)
@@ -464,8 +460,9 @@
 - **祇園辻利**：抹茶伴手禮，樓上是茶寮都路里　[介紹](https://www.giontsujiri.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%A5%87%E5%9C%92%E8%BE%BB%E5%88%A9%20%E7%A5%87%E5%9C%92%E6%9C%AC%E5%BA%97)
 - **松榮堂**：老字號香舖，線香、香袋（營業：9:00–18:00）　[介紹](https://www.shoyeido.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9D%BE%E6%A0%84%E5%A0%82%20%E4%BA%AC%E9%83%BD%E6%9C%AC%E5%BA%97)
 - **LE LABO KYOTO MACHIYA**：町家改建的 LE LABO 香水店（營業：10:00–19:00）　[介紹](https://www.lelabofragrances.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=LE%20LABO%20%E4%BA%AC%E9%83%BD%E7%94%BA%E5%AE%B6)
-- **MY ONLY FRAGRANCE**：調香體驗，可以兩人互調對方的味道；要預約　[介紹](https://myonlyfragrance.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=MY%20ONLY%20FRAGRANCE%20%E4%BA%AC%E9%83%BD)
-- **京都しゃぼんや**：肥皂、香氛，也有調香體驗；要預約　[地圖](https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E9%83%BD%E3%81%97%E3%82%83%E3%81%BC%E3%82%93%E3%82%84)
+- **MY ONLY FRAGRANCE 産寧坂店**：調香體驗，可以兩人互調對方的味道；要預約。清水寺下坡就到，京都另有河原町、新京極、寺町店（營業：10:30–18:30）　[介紹](https://myonlyfragrance.com/shops)・[地圖](https://www.google.com/maps/search/?api=1&query=MY%20ONLY%20FRAGRANCE%20%E7%94%A3%E5%AF%A7%E5%9D%82%E5%BA%97)
+- **APFR KYOTO**：日本香氛品牌，線香、香氛蠟燭；關西唯一門市在京都二條通（營業：11:00–19:00）　[介紹](https://apfr.jp/pages/store)・[地圖](https://www.google.com/maps/search/?api=1&query=APFR%20KYOTO)
+- **京都しゃぼんや 奥の工房**：肥皂、香氛，也有調香體驗（約 1–1.5 小時）；要預約。御幸町通，近京都御苑南邊（營業：11:30–16:00（週末 17:00））　[地圖](https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E9%83%BD%E3%81%97%E3%82%83%E3%81%BC%E3%82%93%E3%82%84%20%E5%A5%A5%E3%81%AE%E5%B7%A5%E6%88%BF)
 - **JR 京都伊勢丹**：京都站直結，伴手禮一次買；去年 1/2 就有營業（營業：10:00–20:00）　[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B8%E3%82%A7%E3%82%A4%E3%82%A2%E3%83%BC%E3%83%AB%E4%BA%AC%E9%83%BD%E4%BC%8A%E5%8B%A2%E4%B8%B9)
 - **茶の菓（マールブランシュ）**：抹茶貓舌餅乾，京都伴手禮第一名（營業：京都站八條口 10:00–20:00）　[介紹](https://www.malebranche.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9E%E3%83%BC%E3%83%AB%E3%83%96%E3%83%A9%E3%83%B3%E3%82%B7%E3%83%A5%20%E4%BA%AC%E9%83%BD%E9%A7%85)
 - **京ばあむ**：抹茶和豆乳的年輪蛋糕　[介紹](https://www.kyobaum.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E3%81%B0%E3%81%82%E3%82%80%20%E4%BA%AC%E9%83%BD%E9%A7%85)
@@ -504,7 +501,6 @@
 **美食**
 
 - **中谷堂**（已排 1/3）｜¥約 200：看高速搗麻糬，艾草麻糬（營業：10:00–19:00）　[介紹](https://www.nakatanidou.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E8%B0%B7%E5%A0%82%20%E5%A5%88%E8%89%AF)
-- **志津香 公園店**｜¥2,000–3,000：1959 年創業的釜飯，常排隊（營業：11:00–19:00）　[介紹](https://kamameshi-shizuka.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%BF%97%E6%B4%A5%E9%A6%99%20%E5%85%AC%E5%9C%92%E5%BA%97)
 - **柿葉壽司：平宗／ゐざさ**｜¥約 1,000：一口大小，可以買幾種分著吃　[介紹](https://www.hiraso.jp/)・[介紹 2](https://www.izasa.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9F%BF%E3%81%AE%E8%91%89%E3%81%9A%E3%81%97%20%E5%B9%B3%E5%AE%97%20%E5%A5%88%E8%89%AF%E5%BA%97)
 
 ### 神戶
@@ -532,7 +528,6 @@
 - **Comme Chinois**｜¥麵包 300–600：三宮ビル南館 B1 的人氣麵包店，招牌馬鈴薯麵包、18 層可頌；8:00–18:00，附設咖啡廳，三宮站走約 10 分。週一休（看官網）（營業：8:00–18:00、週一休）　[介紹](https://www.comme-chinois.com/honten)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B3%E3%83%A0%E3%83%BB%E3%82%B7%E3%83%8E%E3%83%AF%20%E4%B8%89%E5%AE%AE%E3%83%93%E3%83%AB%E5%8D%97%E9%A4%A8)
 - **Ca marche**｜¥麵包 300–600：北野山本通的人氣麵包店，2010 年開幕天天排隊；只有週四到週日 10:00–18:00 營業，12/29（週二）沒開，以前年末還會連休到 1 月初（營業：週四–日 10:00–18:00）　[介紹](https://ca-marche-kobe.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B5%E3%83%BB%E3%83%9E%E3%83%BC%E3%82%B7%E3%83%A5%20%E7%A5%9E%E6%88%B8%20%E5%B1%B1%E6%9C%AC%E9%80%9A)
 - **老祥記**｜¥約 300：南京町的元祖豬肉包；本店整修中，預計 2026 年 11 月左右完工（營業：10:00–18:30，賣完為止）　[介紹](https://roushouki.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E8%80%81%E7%A5%A5%E8%A8%98)
-- **Steak Land 神戶**｜¥約 3,000 起：平價神戶牛午餐（預算內的神戶牛選擇）（營業：11:00–21:30）　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD%E3%83%A9%E3%83%B3%E3%83%89%20%E7%A5%9E%E6%88%B8%E5%BA%97)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD%E3%83%A9%E3%83%B3%E3%83%89%20%E7%A5%9E%E6%88%B8%E5%BA%97)
 - **西村珈琲 中山手本店**｜¥約 1,000：神戶老咖啡館，適合跟北野異人館一起排　[食べログ](https://tabelog.com/rstLst/?vs=1&sw=%E8%A5%BF%E6%9D%91%E7%8F%88%E7%90%B2%20%E4%B8%AD%E5%B1%B1%E6%89%8B%E6%9C%AC%E5%BA%97)・[地圖](https://www.google.com/maps/search/?api=1&query=%E8%A5%BF%E6%9D%91%E7%8F%88%E7%90%B2%20%E4%B8%AD%E5%B1%B1%E6%89%8B%E6%9C%AC%E5%BA%97)
 
 **購物**
@@ -572,10 +567,7 @@
 
 網站上的勾選只存在各自的手機；這裡列的是全部項目和截止日。
 
-- [ ] **任天堂博物館①：申請任天堂帳號**（10/31 前）：10/31 前；要手機號碼收驗證碼 [官方網站](https://museum-tickets.nintendo.com/en/calendar)
-- [ ] **任天堂博物館②：抽籤報名，三個志願都選 1/4 的不同時段**（10/31 前）：10/31 23:59（日本時間）截止。兩人姓名跟護照一模一樣；只送一次，不要找代購 [官方網站](https://museum-tickets.nintendo.com/en/calendar)
-- [ ] **任天堂博物館③：看抽籤結果**：11 月已公布：沒抽中
-- [ ] **任天堂博物館④：沒抽中，找其他管道入場（官網釋出的票等）**：參觀日前約兩個月起常上官網看，一釋出幾分鐘就被搶光；拿到票就把 1/4 下午排回去 [官方網站](https://museum-tickets.nintendo.com/en/calendar)
+- [ ] **任天堂博物館：抽籤沒中，等官網釋出的票**：參觀日前約兩個月起常上官網看，一釋出幾分鐘就被搶光；拿到票就把 1/4 下午排回去 [官方網站](https://museum-tickets.nintendo.com/en/calendar)
 - [ ] **環球影城 12/30 門票＋快速通關（已買快速通關）**：快速通關：任天堂世界保證入場 9:00–10:00、瑪利歐賽車 9:00–9:30、咚奇剛的瘋狂礦車 9:30–10:00、大白鯊、飛天翼龍。門票如果還沒買也要買好
 - [ ] **teamLab Biovortex Kyoto（數位藝術美術館）1/2 下午的時段預約（14:45 左右）**
 - [ ] **TableCheck 訂宮川豚衛門 1/2 午餐（12:30）**
