@@ -671,7 +671,7 @@ main > section:nth-of-type(3n)::before{background:var(--take);left:50%;margin-le
 .hero h1{font-size:clamp(25px,7vw,40px)}
 .hero h1 .hl{background:linear-gradient(transparent 55%,var(--yama) 55%);border-radius:0;padding:0 2px}
 /* 六個重點標籤擠一排：字跟著螢幕寬度縮 */
-.hero-tags{list-style:none;margin:2px 0 0;padding:0;display:flex;flex-wrap:nowrap;justify-content:space-between;gap:2px}
+.hero-tags{list-style:none;margin:2px 0 0;padding:0;display:flex;flex-wrap:nowrap;justify-content:flex-start;gap:4px}
 .hero-tags li{flex:0 1 auto;white-space:nowrap;font-size:clamp(9px,2.5vw,14px);line-height:1.2;padding:3px clamp(2px,.6vw,8px);border:1px solid var(--edge);border-radius:3px;background:var(--paper)}
 .hero-tags li::before{content:"#";color:var(--stamp);margin-right:1px}
 
