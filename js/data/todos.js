@@ -12,6 +12,8 @@ var GIFTS=[
 var TODOS=[
   {id:"nm-resale",cat:"ticket",t:"任天堂博物館：抽籤沒中，等官網釋出的票",when:"參觀日前約兩個月起常上官網看，一釋出幾分鐘就被搶光；拿到票就把 1/4 下午排回去",href:"https://museum-tickets.nintendo.com/en/calendar",hl:"官方網站"},
   {id:"usj",cat:"ticket",t:"環球影城 12/30 門票＋快速通關（已買快速通關）",when:"快速通關：任天堂世界保證入場 9:00–10:00、瑪利歐賽車 9:00–9:30、咚奇剛的瘋狂礦車 9:30–10:00、大白鯊、飛天翼龍。門票如果還沒買也要買好",links:[{href:"https://www.kkday.com/zh-tw/product/18618-universal-studios-japan-express-pass-osaka",hl:"KKday"},{href:"https://www.klook.com/zh-TW/activity/3407-universal-studios-japan-express-pass-osaka/",hl:"Klook"},{href:"https://www.usj.co.jp/web/zh/tw/tickets/lineup/expresspass",hl:"官方網站"}]},
+  {id:"mokphoto",cat:"book",t:"用 LINE／IG 預約 MOK PHOTO 1/3 16:15（心齋橋自拍照相館），順便問過年有沒有開",href:"https://line.me/R/ti/p/@396ykpce",hl:"LINE"},
+  {id:"katsuoji",cat:"check",due:"2026-12-15",t:"查勝尾寺 1/1 開放時間和元旦臨時巴士",when:"12 月中",href:"https://katsuo-ji-temple.or.jp/",hl:"官方網站"},
   {id:"teamlab",cat:"book",t:"teamLab Biovortex Kyoto（數位藝術美術館）1/2 下午的時段預約（14:45 左右）"},
   {id:"tonemon",cat:"book",t:"TableCheck 訂宮川豚衛門 1/2 午餐（12:30）"},
   {id:"ukb-t2",cat:"check",t:"查神戶機場第 2 航廈的位置"},

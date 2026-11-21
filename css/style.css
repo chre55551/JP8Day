@@ -291,6 +291,7 @@ main > section:nth-of-type(3n)::before{background:var(--take);left:50%;margin-le
 .tt-京阪{background:var(--take)}
 .tt-地鐵{background:var(--mizu)}
 .tt-計程車{background:var(--yama)}
+.tt-巴士{background:var(--coral)}
 .tt-步行{background:var(--take)}
 .tt-PortLiner{background:var(--mizu)}
 .tt-飛機{background:var(--coral)}
