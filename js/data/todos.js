@@ -17,6 +17,7 @@ var TODOS=[
   {id:"green",cat:"book",t:"訂自然とお肉 green 12/31 11:30 午餐（親子丼），順便確認平日有午餐、除夕有開",when:"沒開就改去備案月盗",href:"https://autoreserve.com/ja/restaurants/7gFdmDCVogpJRpd14zLf",hl:"autoreserve"},
   {id:"teamlab",cat:"book",t:"teamLab Biovortex Kyoto（數位藝術美術館）1/2 下午的時段預約（14:45 左右）"},
   {id:"tonemon",cat:"book",t:"TableCheck 訂宮川豚衛門 1/2 午餐（12:30）"},
+  {id:"dinner-0102",cat:"book",t:"1/2 晚餐（四條・先斗町）店家選好後就訂位",when:"候選在備選「1/2 晚餐備選」；過年熱門店要早訂"},
   {id:"ukb-t2",cat:"check",t:"查神戶機場第 2 航廈的位置"},
   {id:"icoca",cat:"prep",due:"2026-12-28",t:"兩支 iPhone 加入 ICOCA 並儲值"},
   {id:"countdown",cat:"check",due:"2026-12-15",t:"選大阪跨年地點，確認除夕當晚的開放時間和回飯店的交通",when:"12 月中"},
